@@ -1,0 +1,1113 @@
+{
+  "case": "E2E-012",
+  "status": "PASS",
+  "elapsedMs": 479014,
+  "screenshots": [
+    "e2e-evidence/E2E-012-desktop.png"
+  ],
+  "observations": [
+    "Enter 切換角色",
+    "Tab 與 Enter 接續切換身分",
+    "顯示：待付服務費",
+    "開啟確認框後焦點在對話框內",
+    "確認框鍵盤焦點可到返回",
+    "Enter 確認模擬付款",
+    "1366 桌機無全頁水平溢出",
+    "顯示：待餐廳驗齡",
+    "顯示：服務完成",
+    "顯示：待結算",
+    "顯示：已取消／已退款",
+    "顯示：已退回／服務未完成",
+    "顯示：主人新增應付 0 元",
+    "顯示：不代表完整企業獲利",
+    "正常與兩異常均在前七分鐘內完成",
+    "計時演練本段無瀏覽器錯誤",
+    "依手冊時段分段自動化演練，保留各段講解時間；未模擬真人口述。"
+  ],
+  "checkpoints": [
+    {
+      "stage": 0,
+      "label": "00:00 問題、模擬身分與鍵盤操作",
+      "elapsedMs": 349,
+      "at": "2026-11-07T14:54:13.161Z"
+    },
+    {
+      "stage": 1,
+      "label": "01:00 需求、服務費與邀請",
+      "elapsedMs": 60281,
+      "at": "2026-11-07T14:55:13.093Z"
+    },
+    {
+      "stage": 2,
+      "label": "02:00 兩提案比較與選定",
+      "elapsedMs": 120316,
+      "at": "2026-11-07T14:56:13.128Z"
+    },
+    {
+      "stage": 3,
+      "label": "03:00 配送、餐廳收貨及刷新",
+      "elapsedMs": 180326,
+      "at": "2026-11-07T14:57:13.138Z"
+    },
+    {
+      "stage": 4,
+      "label": "04:00 驗齡、購買付款與完成",
+      "elapsedMs": 240348,
+      "at": "2026-11-07T14:58:13.160Z"
+    },
+    {
+      "stage": 5,
+      "label": "05:00 取消與服務費全額退款",
+      "elapsedMs": 300277,
+      "at": "2026-11-07T14:59:13.089Z"
+    },
+    {
+      "stage": 6,
+      "label": "06:00 驗齡失敗、取回與平台成本",
+      "elapsedMs": 360297,
+      "at": "2026-11-07T15:00:13.109Z"
+    },
+    {
+      "stage": 7,
+      "label": "07:00 P0 邊界、示範條件與保存限制",
+      "elapsedMs": 420131,
+      "at": "2026-11-07T15:01:12.943Z"
+    },
+    {
+      "stage": 8,
+      "label": "07:59 計時演練結束",
+      "elapsedMs": 479014,
+      "at": "2026-11-07T15:02:11.826Z"
+    }
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1b9e8&tm=2026-11-07T14%3A54%3A14.057Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1fa2d&tm=2026-11-07T14%3A54%3A16.069Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1b09b&tm=2026-11-07T14%3A54%3A18.071Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=128a1&tm=2026-11-07T14%3A54%3A20.083Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=17688&tm=2026-11-07T14%3A54%3A22.092Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=186d7&tm=2026-11-07T14%3A54%3A24.097Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1e7c4&tm=2026-11-07T14%3A54%3A26.112Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=13ac4&tm=2026-11-07T14%3A54%3A28.121Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=11719&tm=2026-11-07T14%3A54%3A30.136Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=15812&tm=2026-11-07T14%3A54%3A32.141Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=15446&tm=2026-11-07T14%3A54%3A34.147Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19966&tm=2026-11-07T14%3A54%3A36.155Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1cfe9&tm=2026-11-07T14%3A54%3A38.162Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19757&tm=2026-11-07T14%3A54%3A40.176Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f2b1&tm=2026-11-07T14%3A54%3A42.191Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a402&tm=2026-11-07T14%3A54%3A44.204Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=168ff&tm=2026-11-07T14%3A54%3A46.206Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f4ec&tm=2026-11-07T14%3A54%3A48.207Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=17e50&tm=2026-11-07T14%3A54%3A50.219Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=18e74&tm=2026-11-07T14%3A54%3A52.220Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a514&tm=2026-11-07T14%3A54%3A54.224Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f30d&tm=2026-11-07T14%3A54%3A56.227Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=16981&tm=2026-11-07T14%3A54%3A58.236Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1caac&tm=2026-11-07T14%3A55%3A00.238Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a866&tm=2026-11-07T14%3A55%3A02.239Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a1de&tm=2026-11-07T14%3A55%3A04.249Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1b10d&tm=2026-11-07T14%3A55%3A06.255Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=15572&tm=2026-11-07T14%3A55%3A08.264Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19e56&tm=2026-11-07T14%3A55%3A10.271Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1457b&tm=2026-11-07T14%3A55%3A12.275Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1161c&tm=2026-11-07T14%3A55%3A14.278Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=133da&tm=2026-11-07T14%3A55%3A16.286Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19dba&tm=2026-11-07T14%3A55%3A18.288Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1590d&tm=2026-11-07T14%3A55%3A20.302Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=12c09&tm=2026-11-07T14%3A55%3A22.303Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1c1e6&tm=2026-11-07T14%3A55%3A24.305Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1df70&tm=2026-11-07T14%3A55%3A26.306Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=14262&tm=2026-11-07T14%3A55%3A28.313Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f709&tm=2026-11-07T14%3A55%3A30.320Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1c940&tm=2026-11-07T14%3A55%3A32.322Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1e4f7&tm=2026-11-07T14%3A55%3A34.324Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19353&tm=2026-11-07T14%3A55%3A36.338Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19b02&tm=2026-11-07T14%3A55%3A38.354Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=14bc0&tm=2026-11-07T14%3A55%3A40.363Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1d229&tm=2026-11-07T14%3A55%3A42.374Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=14ee9&tm=2026-11-07T14%3A55%3A44.385Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1ffb6&tm=2026-11-07T14%3A55%3A46.390Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=160de&tm=2026-11-07T14%3A55%3A48.392Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=16766&tm=2026-11-07T14%3A55%3A50.403Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=10a9c&tm=2026-11-07T14%3A55%3A52.406Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1e4f9&tm=2026-11-07T14%3A55%3A54.420Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1c8b5&tm=2026-11-07T14%3A55%3A56.424Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a07c&tm=2026-11-07T14%3A55%3A58.436Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=198c2&tm=2026-11-07T14%3A56%3A00.437Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=12add&tm=2026-11-07T14%3A56%3A02.447Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=13b75&tm=2026-11-07T14%3A56%3A04.459Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f673&tm=2026-11-07T14%3A56%3A06.461Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1ea03&tm=2026-11-07T14%3A56%3A08.465Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=10e4a&tm=2026-11-07T14%3A56%3A10.480Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=123c1&tm=2026-11-07T14%3A56%3A12.486Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=191ac&tm=2026-11-07T14%3A56%3A14.502Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=18d03&tm=2026-11-07T14%3A56%3A16.518Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1baaa&tm=2026-11-07T14%3A56%3A18.520Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1553d&tm=2026-11-07T14%3A56%3A20.536Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=10f3d&tm=2026-11-07T14%3A56%3A22.539Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=11a56&tm=2026-11-07T14%3A56%3A24.548Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a428&tm=2026-11-07T14%3A56%3A26.563Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=145ed&tm=2026-11-07T14%3A56%3A28.569Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=19ee1&tm=2026-11-07T14%3A56%3A30.580Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f3ae&tm=2026-11-07T14%3A56%3A32.598Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1768f&tm=2026-11-07T14%3A56%3A34.613Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=13a62&tm=2026-11-07T14%3A56%3A36.615Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1de77&tm=2026-11-07T14%3A56%3A38.620Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=14106&tm=2026-11-07T14%3A56%3A40.621Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=11a9d&tm=2026-11-07T14%3A56%3A42.625Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=18267&tm=2026-11-07T14%3A56%3A44.628Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1803c&tm=2026-11-07T14%3A56%3A46.634Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=183bd&tm=2026-11-07T14%3A56%3A48.642Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1028c&tm=2026-11-07T14%3A56%3A50.657Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1b063&tm=2026-11-07T14%3A56%3A52.662Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=168b6&tm=2026-11-07T14%3A56%3A54.664Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1596d&tm=2026-11-07T14%3A56%3A56.669Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1f5b3&tm=2026-11-07T14%3A56%3A58.680Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=10744&tm=2026-11-07T14%3A57%3A00.695Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=147b3&tm=2026-11-07T14%3A57%3A02.712Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=138a4&tm=2026-11-07T14%3A57%3A04.714Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=16fec&tm=2026-11-07T14%3A57%3A06.719Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=11932&tm=2026-11-07T14%3A57%3A08.732Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1a37c&tm=2026-11-07T14%3A57%3A10.743Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1d77a&tm=2026-11-07T14%3A57%3A12.747Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=bZcdZfDBqCZruw-FwUlBheVGv55pnAs86TKvDekGr8DxEQ5xWNMfEnAt2LolYCO8",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDRvcaoI.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDuxphe8.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014nIvuhYEeRfWtvTCi7GgHx5IBcQviRXv5cHSXue6Fhic_ROZej2pqF546jNjzZgMSGRNwdrEMpuWhE1wJd_VQbA/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MTc5NDA2MzQzMzA3OX0%3D&nocache=1406d&tm=2026-11-07T14%3A57%3A13.112Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/to/wsm.sessionActivated?tm=2026-11-07T14%3A57%3A13.127Z",
+      "method": "POST"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18d58&tm=2026-11-07T14%3A57%3A15.134Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=17a53&tm=2026-11-07T14%3A57%3A15.637Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10140&tm=2026-11-07T14%3A57%3A16.151Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=101de&tm=2026-11-07T14%3A57%3A16.653Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1969b&tm=2026-11-07T14%3A57%3A17.169Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=17211&tm=2026-11-07T14%3A57%3A17.673Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e871&tm=2026-11-07T14%3A57%3A18.182Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1adde&tm=2026-11-07T14%3A57%3A18.686Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1dd13&tm=2026-11-07T14%3A57%3A19.200Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1502a&tm=2026-11-07T14%3A57%3A19.704Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1b0b1&tm=2026-11-07T14%3A57%3A20.217Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=11c0a&tm=2026-11-07T14%3A57%3A20.719Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1761f&tm=2026-11-07T14%3A57%3A21.233Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1bac1&tm=2026-11-07T14%3A57%3A21.734Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1da28&tm=2026-11-07T14%3A57%3A22.248Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1de67&tm=2026-11-07T14%3A57%3A22.752Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1250f&tm=2026-11-07T14%3A57%3A23.267Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=11273&tm=2026-11-07T14%3A57%3A25.269Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=133ae&tm=2026-11-07T14%3A57%3A27.280Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=114fc&tm=2026-11-07T14%3A57%3A29.284Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f9a0&tm=2026-11-07T14%3A57%3A31.299Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=12c8c&tm=2026-11-07T14%3A57%3A33.314Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18774&tm=2026-11-07T14%3A57%3A35.320Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=13f0e&tm=2026-11-07T14%3A57%3A37.337Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=12b77&tm=2026-11-07T14%3A57%3A39.341Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1ed55&tm=2026-11-07T14%3A57%3A41.344Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1009c&tm=2026-11-07T14%3A57%3A43.349Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a973&tm=2026-11-07T14%3A57%3A45.354Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1ac67&tm=2026-11-07T14%3A57%3A47.357Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a26b&tm=2026-11-07T14%3A57%3A49.371Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18ba7&tm=2026-11-07T14%3A57%3A51.377Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10067&tm=2026-11-07T14%3A57%3A53.384Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1da13&tm=2026-11-07T14%3A57%3A55.393Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=15653&tm=2026-11-07T14%3A57%3A57.403Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e001&tm=2026-11-07T14%3A57%3A59.410Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=19a6a&tm=2026-11-07T14%3A58%3A01.414Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=118cd&tm=2026-11-07T14%3A58%3A03.418Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a34d&tm=2026-11-07T14%3A58%3A05.427Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1d042&tm=2026-11-07T14%3A58%3A07.429Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1bac3&tm=2026-11-07T14%3A58%3A09.445Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1dd05&tm=2026-11-07T14%3A58%3A11.449Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1398f&tm=2026-11-07T14%3A58%3A13.465Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=11a63&tm=2026-11-07T14%3A58%3A15.481Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1118d&tm=2026-11-07T14%3A58%3A17.492Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=15539&tm=2026-11-07T14%3A58%3A19.496Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a631&tm=2026-11-07T14%3A58%3A21.502Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1ef69&tm=2026-11-07T14%3A58%3A23.516Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16b73&tm=2026-11-07T14%3A58%3A25.532Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=12c4a&tm=2026-11-07T14%3A58%3A27.533Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18a70&tm=2026-11-07T14%3A58%3A29.549Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=181d5&tm=2026-11-07T14%3A58%3A31.565Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16826&tm=2026-11-07T14%3A58%3A33.567Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1d05d&tm=2026-11-07T14%3A58%3A35.584Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10669&tm=2026-11-07T14%3A58%3A37.594Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1c003&tm=2026-11-07T14%3A58%3A39.601Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=14a47&tm=2026-11-07T14%3A58%3A41.603Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=103c1&tm=2026-11-07T14%3A58%3A43.606Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10c1a&tm=2026-11-07T14%3A58%3A45.623Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1855d&tm=2026-11-07T14%3A58%3A47.627Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=19d04&tm=2026-11-07T14%3A58%3A49.631Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=11ceb&tm=2026-11-07T14%3A58%3A51.636Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1c187&tm=2026-11-07T14%3A58%3A53.639Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=17652&tm=2026-11-07T14%3A58%3A55.642Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1c231&tm=2026-11-07T14%3A58%3A57.647Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a1a9&tm=2026-11-07T14%3A58%3A59.650Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=155ca&tm=2026-11-07T14%3A59%3A01.656Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f507&tm=2026-11-07T14%3A59%3A03.672Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1396e&tm=2026-11-07T14%3A59%3A05.676Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=120fc&tm=2026-11-07T14%3A59%3A07.680Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=124c7&tm=2026-11-07T14%3A59%3A09.684Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10180&tm=2026-11-07T14%3A59%3A11.691Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=133a6&tm=2026-11-07T14%3A59%3A13.704Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10483&tm=2026-11-07T14%3A59%3A15.710Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1b884&tm=2026-11-07T14%3A59%3A17.716Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=120b3&tm=2026-11-07T14%3A59%3A19.727Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=17447&tm=2026-11-07T14%3A59%3A21.744Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=14dd9&tm=2026-11-07T14%3A59%3A23.749Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a350&tm=2026-11-07T14%3A59%3A25.764Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=15082&tm=2026-11-07T14%3A59%3A27.772Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f794&tm=2026-11-07T14%3A59%3A29.782Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1fa89&tm=2026-11-07T14%3A59%3A31.791Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=148de&tm=2026-11-07T14%3A59%3A33.795Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1ed01&tm=2026-11-07T14%3A59%3A35.810Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1ce15&tm=2026-11-07T14%3A59%3A37.812Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=13b85&tm=2026-11-07T14%3A59%3A39.827Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1d706&tm=2026-11-07T14%3A59%3A41.837Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16039&tm=2026-11-07T14%3A59%3A43.841Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f4e2&tm=2026-11-07T14%3A59%3A45.848Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=132f1&tm=2026-11-07T14%3A59%3A47.861Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1fcdf&tm=2026-11-07T14%3A59%3A49.872Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1802f&tm=2026-11-07T14%3A59%3A51.887Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16873&tm=2026-11-07T14%3A59%3A53.891Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a8a1&tm=2026-11-07T14%3A59%3A55.902Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=19c99&tm=2026-11-07T14%3A59%3A57.908Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=109d6&tm=2026-11-07T14%3A59%3A59.911Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f77f&tm=2026-11-07T15%3A00%3A01.924Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18999&tm=2026-11-07T15%3A00%3A03.933Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=166fd&tm=2026-11-07T15%3A00%3A05.946Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1dacb&tm=2026-11-07T15%3A00%3A07.952Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1fdb8&tm=2026-11-07T15%3A00%3A09.955Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=117a2&tm=2026-11-07T15%3A00%3A11.970Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e138&tm=2026-11-07T15%3A00%3A13.981Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=12ed7&tm=2026-11-07T15%3A00%3A15.984Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1647b&tm=2026-11-07T15%3A00%3A17.991Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=13a03&tm=2026-11-07T15%3A00%3A20.008Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16015&tm=2026-11-07T15%3A00%3A22.014Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=17c30&tm=2026-11-07T15%3A00%3A24.023Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=19b04&tm=2026-11-07T15%3A00%3A26.026Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10594&tm=2026-11-07T15%3A00%3A28.039Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=154fd&tm=2026-11-07T15%3A00%3A30.047Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1bbb7&tm=2026-11-07T15%3A00%3A32.064Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1cd3e&tm=2026-11-07T15%3A00%3A34.073Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1a8e3&tm=2026-11-07T15%3A00%3A36.089Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18ae6&tm=2026-11-07T15%3A00%3A38.098Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1115b&tm=2026-11-07T15%3A00%3A40.107Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18baa&tm=2026-11-07T15%3A00%3A42.115Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e313&tm=2026-11-07T15%3A00%3A44.121Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=104ec&tm=2026-11-07T15%3A00%3A46.130Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=132d7&tm=2026-11-07T15%3A00%3A48.145Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1deec&tm=2026-11-07T15%3A00%3A50.162Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16c7a&tm=2026-11-07T15%3A00%3A52.165Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10ad0&tm=2026-11-07T15%3A00%3A54.181Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=12aec&tm=2026-11-07T15%3A00%3A56.188Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1931d&tm=2026-11-07T15%3A00%3A58.196Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=13e7a&tm=2026-11-07T15%3A01%3A00.212Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10cbb&tm=2026-11-07T15%3A01%3A02.222Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e8fa&tm=2026-11-07T15%3A01%3A04.228Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f96e&tm=2026-11-07T15%3A01%3A06.232Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=197a6&tm=2026-11-07T15%3A01%3A08.238Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=16190&tm=2026-11-07T15%3A01%3A10.250Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=14a3b&tm=2026-11-07T15%3A01%3A12.265Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=12b2c&tm=2026-11-07T15%3A01%3A14.267Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=11026&tm=2026-11-07T15%3A01%3A16.275Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e92f&tm=2026-11-07T15%3A01%3A18.283Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1b14b&tm=2026-11-07T15%3A01%3A20.291Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=164a5&tm=2026-11-07T15%3A01%3A22.295Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=168c4&tm=2026-11-07T15%3A01%3A24.302Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1ed18&tm=2026-11-07T15%3A01%3A26.319Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=14737&tm=2026-11-07T15%3A01%3A28.330Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1f0ce&tm=2026-11-07T15%3A01%3A30.334Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e167&tm=2026-11-07T15%3A01%3A32.343Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=104eb&tm=2026-11-07T15%3A01%3A34.354Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=14a3e&tm=2026-11-07T15%3A01%3A36.357Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1b816&tm=2026-11-07T15%3A01%3A38.372Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18f4b&tm=2026-11-07T15%3A01%3A40.389Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1434b&tm=2026-11-07T15%3A01%3A42.401Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1589a&tm=2026-11-07T15%3A01%3A44.406Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1c314&tm=2026-11-07T15%3A01%3A46.412Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1e86b&tm=2026-11-07T15%3A01%3A48.420Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1b503&tm=2026-11-07T15%3A01%3A50.433Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=15c0a&tm=2026-11-07T15%3A01%3A52.442Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=171cc&tm=2026-11-07T15%3A01%3A54.448Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=119b0&tm=2026-11-07T15%3A01%3A56.455Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18a98&tm=2026-11-07T15%3A01%3A58.467Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=11bc1&tm=2026-11-07T15%3A02%3A00.473Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=17047&tm=2026-11-07T15%3A02%3A02.484Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=18b69&tm=2026-11-07T15%3A02%3A04.488Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=1296a&tm=2026-11-07T15%3A02%3A06.494Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=10d68&tm=2026-11-07T15%3A02%3A08.510Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/02F95EAD-AD59-4462-A562-0DFD7DC423E6/from?get&nocache=146dd&tm=2026-11-07T15%3A02%3A10.519Z",
+      "method": "GET"
+    }
+  ],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T15:02:11.826Z",
+  "productExternalRequests": []
+}

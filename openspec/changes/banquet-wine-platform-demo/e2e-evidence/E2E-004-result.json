@@ -1,0 +1,32 @@
+{
+  "case": "E2E-004",
+  "status": "PASS",
+  "elapsedMs": 1050,
+  "screenshots": [
+    "e2e-evidence/E2E-004-comparison.png",
+    "e2e-evidence/E2E-004-selected.png"
+  ],
+  "observations": [
+    "顯示：NT$ 7,000",
+    "顯示：NT$ 6,500",
+    "顯示：現場另收",
+    "顯示：超出酒款預算",
+    "選定不付款不分潤",
+    "沒有不應開放的按鈕：送出提案",
+    "沒有不應開放的按鈕：選定酒商甲",
+    "沒有不應開放的按鈕：提交宴客需求",
+    "沒有不應開放的按鈕：送出提案",
+    "沒有不應開放的按鈕：選定酒商甲",
+    "沒有不應開放的按鈕：提交宴客需求",
+    "沒有不應開放的按鈕：送出提案",
+    "沒有不應開放的按鈕：選定酒商甲",
+    "沒有不應開放的按鈕：提交宴客需求",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:16.822Z"
+}

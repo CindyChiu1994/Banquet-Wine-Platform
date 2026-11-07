@@ -1,0 +1,68 @@
+{
+  "case": "E2E-006",
+  "status": "PASS",
+  "elapsedMs": 722,
+  "screenshots": [
+    "e2e-evidence/E2E-006-cancelled.png"
+  ],
+  "observations": [
+    "取消入口前置一致",
+    "錯誤提示：原因",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：模擬退還服務費",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：模擬退還服務費",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：模擬退還服務費",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：模擬退還服務費",
+    "顯示：已取消／已退款",
+    "顯示：服務費淨收入",
+    "沒有不應開放的按鈕：模擬退還服務費",
+    "退款500、無成交分潤、退款事件唯一",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求",
+    "本機防護軟體注入請求另列，已核對 CDP initiator 為 Kaspersky main.js；產品請求仍僅限本機來源。"
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=bZcdZfDBqCZruw-FwUlBheVGv55pnAs86TKvDekGr8DxEQ5xWNMfEnAt2LolYCO8",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDRvcaoI.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDuxphe8.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014V3rHjACCzCuwjFagYjGFZhOHmdtpttNotCCM9SHcI0kITTobkr47kFU65oBDCTgRhzJBct5cu9D67U7cZDT59w/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MTc5NDA2MjI0MDg2Mn0%3D&nocache=1549d&tm=2026-11-07T14%3A37%3A20.882Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/A34F91C2-E66D-4B0B-90C0-8B8F4E2516A7/to/wsm.sessionActivated?tm=2026-11-07T14%3A37%3A20.892Z",
+      "method": "POST"
+    }
+  ],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:21.027Z"
+}

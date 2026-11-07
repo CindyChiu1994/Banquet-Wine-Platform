@@ -1,0 +1,59 @@
+{
+  "case": "E2E-012",
+  "status": "FAIL",
+  "nextStage": 6,
+  "elapsedMs": 465242,
+  "observations": [
+    "顯示：已取消／已退款"
+  ],
+  "checkpoints": [
+    {
+      "stage": 0,
+      "label": "00:00 問題、模擬身分與鍵盤操作",
+      "elapsedMs": 330,
+      "at": "2026-11-07T14:40:53.737Z"
+    },
+    {
+      "stage": 1,
+      "label": "01:00 需求、服務費與邀請",
+      "elapsedMs": 67861,
+      "at": "2026-11-07T14:42:01.268Z"
+    },
+    {
+      "stage": 2,
+      "label": "02:00 兩提案比較與選定",
+      "elapsedMs": 134413,
+      "at": "2026-11-07T14:43:07.820Z"
+    },
+    {
+      "stage": 3,
+      "label": "03:00 配送、餐廳收貨及刷新",
+      "elapsedMs": 185867,
+      "at": "2026-11-07T14:43:59.274Z"
+    },
+    {
+      "stage": 4,
+      "label": "04:00 驗齡、購買付款與完成",
+      "elapsedMs": 252614,
+      "at": "2026-11-07T14:45:06.021Z"
+    },
+    {
+      "stage": 5,
+      "label": "05:00 取消與服務費全額退款",
+      "elapsedMs": 465242,
+      "at": "2026-11-07T14:48:38.649Z"
+    }
+  ],
+  "screenshots": [
+    "e2e-evidence/E2E-012-desktop.png"
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/11060B30-55CF-4E37-AAD3-F11B8FFBECC8/from?get&nocache=1cbad&tm=2026-11-07T14%3A48%3A38.509Z",
+      "method": "GET"
+    }
+  ],
+  "failure": "演練操作與工具設定驗證的等待交錯，已超出八分鐘；未當成通過。重跑採同一 MCP 呼叫自動排程。",
+  "actualElapsedAtObservationMs": 574330
+}

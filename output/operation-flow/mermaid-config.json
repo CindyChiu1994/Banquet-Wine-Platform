@@ -1,0 +1,9 @@
+{
+  "theme": "neutral",
+  "themeVariables": {
+    "fontFamily": "Microsoft JhengHei, sans-serif"
+  },
+  "flowchart": {
+    "htmlLabels": false
+  }
+}

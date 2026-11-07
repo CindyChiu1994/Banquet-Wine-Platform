@@ -1,0 +1,125 @@
+{
+  "case": "E2E-010",
+  "status": "PASS",
+  "elapsedMs": 1955,
+  "screenshots": [
+    "e2e-evidence/E2E-010-idempotency.png"
+  ],
+  "observations": [
+    "快速重複確認服務費只一次",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：標記已出貨",
+    "顯示：配送中",
+    "顯示：待餐廳確認收貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "顯示：待餐廳驗齡",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "酒款付款確認框正確分列金額與收款方",
+    "酒商收款6200、分潤600且待結算",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "顯示：服務完成",
+    "顯示：待結算",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "顯示：服務完成",
+    "顯示：待結算",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "顯示：服務完成",
+    "顯示：待結算",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "付款及完成事件均唯一",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：標記已送達",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：標記已送達",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：標記已送達",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：標記已送達",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "沒有不應開放的按鈕：標記已出貨",
+    "沒有不應開放的按鈕：標記已送達",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認收取並完成服務",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求",
+    "本機防護軟體注入請求另列，已核對 CDP initiator 為 Kaspersky main.js；產品請求仍僅限本機來源。"
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=bZcdZfDBqCZruw-FwUlBheVGv55pnAs86TKvDekGr8DxEQ5xWNMfEnAt2LolYCO8",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDRvcaoI.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDuxphe8.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014BWDv5UTe30Sm-0wHTy1sFHsnSH9OoUdKyg1DW0YilfOVfMLzPmhoPIaZ-5DIb7d8gL3SInKpxra_PAcRvVLv1Q/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MTc5NDA2MjI0NjI4MH0%3D&nocache=1a04c&tm=2026-11-07T14%3A37%3A26.303Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/73FAAE1D-5A4B-4E48-BF93-8EA23F24C8EF/to/wsm.sessionActivated?tm=2026-11-07T14%3A37%3A26.313Z",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=bZcdZfDBqCZruw-FwUlBheVGv55pnAs86TKvDekGr8DxEQ5xWNMfEnAt2LolYCO8",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDRvcaoI.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BDuxphe8.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014moURtm96Bt87og-cyooXG-zGv58iq38SK_BVCFOKu1pPUDwZ-yMMRd_Xj9y7sqn8wl3OPMYYfp75nBq9J0Rueg/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MTc5NDA2MjI0Njc3OH0%3D&nocache=15557&tm=2026-11-07T14%3A37%3A26.797Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/AFEF3008-3DD9-4557-85A2-577366AA466B/to/wsm.sessionActivated?tm=2026-11-07T14%3A37%3A26.812Z",
+      "method": "POST"
+    }
+  ],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:27.303Z"
+}

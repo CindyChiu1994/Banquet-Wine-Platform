@@ -1,0 +1,29 @@
+import {actorNames,initial,KEY,statusNames,validateRequest,validateProposal,type State} from '../domain/model';
+export interface StoragePort {getItem(key:string):string|null;setItem(key:string,value:string):void}
+export function validState(value:unknown):value is State {
+ try{
+  const s=value as State;if(!s||s.schemaVersion!==1||!Object.hasOwn(actorNames,s.actor)||typeof s.prefill!=='boolean')return false;
+  if(s.order===null)return true;
+  const o=s.order;if(!o||typeof o.id!=='string'||!Object.hasOwn(statusNames,o.status)||!Array.isArray(o.proposals)||!Array.isArray(o.events)||typeof o.invited!=='boolean')return false;
+  validateRequest(o.request);
+  if(!o.serviceFee||o.serviceFee.amount!==500||typeof o.serviceFee.paid!=='boolean'||![0,500].includes(o.serviceFee.refund))return false;
+  if(!o.age||!['pending','passed','failed'].includes(o.age.result)||typeof o.age.reason!=='string'||typeof o.arrangement!=='string'||typeof o.cancellationReason!=='string'||!(o.returnedAt===null||typeof o.returnedAt==='string')||!(o.returnCost===null||Number.isSafeInteger(o.returnCost)&&o.returnCost>=0))return false;
+  if(o.proposals.length>2||new Set(o.proposals.map(p=>p.merchant)).size!==o.proposals.length)return false;
+  for(const p of o.proposals){if(!['merchant-a','merchant-b'].includes(p.merchant)||!Array.isArray(p.items)||typeof p.submitted!=='boolean')return false;if(p.submitted)validateProposal(p);}
+  if(o.selected){validateProposal(o.selected);if(!o.selected.submitted||!o.invited||!o.serviceFee.paid)return false;}
+  if(o.status!=='service-fee-pending'&&!o.serviceFee.paid)return false;
+  if(!['service-fee-pending','invitation-pending','proposals-pending','comparison-ready'].includes(o.status)&&!o.selected)return false;
+  if(o.winePayment!==null&&(!o.winePayment.paid||!Number.isSafeInteger(o.winePayment.amount)||!o.commission||o.age.result!=='passed'))return false;
+  if(o.commission!==null&&(!o.winePayment?.paid||o.commission.status!=='pending'||!Number.isSafeInteger(o.commission.amount)))return false;
+  if(['handover-pending','host-receipt-pending','completed'].includes(o.status)&&!o.winePayment?.paid)return false;
+  if(['return-pending','returned'].includes(o.status)&&(o.age.result!=='failed'||o.winePayment!==null||o.commission!==null))return false;
+  if(['cancel-refund-pending','cancelled'].includes(o.status)&&(o.winePayment!==null||o.commission!==null))return false;
+  if(o.status==='cancelled'&&o.serviceFee.refund!==500)return false;
+  return o.events.every(e=>typeof e.id==='string'&&typeof e.action==='string'&&Object.hasOwn(actorNames,e.actor)&&typeof e.at==='string'&&typeof e.summary==='string');
+ }catch{return false;}
+}
+export function load(storage:StoragePort):{state:State;error:string}{
+ try{const raw=storage.getItem(KEY);if(raw===null)return {state:initial(),error:''};const parsed:unknown=JSON.parse(raw);if(!validState(parsed))throw new Error('invalid');return {state:parsed,error:''};}
+ catch{return {state:initial(),error:'展示資料無法讀取、版本不符或已損壞。原資料尚未覆寫，請確認重設以恢復。'};}
+}
+export function save(storage:StoragePort,state:State){storage.setItem(KEY,JSON.stringify(state));}

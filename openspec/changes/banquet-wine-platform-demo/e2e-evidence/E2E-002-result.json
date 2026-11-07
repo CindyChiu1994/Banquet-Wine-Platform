@@ -1,0 +1,25 @@
+{
+  "case": "E2E-002",
+  "status": "PASS",
+  "elapsedMs": 488,
+  "screenshots": [
+    "e2e-evidence/E2E-002-service-fee.png"
+  ],
+  "observations": [
+    "沒有不應開放的按鈕：邀請兩家酒商",
+    "顯示：待付服務費",
+    "沒有不應開放的按鈕：送出提案",
+    "顯示：全額退服務費",
+    "顯示：服務費不退",
+    "服務費確認揭露",
+    "不收集卡號",
+    "沒有不應開放的按鈕：模擬支付服務費",
+    "服務費一次且已邀請",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:12.460Z"
+}

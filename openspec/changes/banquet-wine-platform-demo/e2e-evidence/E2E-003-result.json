@@ -1,0 +1,34 @@
+{
+  "case": "E2E-003",
+  "status": "PASS",
+  "elapsedMs": 1171,
+  "screenshots": [
+    "e2e-evidence/E2E-003-proposals.png"
+  ],
+  "observations": [
+    "錯誤提示：酒款",
+    "提案缺項受阻：/^容量/",
+    "草稿未冒充有效提案",
+    "提案缺項受阻：/^瓶數/",
+    "草稿未冒充有效提案",
+    "提案缺項受阻：/^配送費/",
+    "草稿未冒充有效提案",
+    "提案缺項受阻：/^搭配理由/",
+    "草稿未冒充有效提案",
+    "提案缺項受阻：/^供貨限制/",
+    "草稿未冒充有效提案",
+    "錯誤提示：負數",
+    "草稿已保存",
+    "顯示：待回覆",
+    "一份提案不能選定",
+    "酒商只編輯自己的表單",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "顯示：可以比較選定",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:14.754Z"
+}

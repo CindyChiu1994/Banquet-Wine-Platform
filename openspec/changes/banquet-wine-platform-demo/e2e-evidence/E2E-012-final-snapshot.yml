@@ -1,0 +1,167 @@
+- generic [ref=f13e3]:
+  - complementary [ref=f13e4]:
+    - link "宴遇 BANQUET & WINE" [ref=f13e5] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=f13e8]:
+        - text: 宴遇
+        - generic [ref=f13e9]: BANQUET & WINE
+    - generic [ref=f13e10]: 宴席協調工作區
+    - generic [ref=f13e11]:
+      - text: ◈
+      - generic [ref=f13e12]: 我的宴客服務
+      - generic [ref=f13e13]: "01"
+    - generic [ref=f13e14]: 一次看懂服務流程
+    - list [ref=f13e15]:
+      - listitem [ref=f13e16]:
+        - generic [ref=f13e17]: "01"
+        - text: 提交宴客需求
+      - listitem [ref=f13e18]:
+        - generic [ref=f13e19]: "02"
+        - text: 付服務費・邀請酒商
+      - listitem [ref=f13e20]:
+        - generic [ref=f13e21]: "03"
+        - text: 比較提案・選定意向
+      - listitem [ref=f13e22]:
+        - generic [ref=f13e23]: "04"
+        - text: 餐廳安排・配送收貨
+      - listitem [ref=f13e24]:
+        - generic [ref=f13e25]: "05"
+        - text: 現場驗齡・購買付款
+      - listitem [ref=f13e26]:
+        - generic [ref=f13e27]: "06"
+        - text: 交付主人・確認收取
+    - generic [ref=f13e28]:
+      - text: FOR YOUR SPECIAL EVENING
+      - paragraph [ref=f13e29]: 好酒，讓相聚多一點餘韻。
+      - generic [ref=f13e30]: 課程展示作品虛構合作資料・無真實交易
+  - generic [ref=f13e31]:
+    - banner [ref=f13e32]:
+      - generic [ref=f13e33]: 宴客服務 ／ 工作區
+      - generic [ref=f13e34]:
+        - generic [ref=f13e35]: DEMO 模擬模式
+        - generic [ref=f13e36]: 宴客主人
+    - main [ref=f13e37]:
+      - generic [ref=f13e38]:
+        - generic [ref=f13e39]:
+          - generic [ref=f13e40]: A THOUGHTFULLY PAIRED EVENING
+          - heading "讓每一席，恰逢好酒。" [level=1] [ref=f13e41]
+          - paragraph [ref=f13e42]: 從選酒建議到現場交付，讓每一步都有著落。
+        - generic [ref=f13e43]:
+          - text: 宴客酒款媒合平台
+          - generic [ref=f13e44]: 同一瀏覽器・資料持續保存
+      - region "示範身分" [ref=f13e45]:
+        - generic [ref=f13e46]:
+          - text: 目前示範身分
+          - generic [ref=f13e47]: 切換角色接續同一筆服務
+        - generic [ref=f13e48]:
+          - button "宴客主人" [pressed] [ref=f13e49] [cursor=pointer]
+          - button "平台管理者" [ref=f13e50] [cursor=pointer]
+          - button "酒商甲" [ref=f13e51] [cursor=pointer]
+          - button "酒商乙" [ref=f13e52] [cursor=pointer]
+          - button "合作餐廳" [ref=f13e53] [cursor=pointer]
+      - status [ref=f13e54]: ✓ 已載入新情境。
+      - generic [ref=f13e55]:
+        - generic [ref=f13e56]:
+          - generic [ref=f13e57]:
+            - generic [ref=f13e58]:
+              - generic [ref=f13e59]:
+                - generic [ref=f13e60]: SERVICE OVERVIEW
+                - heading "準備一場值得回味的宴席" [level=2] [ref=f13e61]
+              - generic [ref=f13e62]: 尚未建立需求
+            - paragraph [ref=f13e63]: 先告訴我們宴客需求，再由兩家示範酒商提出搭配建議。
+          - generic [ref=f13e64]:
+            - generic [ref=f13e65]:
+              - generic [ref=f13e66]:
+                - generic [ref=f13e67]: YOUR NEXT STEP
+                - heading "宴客主人的當前待辦" [level=2] [ref=f13e68]
+              - generic [ref=f13e69]: ↗
+            - paragraph [ref=f13e70]: 填寫需求、比較酒商提案，並在現場確認購買及收取。
+            - generic [ref=f13e71]:
+              - generic [ref=f13e72]:
+                - generic [ref=f13e73]:
+                  - generic [ref=f13e74]: YOUR BANQUET
+                  - heading "從一場宴席開始" [level=2] [ref=f13e75]
+                - generic [ref=f13e76]: 六項需求 · 約 1 分鐘
+              - generic [ref=f13e77]:
+                - generic [ref=f13e78]:
+                  - generic [ref=f13e79]: 宴客日期與時間
+                  - textbox "宴客日期與時間 時區 Asia/Taipei" [ref=f13e80]: 2026-11-14T18:00
+                  - generic [ref=f13e81]: 時區 Asia/Taipei
+                - generic [ref=f13e82]:
+                  - generic [ref=f13e83]: 合作餐廳
+                  - combobox "合作餐廳" [ref=f13e84]:
+                    - option "請選擇餐廳"
+                    - option "暮光餐桌（示範合作餐廳）" [selected]
+                - generic [ref=f13e85]:
+                  - generic [ref=f13e86]: 宴客人數
+                  - spinbutton "宴客人數" [ref=f13e87]: "12"
+                - generic [ref=f13e88]:
+                  - generic [ref=f13e89]: 酒款總預算
+                  - spinbutton "酒款總預算 新臺幣；不含服務費、配送與餐廳費用" [ref=f13e90]: "6500"
+                  - generic [ref=f13e91]: 新臺幣；不含服務費、配送與餐廳費用
+                - generic [ref=f13e92]:
+                  - generic [ref=f13e93]: 菜色或料理類型
+                  - textbox "菜色或料理類型" [ref=f13e94]:
+                    - /placeholder: 例如 法式料理・海陸分享餐
+                    - text: 法式料理・海陸分享餐
+                - generic [ref=f13e95]:
+                  - generic [ref=f13e96]: 飲酒偏好
+                  - combobox "飲酒偏好" [ref=f13e97]:
+                    - option "不限"
+                    - option "紅白酒皆可" [selected]
+                    - option "偏好紅酒"
+                    - option "偏好白酒"
+                    - option "氣泡酒"
+              - generic [ref=f13e98]:
+                - generic [ref=f13e99]: 送出後由平台協調兩家酒商提案
+                - button "提交宴客需求 →" [ref=f13e100] [cursor=pointer]
+        - complementary [ref=f13e101]:
+          - generic [ref=f13e102]:
+            - generic [ref=f13e103]: COST AT A GLANCE
+            - heading "這一席的費用" [level=2] [ref=f13e104]
+            - paragraph [ref=f13e105]: 所有金額均為新臺幣・示範用途
+            - generic [ref=f13e106]:
+              - generic [ref=f13e107]:
+                - term [ref=f13e108]: 平台服務費
+                - definition [ref=f13e109]: NT$ 500
+              - generic [ref=f13e110]:
+                - term [ref=f13e111]: 付款狀態
+                - definition [ref=f13e112]: 未付
+              - generic [ref=f13e113]:
+                - term [ref=f13e114]: 酒款收款方
+                - definition [ref=f13e115]: 尚未選定
+              - generic [ref=f13e116]:
+                - term [ref=f13e117]: 酒商模擬收款
+                - definition [ref=f13e118]: 未付款
+              - generic [ref=f13e119]:
+                - term [ref=f13e120]: 餐廳費用
+                - definition [ref=f13e121]: 300 元・現場另收
+              - generic [ref=f13e122]:
+                - term [ref=f13e123]: 估計總支出
+                - definition [ref=f13e124]: 待提案
+            - generic [ref=f13e125]: 平台只收服務費，不收酒款佣金。分潤不加到主人支出。
+          - generic [ref=f13e126]:
+            - generic [ref=f13e127]: RESTAURANT SHARE
+            - heading "餐廳分潤" [level=2] [ref=f13e128]
+            - generic [ref=f13e129]: —
+            - paragraph [ref=f13e130]: 未成交，未產生分潤
+            - text: 僅在酒款模擬付款成功後，建立唯一待結算紀錄。
+          - generic [ref=f13e131]:
+            - generic [ref=f13e132]: DEMO TOOLS
+            - heading "展示工具" [level=2] [ref=f13e133]
+            - paragraph [ref=f13e134]: 載入或重設會取代目前展示資料。
+            - button "從空白需求開始 ↗" [ref=f13e135] [cursor=pointer]:
+              - text: 從空白需求開始
+              - generic [ref=f13e136]: ↗
+            - button "重設正常起點 ↗" [ref=f13e137] [cursor=pointer]:
+              - text: 重設正常起點
+              - generic [ref=f13e138]: ↗
+            - button "載入餐廳取消前 ↗" [ref=f13e139] [cursor=pointer]:
+              - text: 載入餐廳取消前
+              - generic [ref=f13e140]: ↗
+            - button "載入餐廳驗齡前 ↗" [ref=f13e141] [cursor=pointer]:
+              - text: 載入餐廳驗齡前
+              - generic [ref=f13e142]: ↗
+      - generic [ref=f13e143]:
+        - text: 宴遇 BANQUET & WINE
+        - generic [ref=f13e144]: 課程展示・所有付款均為模擬・資料僅存於目前瀏覽器

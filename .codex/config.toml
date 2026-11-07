@@ -1,0 +1,5 @@
+﻿[mcp_servers.playwright]
+command = "C:/Users/uuukkjghkjhkjhkjhouh/AppData/Local/Programs/nodejs/node.exe"
+args = ["C:/Users/uuukkjghkjhkjhkjhouh/AppData/Local/Programs/nodejs/node_modules/@playwright/mcp/cli.js", "--headless", "--browser", "chrome", "--isolated", "--viewport-size", "1366x768"]
+startup_timeout_sec = 30
+tool_timeout_sec = 120

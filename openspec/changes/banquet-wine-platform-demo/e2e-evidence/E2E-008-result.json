@@ -1,0 +1,18 @@
+{
+  "case": "E2E-008",
+  "status": "PASS",
+  "elapsedMs": 431,
+  "screenshots": [
+    "e2e-evidence/E2E-008-zero-cost.png"
+  ],
+  "observations": [
+    "零成本明確登錄，取回仍待確認",
+    "顯示：已退回／服務未完成",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:23.473Z"
+}

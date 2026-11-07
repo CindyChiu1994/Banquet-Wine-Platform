@@ -1,0 +1,36 @@
+{
+  "case": "E2E-001",
+  "status": "PASS",
+  "elapsedMs": 593,
+  "screenshots": [
+    "e2e-evidence/E2E-001-request.png"
+  ],
+  "observations": [
+    "錯誤提示：日期",
+    "空白不建立訂單",
+    "錯誤提示：餐廳",
+    "錯誤提示：人數",
+    "錯誤提示：人數",
+    "錯誤提示：人數",
+    "錯誤提示：預算",
+    "錯誤提示：預算",
+    "顯示：待付服務費",
+    "顯示：法式料理",
+    "顯示：12 位",
+    "顯示：法式料理",
+    "顯示：12 位",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：送出提案",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/B32DFF61-D246-49A3-997D-ECD3CA41477C/from?get&nocache=10994&tm=2026-11-07T14%3A37%3A11.036Z",
+      "method": "GET"
+    }
+  ],
+  "executedVia": "Playwright MCP tools/call browser_run_code_unsafe",
+  "runAt": "2026-11-07T14:37:11.031Z"
+}

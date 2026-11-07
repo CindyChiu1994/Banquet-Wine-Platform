@@ -1,0 +1,22 @@
+{
+  "change": "banquet-wine-platform-demo",
+  "schema": "spec-driven",
+  "pass": 12,
+  "fail": 0,
+  "skipped": 0,
+  "total": 12,
+  "screenshotCount": 18,
+  "implementationRepairIterations": 0,
+  "unitTests": 43,
+  "build": "PASS",
+  "browserErrors": 0,
+  "browserWarnings": 0,
+  "rehearsalMs": 479014,
+  "verifiedAt": "2026-11-07T15:21:32.695Z",
+  "execution": "真正的 Playwright MCP；以本機 stdio JSON-RPC client 呼叫工具。",
+  "notes": [
+    "初始測試定位、注入流量判讀與中斷計時紀錄保留；未更動產品規格或降低驗收條件。",
+    "Kaspersky 注入請求依 CDP initiator 確認為本機環境流量；產品來源僅本機，沒有真實支付請求。",
+    "計時演練為自動化分段操作，保留講解時間；不代表已完成真人口述練習。"
+  ]
+}
