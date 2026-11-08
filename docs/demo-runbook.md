@@ -39,7 +39,7 @@ npm.cmd run preview
 
 三天限制只適用於新建需求。已保存的訂單即使日期接近、已過，或由舊版建立而未符合新門檻，仍可在同一來源還原並接續原流程，不會因此被當作損壞資料或自動取消。保存格式與應用 key 不變，不需要清除既有資料。
 
-本次輸入修正的規格、流程圖與驗收見 [improve-banquet-request-inputs](../openspec/changes/improve-banquet-request-inputs/proposal.md) 及 [E2E 清單](../openspec/changes/improve-banquet-request-inputs/e2e-testing.md)；清單僅在實測通過後標記，原封存版驗收紀錄保留。
+本次輸入修正的規格、流程圖與驗收見 [improve-banquet-request-inputs](../openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/proposal.md) 及 [E2E 清單](../openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-testing.md)；清單僅在實測通過後標記，原封存版驗收紀錄保留。
 
 ## 正常流程角色順序
 
@@ -70,7 +70,7 @@ npm.cmd run preview
 
 ## 驗證紀錄
 
-2026-11-08 需求輸入修正驗證：單元測試 **69/69 通過**，TypeScript strict 及 Vite 建置通過；新 change 的 Playwright MCP E2E **11/11 通過、0 失敗、0 跳過**，21 張必要截圖已檢查；正常、取消退款與驗齡失敗三條既有流程回歸 **3/3 通過**。所有案例無未解決的 console/page error，產品修復迭代為 0；測試定位修正與環境流量判讀詳見 [執行紀錄](../openspec/changes/improve-banquet-request-inputs/e2e-evidence/execution-notes.md) 及 [結果摘要](../openspec/changes/improve-banquet-request-inputs/e2e-evidence/summary.json)。以下保留原封存版的歷史驗收紀錄。
+2026-11-08 需求輸入修正驗證：單元測試 **69/69 通過**，TypeScript strict 及 Vite 建置通過；新 change 的 Playwright MCP E2E **11/11 通過、0 失敗、0 跳過**，21 張必要截圖已檢查；正常、取消退款與驗齡失敗三條既有流程回歸 **3/3 通過**。所有案例無未解決的 console/page error，產品修復迭代為 0；測試定位修正與環境流量判讀詳見 [執行紀錄](../openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-evidence/execution-notes.md) 及 [結果摘要](../openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-evidence/summary.json)。以下保留原封存版的歷史驗收紀錄。
 
 2026-11-07 驗證：`npm.cmd run test -- --run` 共 43 項通過，`npm.cmd run build` 的 TypeScript strict 檢查及 Vite 正式建置通過。建置預覽已由 Playwright MCP 實走正常服務、餐廳取消退款、驗齡失敗退回三條流程，每條都核對重新整理後結果。E2E **12/12 通過、0 失敗、0 跳過**，18 張必要截圖均存在、非空且已複核；最終 console 為 0 errors／0 warnings。
 

@@ -2,7 +2,7 @@
 // Case definitions and acceptance criteria: improve-banquet-request-inputs/e2e-testing.md.
 async (rootPage) => {
  const id='__CASE_ID__';
- const root='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/improve-banquet-request-inputs/e2e-evidence/';
+ const root='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-evidence/';
  const observations=[],screenshots=[],errors=[],requests=[],calendarRows=[],injectedRequests=[];
  let context,page,fixedTime;
  const check=(value,message)=>{if(!value)throw Error(message);observations.push(message);};

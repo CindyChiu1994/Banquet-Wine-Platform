@@ -4,7 +4,7 @@ import path from 'node:path';
 
 const id = process.argv[2];
 if (!/^E2E-\d{3}$/.test(id)) throw new Error('Expected E2E case ID');
-const root = 'openspec/changes/improve-banquet-request-inputs';
+const root = 'openspec/changes/archive/2026-11-08-improve-banquet-request-inputs';
 const result = JSON.parse(fs.readFileSync(`${root}/e2e-evidence/${id}-result.json`, 'utf8'));
 if (result.case !== id || !['PASS', 'FAIL'].includes(result.status)) throw new Error('Invalid result');
 if (result.status === 'PASS') {
