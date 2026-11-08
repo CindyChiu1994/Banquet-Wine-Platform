@@ -1,6 +1,6 @@
 async (page) => {
  const id='__CASE_ID__';
- const evidence='openspec/changes/banquet-wine-platform-demo/e2e-evidence/';
+ const evidence='openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/e2e-evidence/';
  const observations=[],screenshots=[],errors=[],requests=[];
  const onError=e=>errors.push(e.message), onConsole=m=>{if(m.type()==='error')errors.push(m.text());},onRequest=r=>requests.push({url:r.url(),method:r.method()});
  page.on('pageerror',onError);page.on('console',onConsole);page.on('request',onRequest);
@@ -18,10 +18,16 @@ async (page) => {
  const shot=async suffix=>{await page.screenshot({path:evidence+id+'-'+suffix+'.png',fullPage:true});screenshots.push('e2e-evidence/'+id+'-'+suffix+'.png');};
  const stored=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('banquet-wine-demo:v1')));
  const alert=async fragment=>{const text=await page.getByRole('alert').innerText();check(text.includes(fragment),'錯誤提示：'+fragment);};
+ const requestDate=()=>page.evaluate(()=>{
+  const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const part=type=>Number(parts.find(p=>p.type===type).value);
+  const date=new Date(Date.UTC(part('year'),part('month')-1,part('day')+7));
+  return date.toISOString().slice(0,10)+'T18:00';
+ });
  const fillRequest=async(budget=6500)=>{
-  await page.getByLabel(/^宴客日期與時間/).fill('2026-11-21T18:00');
+  await page.getByLabel(/^宴客日期與時間/).fill(await requestDate());
   await page.getByRole('combobox',{name:'合作餐廳',exact:true}).selectOption({label:'暮光餐桌（示範合作餐廳）'});
-  await page.getByLabel('宴客人數',{exact:true}).fill('12');await page.getByLabel('菜色或料理類型',{exact:true}).fill('法式料理');
+  await page.getByLabel('宴客人數',{exact:true}).fill('12');await page.getByRole('textbox',{name:/^菜色或料理類型/}).fill('法式料理');
   await page.getByLabel(/^酒款總預算/).fill(String(budget));await page.getByRole('combobox',{name:'飲酒偏好',exact:true}).selectOption({label:'不限'});
  };
  const create=async(blank=false,budget=6500)=>{await reset(blank?'從空白需求開始':'重設正常起點');if(blank||budget!==6500)await fillRequest(budget);await click('提交宴客需求');};
@@ -51,7 +57,7 @@ async (page) => {
   switch(id){
    case 'E2E-001':{
     await reset('從空白需求開始');await click('提交宴客需求');await alert('日期');check((await stored()).order===null,'空白不建立訂單');
-    await page.getByLabel(/^宴客日期與時間/).fill('2026-11-21T18:00');await click('提交宴客需求');await alert('餐廳');await fillRequest();
+    await page.getByLabel(/^宴客日期與時間/).fill(await requestDate());await click('提交宴客需求');await alert('餐廳');await fillRequest();
     for(const v of ['0','-1','1.5']){await page.getByLabel('宴客人數',{exact:true}).fill(v);await click('提交宴客需求');await alert('人數');}
     await page.getByLabel('宴客人數',{exact:true}).fill('12');for(const v of ['0','-1']){await page.getByLabel(/^酒款總預算/).fill(v);await click('提交宴客需求');await alert('預算');}
     await fillRequest();await click('提交宴客需求');await has('待付服務費');for(const a of ['平台管理者','酒商甲']){await role(a);await has('法式料理');await has('12 位');}await no('登錄驗齡結果');await no('送出提案');await shot('request');break;

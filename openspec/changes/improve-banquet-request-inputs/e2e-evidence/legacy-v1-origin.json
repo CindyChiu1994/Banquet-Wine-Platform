@@ -1,0 +1,9 @@
+{
+  "commit": "4730434cdef4475bfb0974e41cec37fa352c00bc",
+  "url": "http://127.0.0.1:4173/",
+  "clock": "2026-11-08T10:00:00.000Z",
+  "timezone": "Asia/Taipei",
+  "orderId": "BW-MW7NVB40",
+  "createdThrough": "Playwright MCP 公開 UI；程式修改前以當時原始碼建置；單行料理舊版",
+  "buildAsset": "index-BDRvcaoI.js"
+}

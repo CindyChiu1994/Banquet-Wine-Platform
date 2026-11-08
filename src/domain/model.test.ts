@@ -2,6 +2,70 @@ import {describe,it,expect} from 'vitest';
 import {actorNames,initial,KEY,sampleRequest,sampleProposal,transition,total,wineTotal,commissionAmount,validateProposal,validateRequest,type Actor,type Command} from './model';
 import {scenario} from '../demo/scenarios';
 import {load,save,validState,type StoragePort} from '../persistence/storage';
+import {earliestBanquetDateTime,taipeiDateAfter,validateNewRequestDate} from './banquet-date';
+
+describe('台北日曆日期與新需求準備期',()=>{
+ const now=new Date('2026-11-08T18:00:00+08:00');
+ it.each([
+  ['2026-11-08T18:00:00+08:00','2026-11-11T00:00'],
+  ['2026-11-29T10:00:00+08:00','2026-12-02T00:00'],
+  ['2026-12-30T10:00:00+08:00','2027-01-02T00:00'],
+  ['2028-02-27T10:00:00+08:00','2028-03-01T00:00'],
+  ['2026-11-08T16:30:00Z','2026-11-12T00:00'],
+  ['2026-11-08T15:59:00Z','2026-11-11T00:00'],
+ ])('時刻 %s 的日期門檻為 %s',(at,expected)=>{
+  expect(earliestBanquetDateTime(new Date(at))).toBe(expected);
+ });
+ it('預填以台北當日加七個日曆日且不修改傳入時刻',()=>{
+  const at=new Date('2026-12-30T16:30:00Z');
+  expect(sampleRequest(at).date).toBe('2027-01-07T18:00');
+  expect(taipeiDateAfter(3,at)).toBe('2027-01-03');
+  expect(at.toISOString()).toBe('2026-12-30T16:30:00.000Z');
+ });
+ it.each(['','not-a-date','2026-02-30T18:00','2026-13-01T18:00','2026-11-11T24:00','2026-11-11T18:60'])('拒絕無效日期 %s',date=>{
+  expect(()=>validateNewRequestDate(date,now)).toThrow('有效的宴客日期');
+ });
+ it.each(['2000-01-01T18:00','2026-11-08T18:00','2026-11-09T18:00','2026-11-10T23:59'])('建立命令拒絕過早日期 %s 且不改狀態',date=>{
+  const state=initial(false),before=structuredClone(state);
+  expect(()=>transition(state,'host',{type:'create',request:{...sampleRequest(now),date}},now)).toThrow('2026-11-11 00:00');
+  expect(state).toEqual(before);
+ });
+ it('接受三天後午夜且不要求滿72小時',()=>{
+  const state=transition(initial(false),'host',{type:'create',request:{...sampleRequest(now),date:'2026-11-11T00:00'}},now);
+  expect(state.order?.status).toBe('service-fee-pending');
+  expect(state.order?.events.filter(e=>e.action==='create')).toHaveLength(1);
+ });
+ it('跨午夜建立使用新的台北當日',()=>{
+  const request={...sampleRequest(now),date:'2026-11-11T18:00'};
+  expect(()=>transition(initial(),'host',{type:'create',request},new Date('2026-11-08T23:59:00+08:00'))).not.toThrow();
+  expect(()=>transition(initial(),'host',{type:'create',request},new Date('2026-11-09T00:01:00+08:00'))).toThrow('2026-11-12 00:00');
+ });
+ it('歷史保存資料不套用新建門檻，且可繼續流程',()=>{
+  const s=transition(initial(),'host',{type:'create',request:{...sampleRequest(now),date:'2026-11-11T00:00'}},now);
+  s.order!.request.date='2000-01-01T18:00';
+  const raw=JSON.stringify(s),storage:StoragePort={getItem:()=>raw,setItem:()=>{}};
+  expect(validateRequest(s.order!.request)).toBeUndefined();
+  expect(load(storage)).toEqual({state:s,error:''});
+  expect(transition(load(storage).state,'host',{type:'service-pay'},new Date('2026-11-12T18:00:00+08:00')).order?.serviceFee.paid).toBe(true);
+ });
+ it('有效訂單經過準備期與宴客日仍可原樣還原',()=>{
+  const s=transition(initial(),'host',{type:'create',request:{...sampleRequest(now),date:'2026-11-11T00:00'}},now);
+  const raw=JSON.stringify(s),storage:StoragePort={getItem:()=>raw,setItem:()=>{}};
+  for(const later of ['2026-11-10T18:00:00+08:00','2026-11-12T18:00:00+08:00']){
+   expect(()=>validateNewRequestDate(s.order!.request.date,new Date(later))).toThrow();
+   expect(load(storage)).toEqual({state:s,error:''});
+  }
+ });
+ it.each(['','   ','\n\n',' \n '])('拒絕空白料理 %j',cuisine=>{
+  expect(()=>transition(initial(),'host',{type:'create',request:{...sampleRequest(now),cuisine}},now)).toThrow('菜色或料理類型');
+ });
+ it('多行料理原文經建立及保存還原仍相同',()=>{
+  const cuisine='前菜：沙拉\n主菜：牛排';
+  const s=transition(initial(),'host',{type:'create',request:{...sampleRequest(now),cuisine}},now);
+  let raw='';const storage:StoragePort={getItem:()=>raw,setItem:(_,v)=>{raw=v;}};
+  save(storage,s);expect(load(storage).state.order?.request.cuisine).toBe(cuisine);
+ });
+});
 describe('輸入與金額不變條件',()=>{
  it('甲案例費用分流及四捨五入',()=>{const p=sampleProposal('merchant-a');expect(wineTotal(p)).toBe(6000);expect(total(p)).toBe(7000);expect(total(p)-500).toBe(6500);expect(wineTotal(p)+p.shipping).toBe(6200);expect(commissionAmount(6000)).toBe(600);expect(commissionAmount(1005)).toBe(101);});
  it.each([0,-1,1.5,NaN,Infinity])('拒絕不合法人數 %s',guests=>{expect(()=>validateRequest({...sampleRequest(),guests})).toThrow();});

@@ -1,0 +1,126 @@
+{
+  "change": "improve-banquet-request-inputs",
+  "schema": "spec-driven",
+  "unitTests": {
+    "passed": 69,
+    "total": 69
+  },
+  "build": "PASS",
+  "e2e": {
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0,
+    "total": 11,
+    "checks": 214,
+    "screenshots": 21
+  },
+  "regression": {
+    "passed": 3,
+    "total": 3,
+    "checks": 83
+  },
+  "productRepairIterations": 0,
+  "testHarnessCorrection": "textarea locator corrected; E2E-001 rerun",
+  "browserErrors": 0,
+  "mermaidRender": "2 source-matched SVG files",
+  "cases": [
+    {
+      "id": "E2E-001",
+      "status": "PASS",
+      "checks": 39,
+      "screenshots": [
+        "E2E-001-date-validation.png",
+        "E2E-001-date-success.png"
+      ]
+    },
+    {
+      "id": "E2E-002",
+      "status": "PASS",
+      "checks": 11,
+      "screenshots": [
+        "E2E-002-midnight-boundary.png"
+      ]
+    },
+    {
+      "id": "E2E-003",
+      "status": "PASS",
+      "checks": 14,
+      "screenshots": [
+        "E2E-003-rollover.png",
+        "E2E-003-rollover-success.png"
+      ]
+    },
+    {
+      "id": "E2E-004",
+      "status": "PASS",
+      "checks": 33,
+      "screenshots": [
+        "E2E-004-calendar-row-1.png",
+        "E2E-004-calendar-row-2.png",
+        "E2E-004-calendar-row-3.png",
+        "E2E-004-calendar-timezone.png"
+      ]
+    },
+    {
+      "id": "E2E-005",
+      "status": "PASS",
+      "checks": 21,
+      "screenshots": [
+        "E2E-005-enter.png",
+        "E2E-005-multiline.png"
+      ]
+    },
+    {
+      "id": "E2E-006",
+      "status": "PASS",
+      "checks": 18,
+      "screenshots": [
+        "E2E-006-cuisine-required.png"
+      ]
+    },
+    {
+      "id": "E2E-007",
+      "status": "PASS",
+      "checks": 31,
+      "screenshots": [
+        "E2E-007-input-wrap.png",
+        "E2E-007-desktop-wrap.png"
+      ]
+    },
+    {
+      "id": "E2E-008",
+      "status": "PASS",
+      "checks": 13,
+      "screenshots": [
+        "E2E-008-aged-order.png"
+      ]
+    },
+    {
+      "id": "E2E-009",
+      "status": "PASS",
+      "checks": 11,
+      "screenshots": [
+        "E2E-009-legacy.png"
+      ]
+    },
+    {
+      "id": "E2E-010",
+      "status": "PASS",
+      "checks": 11,
+      "screenshots": [
+        "E2E-010-save-failure.png",
+        "E2E-010-save-retry.png"
+      ]
+    },
+    {
+      "id": "E2E-011",
+      "status": "PASS",
+      "checks": 12,
+      "screenshots": [
+        "E2E-011-service-dialog.png",
+        "E2E-011-receipt.png",
+        "E2E-011-regression.png"
+      ]
+    }
+  ]
+}

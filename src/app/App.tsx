@@ -2,6 +2,7 @@ import {useEffect,useRef,useState,type ReactNode} from 'react';
 import {actorNames,sampleRequest,sampleProposal,statusNames,transition,total,wineTotal,type Actor,type State,type Command,type Request,type Proposal} from '../domain/model';
 import {scenario,type Scenario} from '../demo/scenarios';
 import {load,save} from '../persistence/storage';
+import {earliestBanquetDateTime} from '../domain/banquet-date';
 const money=(n:number)=>'NT$ '+n.toLocaleString('zh-TW');
 const fmt=(s:string)=>new Date(s).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false});
 const numberValue=(s:string)=>s.trim()===''?NaN:Number(s);
@@ -10,15 +11,16 @@ type Run=(command:Command)=>void;
 function Field({label,children,hint}:{label:string;children:ReactNode;hint?:string}){return <label className="field"><span>{label}</span>{children}{hint&&<small>{hint}</small>}</label>;}
 function RequestForm({prefill,run}:{prefill:boolean;run:Run}){
  const [draft,setDraft]=useState<Request>(()=>prefill?sampleRequest():{date:'',restaurantId:'',guests:NaN,cuisine:'',budget:NaN,preference:'不限'});
+ const [minimum,setMinimum]=useState(()=>earliestBanquetDateTime());
  const field=<K extends keyof Request>(key:K,value:Request[K])=>setDraft({...draft,[key]:value});
- return <form noValidate onSubmit={e=>{e.preventDefault();run({type:'create',request:draft});}}>
+ return <form noValidate onSubmit={e=>{e.preventDefault();setMinimum(earliestBanquetDateTime());run({type:'create',request:draft});}}>
   <div className="section-title"><div><span className="eyebrow">YOUR BANQUET</span><h2>從一場宴席開始</h2></div><span className="subtle">六項需求 · 約 1 分鐘</span></div>
   <div className="form-grid">
-   <Field label="宴客日期與時間" hint="時區 Asia/Taipei"><input type="datetime-local" value={draft.date} onChange={e=>field('date',e.target.value)}/></Field>
+   <Field label="宴客日期與時間" hint={`時區 Asia/Taipei；至少提前三個日曆日；最早 ${minimum.slice(0,10).replaceAll('-','/')} 00:00`}><input type="datetime-local" min={minimum} value={draft.date} onFocus={()=>setMinimum(earliestBanquetDateTime())} onChange={e=>field('date',e.target.value)}/></Field>
    <Field label="合作餐廳"><select value={draft.restaurantId} onChange={e=>field('restaurantId',e.target.value)}><option value="">請選擇餐廳</option><option value="restaurant-demo">暮光餐桌（示範合作餐廳）</option></select></Field>
    <Field label="宴客人數"><input type="number" min="1" step="1" placeholder="例如 12" value={asInput(draft.guests)} onChange={e=>field('guests',numberValue(e.target.value))}/></Field>
    <Field label="酒款總預算" hint="新臺幣；不含服務費、配送與餐廳費用"><input type="number" min="1" step="1" placeholder="例如 6500" value={asInput(draft.budget)} onChange={e=>field('budget',numberValue(e.target.value))}/></Field>
-   <Field label="菜色或料理類型"><input placeholder="例如 法式料理・海陸分享餐" value={draft.cuisine} onChange={e=>field('cuisine',e.target.value)}/></Field>
+   <Field label="菜色或料理類型"><textarea className="cuisine-input" rows={3} placeholder="例如 前菜：沙拉、主菜：牛排（可按 Enter 分行）" value={draft.cuisine} onChange={e=>field('cuisine',e.target.value)}/></Field>
    <Field label="飲酒偏好"><select value={draft.preference} onChange={e=>field('preference',e.target.value)}>{['不限','紅白酒皆可','偏好紅酒','偏好白酒','氣泡酒'].map(x=><option key={x}>{x}</option>)}</select></Field>
   </div><div className="form-footer"><span>送出後由平台協調兩家酒商提案</span><button className="primary" type="submit">提交宴客需求 <b>→</b></button></div>
  </form>;
@@ -73,7 +75,7 @@ export function App(){
   {recovery&&<div role="alert" className="error">{recovery} <button onClick={()=>reset('normal')}>確認重設展示資料</button></div>}
   {error&&<div role="alert" className="error">{error}</div>}{notice&&<div role="status" className="notice">✓ {notice}</div>}
   <div className="content-grid"><div className="main-column">
-   <section className="card order-head"><div className="section-title"><div><span className="eyebrow">SERVICE OVERVIEW</span><h2>{o?'本次宴客服務':'準備一場值得回味的宴席'}</h2></div>{badge}</div>{o?<><p className="request-line">{requestText}</p><div className="request-facts"><span>料理 <b>{o.request.cuisine}</b></span><span>酒款預算 <b>{money(o.request.budget)}</b></span><span>偏好 <b>{o.request.preference}</b></span></div><small className="subtle">服務編號 {o.id} · {chosen?`協調酒商：${actorNames[chosen.merchant]}（已鎖定條件）`:'尚未選定協調酒商'}</small></>:<p>先告訴我們宴客需求，再由兩家示範酒商提出搭配建議。</p>}</section>
+   <section className="card order-head"><div className="section-title"><div><span className="eyebrow">SERVICE OVERVIEW</span><h2>{o?'本次宴客服務':'準備一場值得回味的宴席'}</h2></div>{badge}</div>{o?<><p className="request-line">{requestText}</p><div className="request-facts"><span className="cuisine-fact">料理 <b>{o.request.cuisine}</b></span><span>酒款預算 <b>{money(o.request.budget)}</b></span><span>偏好 <b>{o.request.preference}</b></span></div><small className="subtle">服務編號 {o.id} · {chosen?`協調酒商：${actorNames[chosen.merchant]}（已鎖定條件）`:'尚未選定協調酒商'}</small></>:<p>先告訴我們宴客需求，再由兩家示範酒商提出搭配建議。</p>}</section>
    <section className="card current-task"><div className="section-title"><div><span className="eyebrow">YOUR NEXT STEP</span><h2>{actorNames[actor]}的當前待辦</h2></div><span className="step-symbol">↗</span></div><p className="role-description">{roleHelp[actor]}</p>
    {!o?(actor==='host'?<RequestForm key={epoch} prefill={state.prefill} run={run}/>:<div className="waiting">等待主人建立宴客需求。切換至宴客主人開始。</div>):<>
     {actor==='host'&&o.status==='service-fee-pending'&&<div className="task-block"><h3>先啟動這一席的選酒服務</h3><p>模擬服務費 <strong>{money(500)}</strong>，收款方：平台。</p><p className="policy">餐廳無法配合且服務無法繼續：全額退服務費。已提供建議與配送後驗齡未通過：服務費不退，亦不另收罰款、退回運費或酒款。</p><button className="primary" onClick={()=>confirm('模擬支付平台服務費',<p>收款方：平台<br/>服務費：{money(500)}<br/>僅為模擬付款，不收集信用卡資料。</p>,()=>run({type:'service-pay'}))}>模擬支付服務費 →</button></div>}

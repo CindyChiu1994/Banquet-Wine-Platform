@@ -29,6 +29,18 @@ npm.cmd run preview
 
 右欄「展示工具」四個入口均需先確認取代資料：空白需求、正常起點、餐廳取消前、餐廳驗齡前。正常起點預填需求但未付款，提案草稿需各酒商自行套用與送出。異常入口使用相同領域轉換規則建立完整前置紀錄。宴客預設日期為載入當日後七天，時區 Asia/Taipei。
 
+## 填寫宴客需求
+
+新需求至少須提前三個日曆日。系統以裝置時鐘取得現在時刻，再依 Asia/Taipei 計算當日日期；例如台北 2026/11/08 操作，最早可填 2026/11/11 00:00，包含該時間。日曆日包含週末及假日，不另要求滿 72 小時；裝置設定為其他時區仍以台北日期為準，展示前請確認裝置時鐘正確。
+
+「宴客日期與時間」會顯示準備期及最早日期，選擇器也有下限。表單跨午夜後，送出時會以新日期重新檢查；若日期太早，錯誤會指出新的最早時間，原填寫內容保留，修正後可重試。預填日期維持台北當日後七天 18:00。
+
+「菜色或料理類型」支援多行文字，可按 Enter 分別填寫前菜、主菜與甜點；Enter 只換行，完成後請按「提交宴客需求」。長文字會自動折行；送出後各角色的料理摘要及重新整理均保留文字與換行。僅空白或換行不能提交。
+
+三天限制只適用於新建需求。已保存的訂單即使日期接近、已過，或由舊版建立而未符合新門檻，仍可在同一來源還原並接續原流程，不會因此被當作損壞資料或自動取消。保存格式與應用 key 不變，不需要清除既有資料。
+
+本次輸入修正的規格、流程圖與驗收見 [improve-banquet-request-inputs](../openspec/changes/improve-banquet-request-inputs/proposal.md) 及 [E2E 清單](../openspec/changes/improve-banquet-request-inputs/e2e-testing.md)；清單僅在實測通過後標記，原封存版驗收紀錄保留。
+
 ## 正常流程角色順序
 
 主人填六項需求並提交 → 主人確認模擬支付平台服務費 → 平台邀請兩家酒商 → 酒商甲、乙各自編輯或套用示範草稿並送出 → 主人比較後選定一家 → 餐廳確認收貨時段 → 選定酒商出貨、標記送達 → 餐廳獨立確認收貨、現場驗齡 → 主人確認購買、模擬付款給酒商 → 餐廳交付 → 主人確認收取。
@@ -58,12 +70,14 @@ npm.cmd run preview
 
 ## 驗證紀錄
 
+2026-11-08 需求輸入修正驗證：單元測試 **69/69 通過**，TypeScript strict 及 Vite 建置通過；新 change 的 Playwright MCP E2E **11/11 通過、0 失敗、0 跳過**，21 張必要截圖已檢查；正常、取消退款與驗齡失敗三條既有流程回歸 **3/3 通過**。所有案例無未解決的 console/page error，產品修復迭代為 0；測試定位修正與環境流量判讀詳見 [執行紀錄](../openspec/changes/improve-banquet-request-inputs/e2e-evidence/execution-notes.md) 及 [結果摘要](../openspec/changes/improve-banquet-request-inputs/e2e-evidence/summary.json)。以下保留原封存版的歷史驗收紀錄。
+
 2026-11-07 驗證：`npm.cmd run test -- --run` 共 43 項通過，`npm.cmd run build` 的 TypeScript strict 檢查及 Vite 正式建置通過。建置預覽已由 Playwright MCP 實走正常服務、餐廳取消退款、驗齡失敗退回三條流程，每條都核對重新整理後結果。E2E **12/12 通過、0 失敗、0 跳過**，18 張必要截圖均存在、非空且已複核；最終 console 為 0 errors／0 warnings。
 
 八分鐘腳本的自動化分段計時演練於 2026-11-07 22:54–23:02 Asia/Taipei 執行，耗時 **479014 ms（7 分 59 秒）**。正常及兩條異常於前七分鐘內完成，各段保留講解時間，這項紀錄不代表已完成真人口述練習。先前被工具設定確認等待打斷的計時不列為通過，保留於證據目錄。實作初輪完成後未因 E2E 進行產品修復，產品修復迭代為 0；測試定位及環境流量判讀修正另留紀錄。P0 範圍維持不變，未加入 P1 結算操作。
 
-可直接開啟 [證據總覽](../openspec/changes/banquet-wine-platform-demo/e2e-evidence/index.html) 審閱所有截圖與實測 JSON。本次測試瀏覽器及建置預覽服務均已停止；需展示時依本手冊重新啟動。
+可直接開啟 [證據總覽](../openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/e2e-evidence/index.html) 審閱所有截圖與實測 JSON。本次測試瀏覽器及建置預覽服務均已停止；需展示時依本手冊重新啟動。
 
-E2E 定義、個別結果與截圖以 [e2e-testing.md](../openspec/changes/banquet-wine-platform-demo/e2e-testing.md) 為唯一清單，不在此複製驗收步驟。初次測試遇到下拉選單標籤定位與本機 Kaspersky 注入流量造成誤判；已依 accessibility snapshot 修正測試定位，並透過 CDP request initiator 確認注入請求來自 Kaspersky 的 main.js。產品原始碼與建置頁面沒有該來源。原始失敗截圖與 `output/mcp-results/initial/` 紀錄保留，驗收仍要求產品無外部服務或真實支付請求。瀏覽器未出現未解決的產品 console 或 page error。
+E2E 定義、個別結果與截圖以 [e2e-testing.md](../openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/e2e-testing.md) 為唯一清單，不在此複製驗收步驟。初次測試遇到下拉選單標籤定位與本機 Kaspersky 注入流量造成誤判；已依 accessibility snapshot 修正測試定位，並透過 CDP request initiator 確認注入請求來自 Kaspersky 的 main.js。產品原始碼與建置頁面沒有該來源。原始失敗截圖與 `output/mcp-results/initial/` 紀錄保留，驗收仍要求產品無外部服務或真實支付請求。瀏覽器未出現未解決的產品 console 或 page error。
 
 Playwright MCP 已安裝在本機並由 `.codex/config.toml` 指向固定本機 CLI，採隔離的無介面 Chrome。若目前工作階段未重新載入工具，可使用 `scripts/playwright-mcp-client.mjs` 以標準 MCP stdio 協定呼叫同一伺服器；其初始化會列出實際 MCP 工具，所有瀏覽器驗收仍經由 Playwright MCP `tools/call` 執行。此啟動方式只處理測試工具連線，不取代產品流程或領域測試。

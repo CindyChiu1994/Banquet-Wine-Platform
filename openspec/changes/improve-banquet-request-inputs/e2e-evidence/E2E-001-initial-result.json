@@ -1,0 +1,101 @@
+{
+  "case": "E2E-001",
+  "status": "FAIL",
+  "error": "TimeoutError: locator.inputValue: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('菜色或料理類型', { exact: true })\u001b[22m\n",
+  "observations": [
+    "頁面時鐘：2026-11-08T10:00:00.000Z",
+    "瀏覽器時區：Asia/Taipei",
+    "顯示：至少提前三個日曆日",
+    "顯示：Asia/Taipei",
+    "顯示：2026/11/11",
+    "選擇器下限為三天後午夜",
+    "錯誤指出：日期",
+    "無效提交不建立訂單或成功事件",
+    "錯誤指出：餐廳",
+    "錯誤指出：人數",
+    "無效提交不建立訂單或成功事件",
+    "錯誤指出：人數",
+    "無效提交不建立訂單或成功事件",
+    "錯誤指出：人數",
+    "無效提交不建立訂單或成功事件",
+    "錯誤指出：預算",
+    "無效提交不建立訂單或成功事件",
+    "錯誤指出：預算",
+    "無效提交不建立訂單或成功事件",
+    "原生日期控制將 2026-11-07T18:00 標為下限外",
+    "錯誤指出：最早可選 2026-11-11",
+    "無效提交不建立訂單或成功事件"
+  ],
+  "screenshots": [
+    "E2E-001-failure.png"
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=GRgzh5uIooPYs68XzxjskCN289DnGlsh7FTds1HHukS9mQEWvvqhLxrFRfUfvb9j",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-CgM09UCs.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-DhFa1V4x.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014G7yqmOsYjKE7a2QfUM8uHiqV4GGnnUAxZ-GAmQfoGOcmCSSIqWhYZiICJFZVw12-fcId_iaUbfYvrTq_ZLFOAg/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MH0%3D&nocache=181a3&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/to/wsm.sessionActivated?tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "POST"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=1a159&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=148cd&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=1858a&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=19275&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=1bdb7&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=1c38e&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=14e12&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=1ecf4&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=11134&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/9C84CB65-46A9-4458-B14C-3AEDACC76C23/from?get&nocache=17dde&tm=2026-11-08T10%3A00%3A00.000Z",
+      "method": "GET"
+    }
+  ],
+  "calendarRows": [],
+  "visibleText": "宴遇\nBANQUET & WINE\n宴席協調工作區\n◈\n我的宴客服務\n01\n一次看懂服務流程\n01\n提交宴客需求\n02\n付服務費・邀請酒商\n03\n比較提案・選定意向\n04\n餐廳安排・配送收貨\n05\n現場驗齡・購買付款\n06\n交付主人・確認收取\nFOR YOUR SPECIAL EVENING\n\n好酒，讓相聚\n多一點餘韻。\n\n課程展示作品\n虛構合作資料・無真實交易\n宴客服務 ／ 工作區\nDEMO 模擬模式\n宴客主人\nA THOUGHTFULLY PAIRED EVENING\n讓每一席，恰逢好酒。\n\n從選酒建議到現場交付，讓每一步都有著落。\n\n宴客酒款媒合平台\n同一瀏覽器・資料持續保存\n目前示範身分\n切換角色接續同一筆服務\n宴客主人\n平台管理者\n酒商甲\n酒商乙\n合作餐廳\n宴客日期至少須提前三個日曆日，最早可選 2026-11-11 00:00（Asia/Taipei）\nSERVICE OVERVIEW\n準備一場值得回味的宴席\n尚未建立需求\n\n先告訴我們宴客需求，再由兩家示範酒商提出搭配建議。\n\nYOUR NEXT STEP\n宴客主人的當前待辦\n↗\n\n填寫需求、比較酒商提案，並在現場確認購買及收取。\n\nYOUR BANQUET\n從一場宴席開始\n六項需求 · 約 1 分鐘\n宴客日期與時間\n時區 Asia/Taipei；至少提前三個日曆日；最早 2026/11/11 00:00\n合作餐廳\n請選擇餐廳\n暮光餐桌（示範合作餐廳）\n宴客人數\n酒款總預算\n新臺幣；不含服務費、配送與餐廳費用\n菜色或料理類型\n飲酒偏好\n不限\n紅白酒皆可\n偏好紅酒\n偏好白酒\n氣泡酒\n送出後由平台協調兩家酒商提案\n提交宴客需求 →\nCOST AT A GLANCE\n這一席的費用\n\n所有金額均為新臺幣・示範用途\n\n平台服務費\nNT$ 500\n付款狀態\n未付\n酒款收款方\n尚未選定\n酒商模擬收款\n未付款\n餐廳費用\n300 元・現場另收\n估計總支出\n待提案\n平台只收服務費，不收酒款佣金。分潤不加到主人支出。\nRESTAURANT SHARE\n餐廳分潤\n—\n\n未成交，未產生分潤\n\n僅在酒款模擬付款成功後，建立唯一待結算紀錄。\nDEMO TOOLS\n展示工具\n\n載入或重設會取代目前展示資料。\n\n從空白需求開始\n↗\n重設正常起點\n↗\n載入餐廳取消前\n↗\n載入餐廳驗齡前\n↗\n宴遇 BANQUET & WINE\n課程展示・所有付款均為模擬・資料僅存於目前瀏覽器"
+}

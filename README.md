@@ -26,8 +26,8 @@ npm.cmd run preview
 ## 文件
 
 - [展示手冊與八分鐘腳本](docs/demo-runbook.md)
-- [設計與六張操作流程圖](openspec/changes/banquet-wine-platform-demo/design.md)
-- [E2E 清單及證據](openspec/changes/banquet-wine-platform-demo/e2e-testing.md)
-- [追蹤任務](openspec/changes/banquet-wine-platform-demo/tasks.md)
+- [設計與六張操作流程圖](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/design.md)
+- [E2E 清單及證據](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/e2e-testing.md)
+- [追蹤任務](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/tasks.md)
 
 本版採 React、TypeScript strict、Vite、原生 CSS 與 localStorage，資料僅保存在同一瀏覽器與網站來源。分潤 P0 僅計算金額並顯示待結算；酒商支付分潤與餐廳確認收款屬 P1。正式登入、跨裝置同步、真實交易與公開部署不在此次範圍。

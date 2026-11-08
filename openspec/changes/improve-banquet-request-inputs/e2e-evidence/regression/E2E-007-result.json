@@ -1,0 +1,90 @@
+{
+  "case": "E2E-007",
+  "status": "PASS",
+  "elapsedMs": 1248,
+  "screenshots": [
+    "e2e-evidence/regression/E2E-007-pending.png",
+    "e2e-evidence/regression/E2E-007-returned.png",
+    "e2e-evidence/regression/E2E-007-cost.png"
+  ],
+  "observations": [
+    "錯誤提示：原因",
+    "顯示：待退回",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認已取回酒品",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認已取回酒品",
+    "沒有不應開放的按鈕：模擬支付酒款",
+    "沒有不應開放的按鈕：登錄驗齡結果",
+    "沒有不應開放的按鈕：標記已交付主人",
+    "沒有不應開放的按鈕：確認已取回酒品",
+    "顯示：已退回／服務未完成",
+    "顯示：待登錄",
+    "錯誤提示：非負整數",
+    "錯誤提示：非負整數",
+    "顯示：主人新增應付 0 元",
+    "失敗費用與取回狀態正確",
+    "沒有未解決的 browser console 或 page error",
+    "產品沒有外部服務或真實支付請求",
+    "本機防護軟體注入請求另列，已核對 CDP initiator 為 Kaspersky main.js；產品請求仍僅限本機來源。"
+  ],
+  "browserErrors": [],
+  "requests": [
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/968A7C58-148F-46E7-A25D-9648BBFCDF4D/to/wsm.sessionActivated?tm=2026-11-08T13%3A55%3A01.824Z",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Ijyti7yZ_hXP4j3UYzb9BGlLv2R_ZPZRUSbzO3DnA9WUxLQaeAHeDTZi4nVhDB3o",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-CgM09UCs.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-DhFa1V4x.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014_R18JZjExwdgMMXihGvUPSjl0nhHIojvEcxg3gX6iGfuehvaKsguB3LfHCvdOKpl2QOmN-2asGQZGchCl3bfzw/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MTc5NDE0NjEwMjQ2NX0%3D&nocache=160fa&tm=2026-11-08T13%3A55%3A02.495Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/20825AB2-C295-4432-A722-672A3346D7B3/to/wsm.sessionActivated?tm=2026-11-08T13%3A55%3A02.505Z",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Ijyti7yZ_hXP4j3UYzb9BGlLv2R_ZPZRUSbzO3DnA9WUxLQaeAHeDTZi4nVhDB3o",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-CgM09UCs.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-DhFa1V4x.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014QeM5sTNzF8L9IWuse0x4WfvdS3TIWM49KJBBzcw5hb-WnoD6RAGEkNlqOiwT6eOI9z9ZLdakRxmYnzu-jktF9Q/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MTc5NDE0NjEwMjg0MX0%3D&nocache=1e4d8&tm=2026-11-08T13%3A55%3A02.863Z",
+      "method": "GET"
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/DD4C0F27-8A9A-4D81-9FD6-7791B1FD230F/to/wsm.sessionActivated?tm=2026-11-08T13%3A55%3A02.871Z",
+      "method": "POST"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import {taipeiDateAfter,validateNewRequestDate} from './banquet-date';
+
 export type Actor = 'host' | 'platform' | 'merchant-a' | 'merchant-b' | 'restaurant';
 export const actorNames: Record<Actor, string> = { host:'宴客主人', platform:'平台管理者', 'merchant-a':'酒商甲', 'merchant-b':'酒商乙', restaurant:'合作餐廳' };
 export type Status = 'draft'|'service-fee-pending'|'invitation-pending'|'proposals-pending'|'comparison-ready'|'restaurant-pending'|'delivery-ready'|'in-transit'|'restaurant-receipt-pending'|'age-check-pending'|'purchase-pending'|'wine-payment-pending'|'handover-pending'|'host-receipt-pending'|'completed'|'cancel-refund-pending'|'cancelled'|'return-pending'|'returned';
@@ -48,20 +50,19 @@ export function wineTotal(p:Proposal){return p.items.reduce((sum,w)=>sum+w.quant
 export function total(p:Proposal){return 500+wineTotal(p)+p.shipping+p.restaurantFee;}
 export function commissionAmount(amount:number,rateBps=1000){ensure(integer(amount,0)&&integer(rateBps,0)&&rateBps<=10000,'分潤參數無效');return Math.round(amount*rateBps/10000);}
 export function initial(prefill=true):State{return {schemaVersion:1,actor:'host',order:null,prefill};}
-export function sampleRequest():Request {
- const date=new Date();date.setDate(date.getDate()+7);
- const local=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
+export function sampleRequest(now=new Date()):Request {
+ const local=taipeiDateAfter(7,now);
  return {date:local+'T18:00',restaurantId:'restaurant-demo',guests:12,cuisine:'法式料理・海陸分享餐',budget:6500,preference:'紅白酒皆可'};
 }
 export function sampleProposal(merchant:Proposal['merchant']):Proposal{return {merchant,items:[{name:merchant==='merchant-a'?'勃根地風格黑皮諾':'波爾多風格紅酒',capacity:750,quantity:6,price:merchant==='merchant-a'?1000:1100}],shipping:merchant==='merchant-a'?200:0,restaurantFee:300,reason:merchant==='merchant-a'?'細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。':'成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。',delivery:'宴客當日 15:00–17:00 配送至餐廳',limits:'示範供貨 6 瓶；無其他限制',submitted:false};}
 const terminal=['completed','cancel-refund-pending','cancelled','return-pending','returned'];
-export function transition(state:State,actor:Actor,command:Command):State {
+export function transition(state:State,actor:Actor,command:Command,now=new Date()):State {
  ensure(Object.hasOwn(actorNames,actor),'未知的示範角色');
  const n=structuredClone(state), c=command;
  const expected:Partial<Record<Command['type'],Actor>>={create:'host','service-pay':'host',invite:'platform',select:'host',arrange:'restaurant',cancel:'restaurant',receive:'restaurant',age:'restaurant',purchase:'host','wine-pay':'host',handover:'restaurant',complete:'host',refund:'platform',cost:'platform'};
  if(expected[c.type])ensure(actor===expected[c.type],'此角色沒有執行該動作的權限');
  if(c.type==='create'){
-  ensure(!n.order,'目前已有訂單，請先使用展示工具重設或建立空白需求');validateRequest(c.request);
+  ensure(!n.order,'目前已有訂單，請先使用展示工具重設或建立空白需求');validateNewRequestDate(c.request.date,now);validateRequest(c.request);
   n.order={id:'BW-'+Date.now().toString(36).toUpperCase(),request:structuredClone(c.request),status:'service-fee-pending',invited:false,proposals:[],selected:null,serviceFee:{amount:500,paid:false,refund:0},winePayment:null,arrangement:'',age:{result:'pending',reason:'',actor:null,at:null},cancellationReason:'',returnedAt:null,returnCost:null,commission:null,events:[]};
  } else {
   const o=n.order;ensure(o,'請先建立需求');

@@ -5,6 +5,7 @@ export function validState(value:unknown):value is State {
   const s=value as State;if(!s||s.schemaVersion!==1||!Object.hasOwn(actorNames,s.actor)||typeof s.prefill!=='boolean')return false;
   if(s.order===null)return true;
   const o=s.order;if(!o||typeof o.id!=='string'||!Object.hasOwn(statusNames,o.status)||!Array.isArray(o.proposals)||!Array.isArray(o.events)||typeof o.invited!=='boolean')return false;
+  // Loading historical orders checks data validity, never today's booking cutoff.
   validateRequest(o.request);
   if(!o.serviceFee||o.serviceFee.amount!==500||typeof o.serviceFee.paid!=='boolean'||![0,500].includes(o.serviceFee.refund))return false;
   if(!o.age||!['pending','passed','failed'].includes(o.age.result)||typeof o.age.reason!=='string'||typeof o.arrangement!=='string'||typeof o.cancellationReason!=='string'||!(o.returnedAt===null||typeof o.returnedAt==='string')||!(o.returnCost===null||Number.isSafeInteger(o.returnCost)&&o.returnCost>=0))return false;
