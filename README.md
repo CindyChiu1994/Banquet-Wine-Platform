@@ -2,6 +2,18 @@
 
 繁體中文的課程展示作品。可切換宴客主人、平台、兩家酒商與合作餐廳，操作需求、提案、現場驗齡簽收付款、餐廳代收及酒商收清；所有付款與合作資料均為模擬。主人選定後，未獲選酒商不再看到該單後續資訊。
 
+## 規格迭代歷程
+
+本專案以 OpenSpec 保存每次變更的原因、設計、規格差異、實作任務與驗收紀錄。以下依實際開發順序整理三個階段；各階段的規格與截圖反映當時版本，現行規格以 [openspec/specs](openspec/specs) 為準。
+
+| 日期 | 階段與修改原因 | 主要變更 | 提案與驗收紀錄 |
+| --- | --- | --- | --- |
+| 2026-11-07 | 初版 Demo：將產品構想轉成可操作的課程展示 | 建立宴客需求、酒商提案比較、餐廳履約、現場購酒付款與異常處理流程 | [初版提案](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/proposal.md) · [E2E 驗收](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/e2e-testing.md) |
+| 2026-11-08 | 改善需求輸入：測試發現日期限制不足、菜單無法分行 | 新需求至少提前三個日曆日預約；料理支援多行輸入與保存，同時維持舊訂單相容性 | [變更提案](openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/proposal.md) · [E2E 驗收](openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-testing.md) |
+| 2026-11-09 | 調整現場服務：原流程需切換角色、互相等待，不符合桌邊服務情境 | 改為同裝置驗齡、簽收付款，加入付款失敗後餐廳代收與酒商確認收清；服務完成與收款狀態分開 | [變更提案](openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/proposal.md) · [E2E 驗收](openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/e2e-testing.md) |
+
+閱讀每次變更時，可從 `proposal.md` 的 Why 與 What Changes 了解修改原因，再看 `design.md`、`specs/` 與 `e2e-testing.md` 追蹤設計、驗收條件及執行證據。Git 提交歷史亦保留各階段的實作與封存紀錄。
+
 ## 本機啟動
 
 使用 Node.js 24，在此資料夾執行：
