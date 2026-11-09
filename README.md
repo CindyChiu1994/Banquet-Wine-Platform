@@ -25,8 +25,8 @@ npm.cmd run preview
 
 ## 文件
 
-- [現場簽收付款與餐廳代收變更](openspec/changes/streamline-onsite-signoff-payment/proposal.md)
-- [本次 E2E 清單與執行結果](openspec/changes/streamline-onsite-signoff-payment/e2e-testing.md)
+- [現場簽收付款與餐廳代收變更](openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/proposal.md)
+- [本次 E2E 清單與執行結果](openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/e2e-testing.md)
 - [展示手冊與八分鐘腳本](docs/demo-runbook.md)
 - [設計與六張操作流程圖](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/design.md)
 - [E2E 清單及證據](openspec/changes/archive/2026-11-07-banquet-wine-platform-demo/e2e-testing.md)

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 const id=process.argv[2];if(!/^E2E-\d{3}$/.test(id))throw Error('Invalid case');
-const root='openspec/changes/streamline-onsite-signoff-payment',r=JSON.parse(fs.readFileSync(`${root}/e2e-evidence/${id}-result.json`,'utf8'));
+const root='openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment',r=JSON.parse(fs.readFileSync(`${root}/e2e-evidence/${id}-result.json`,'utf8'));
 if(r.case!==id)throw Error('Case mismatch');
 for(const s of r.screenshots)if(!s.startsWith(id+'-')||!fs.statSync(`${root}/e2e-evidence/${s}`).size)throw Error('Missing evidence');
 if(r.status==='PASS'&&(!r.screenshots.length||r.browserErrors.length))throw Error('Invalid PASS');

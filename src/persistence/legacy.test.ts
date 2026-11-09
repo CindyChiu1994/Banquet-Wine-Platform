@@ -1,5 +1,5 @@
 import {describe,it,expect} from 'vitest';
-import fixtures from '../../openspec/changes/streamline-onsite-signoff-payment/legacy/fixtures.json';
+import fixtures from '../../openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/legacy/fixtures.json';
 import {load} from './storage';
 describe('原公開 UI 建立的 v1 相容性資料',()=>{
  for(const [name,state] of Object.entries(fixtures))it(name,()=>{

@@ -2,7 +2,7 @@ import {describe,it,expect} from 'vitest';
 import {transition,signatureValid,validStrokes,orderForActor,type State,type Strokes,type Actor} from './model';
 import {scenario} from '../demo/scenarios';
 import {load,save,validState} from '../persistence/storage';
-import fixtures from '../../openspec/changes/streamline-onsite-signoff-payment/legacy/fixtures.json';
+import fixtures from '../../openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/legacy/fixtures.json';
 const strokes:Strokes=[[{x:10,y:30},{x:200,y:100},{x:300,y:40}]];
 const age=()=>transition(scenario('age'),'restaurant',{type:'age',passed:true,reason:''});
 const signed=()=>transition(age(),'host',{type:'signature-save',name:'展示主人',strokes});

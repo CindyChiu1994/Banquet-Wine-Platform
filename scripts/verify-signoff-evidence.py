@@ -3,7 +3,7 @@ from pathlib import Path
 import json, hashlib
 from PIL import Image, ImageDraw, ImageFont
 
-root = Path('openspec/changes/streamline-onsite-signoff-payment/e2e-evidence')
+root = Path('openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/e2e-evidence')
 rows, names, results = [], [], []
 for index in range(1, 17):
     case = f'E2E-{index:03d}'

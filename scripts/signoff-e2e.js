@@ -2,7 +2,7 @@
 // Acceptance criteria are maintained in the change's e2e-testing.md.
 async (rootPage) => {
  const id='__CASE_ID__',fixtures=__LEGACY_FIXTURES__;
- const root='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/streamline-onsite-signoff-payment/e2e-evidence/';
+ const root='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/e2e-evidence/';
  const observations=[],screenshots=[],errors=[],requests=[],injected=[];let context,page;
  const check=(ok,msg)=>{if(!ok)throw Error(msg);observations.push(msg);};
  const click=name=>page.getByRole('button',{name}).click();

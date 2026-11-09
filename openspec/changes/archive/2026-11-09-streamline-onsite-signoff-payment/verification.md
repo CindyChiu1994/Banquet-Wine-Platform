@@ -19,6 +19,6 @@
 
 `npm.cmd run test -- --run`：106/106；`npm.cmd run build`：通過。Playwright MCP：16 通過、0 失敗、0 跳過，共 64 張必要截圖，沒有未解決產品瀏覽器錯誤。產品修復迭代為 0；定位及環境判讀修正見 [執行紀錄](e2e-evidence/execution-notes.md)。
 
-唯一完整案例定義與勾選結果：[e2e-testing.md](e2e-testing.md)。逐案實測資料：[summary.json](e2e-evidence/summary.json)，原始檔檢查：[evidence-audit.json](e2e-evidence/evidence-audit.json)。原主規格與封存歷史不在 apply 階段同步或改寫；本 change 尚未封存。
+唯一完整案例定義與勾選結果：[e2e-testing.md](e2e-testing.md)。逐案實測資料：[summary.json](e2e-evidence/summary.json)，原始檔檢查：[evidence-audit.json](e2e-evidence/evidence-audit.json)。Apply 階段未同步主規格；2026/11/09 已於封存階段將六份差異規格同步至主規格，並封存完整變更，詳見 [封存紀錄](archive-summary.md)。
 
 保存格式為 v2、storage key 沿用 v1；同一瀏覽器與來源可接續，跨來源、跨裝置及正式帳戶隔離不在本次範圍。完成後退款／退酒與部分收款仍未提供，符合已確認範圍。

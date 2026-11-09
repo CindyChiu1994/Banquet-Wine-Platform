@@ -1,5 +1,5 @@
 async (rootPage) => {
- const root='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/streamline-onsite-signoff-payment/legacy';
+ const root='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/legacy';
  const ctx=await rootPage.context().browser().newContext({viewport:{width:1366,height:768}});
  const page=await ctx.newPage();page.setDefaultTimeout(7000);
  const fixtures={};

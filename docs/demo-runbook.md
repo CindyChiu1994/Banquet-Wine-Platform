@@ -84,9 +84,9 @@ npm.cmd run preview
 
 ## 驗證紀錄
 
-2026/11/09 簽收付款變更驗證：106/106 單元測試、TypeScript strict 與 Vite 建置通過；Playwright MCP E2E 16/16 通過、0 失敗、0 跳過，64 張必要截圖、541 項觀察已核對，產品修復迭代 0。正常線上付款、失敗重試、餐廳代收／拒絕、酒商收清及重複提醒、取消退回、觸控、儲存故障、v1 舊單與未獲選可見性均有證據；詳見 [驗證摘要](../openspec/changes/streamline-onsite-signoff-payment/verification.md)。
+2026/11/09 簽收付款變更驗證：106/106 單元測試、TypeScript strict 與 Vite 建置通過；Playwright MCP E2E 16/16 通過、0 失敗、0 跳過，64 張必要截圖、541 項觀察已核對，產品修復迭代 0。正常線上付款、失敗重試、餐廳代收／拒絕、酒商收清及重複提醒、取消退回、觸控、儲存故障、v1 舊單與未獲選可見性均有證據；詳見 [驗證摘要](../openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/verification.md)。
 
-2026/11/09 簽收付款變更的任務與執行結果，以 [streamline-onsite-signoff-payment](../openspec/changes/streamline-onsite-signoff-payment/proposal.md) 與其 [E2E 清單](../openspec/changes/streamline-onsite-signoff-payment/e2e-testing.md) 為準。以下數字為舊版歷史結果，不代表新版已驗收；八分鐘腳本的新版本尚未重新計時。
+2026/11/09 簽收付款變更的任務與執行結果，以 [streamline-onsite-signoff-payment](../openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/proposal.md) 與其 [E2E 清單](../openspec/changes/archive/2026-11-09-streamline-onsite-signoff-payment/e2e-testing.md) 為準。以下數字為舊版歷史結果，不代表新版已驗收；八分鐘腳本的新版本尚未重新計時。
 
 2026-11-08 需求輸入修正驗證：單元測試 **69/69 通過**，TypeScript strict 及 Vite 建置通過；新 change 的 Playwright MCP E2E **11/11 通過、0 失敗、0 跳過**，21 張必要截圖已檢查；正常、取消退款與驗齡失敗三條既有流程回歸 **3/3 通過**。所有案例無未解決的 console/page error，產品修復迭代為 0；測試定位修正與環境流量判讀詳見 [執行紀錄](../openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-evidence/execution-notes.md) 及 [結果摘要](../openspec/changes/archive/2026-11-08-improve-banquet-request-inputs/e2e-evidence/summary.json)。以下保留原封存版的歷史驗收紀錄。
 
