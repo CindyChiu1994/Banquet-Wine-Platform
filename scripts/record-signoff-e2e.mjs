@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const id=process.argv[2];if(!/^E2E-\d{3}$/.test(id))throw Error('Invalid case');
+const root='openspec/changes/streamline-onsite-signoff-payment',r=JSON.parse(fs.readFileSync(`${root}/e2e-evidence/${id}-result.json`,'utf8'));
+if(r.case!==id)throw Error('Case mismatch');
+for(const s of r.screenshots)if(!s.startsWith(id+'-')||!fs.statSync(`${root}/e2e-evidence/${s}`).size)throw Error('Missing evidence');
+if(r.status==='PASS'&&(!r.screenshots.length||r.browserErrors.length))throw Error('Invalid PASS');
+const file=root+'/e2e-testing.md',text=fs.readFileSync(file,'utf8');
+const re=new RegExp(`^- \\[[ x]\\] ${id} [\\s\\S]*?(?=^- \\[[ x]\\] E2E-|^## |$(?![\\s\\S]))`,'m');
+const old=text.match(re)?.[0];if(!old)throw Error('Missing case');
+const stamp=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date());
+let next=old.replace(/^- \[[ x]\]/,r.status==='PASS'?'- [x]':'- [ ]').replace(/^  - \*\*(Last run|Failure|Screenshot evidence|Observed evidence):\*\*.*\r?\n/gm,'');
+const fields=[`  - **Last run:** \`${stamp} Asia/Taipei\` — ${r.status}`,...(r.status==='FAIL'?[`  - **Failure:** ${r.error.replace(/\s+/g,' ')}`]:[]),`  - **Screenshot evidence:** ${r.screenshots.map(s=>`[${s}](e2e-evidence/${s})`).join('、')}`,`  - **Observed evidence:** [實測 JSON](e2e-evidence/${id}-result.json)；${r.observations.length} 項觀察；console/page errors ${r.browserErrors.length}。`].join('\n');
+next=next.replace(/(  - \*\*Evidence:\*\*.*)(\r?\n)/,(_,line,nl)=>line+nl+fields+'\n');fs.writeFileSync(file,text.replace(old,next));
+console.log(JSON.stringify({case:id,status:r.status,checks:r.observations.length,screenshots:r.screenshots.length,error:r.error}));

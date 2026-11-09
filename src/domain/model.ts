@@ -2,12 +2,18 @@ import {taipeiDateAfter,validateNewRequestDate} from './banquet-date';
 
 export type Actor = 'host' | 'platform' | 'merchant-a' | 'merchant-b' | 'restaurant';
 export const actorNames: Record<Actor, string> = { host:'宴客主人', platform:'平台管理者', 'merchant-a':'酒商甲', 'merchant-b':'酒商乙', restaurant:'合作餐廳' };
-export type Status = 'draft'|'service-fee-pending'|'invitation-pending'|'proposals-pending'|'comparison-ready'|'restaurant-pending'|'delivery-ready'|'in-transit'|'restaurant-receipt-pending'|'age-check-pending'|'purchase-pending'|'wine-payment-pending'|'handover-pending'|'host-receipt-pending'|'completed'|'cancel-refund-pending'|'cancelled'|'return-pending'|'returned';
-export const statusNames: Record<Status,string> = {draft:'填寫宴客需求','service-fee-pending':'待付服務費','invitation-pending':'待平台邀請','proposals-pending':'等待酒商提案','comparison-ready':'可以比較選定','restaurant-pending':'待餐廳確認安排','delivery-ready':'待酒商出貨','in-transit':'配送中','restaurant-receipt-pending':'待餐廳確認收貨','age-check-pending':'待餐廳驗齡','purchase-pending':'待現場確認購買','wine-payment-pending':'待付酒款','handover-pending':'待餐廳交付','host-receipt-pending':'待主人確認收取',completed:'服務完成','cancel-refund-pending':'取消待退款',cancelled:'已取消／已退款','return-pending':'待退回',returned:'已退回／服務未完成'};
+export type Status = 'signature-pending'|'collection-review-pending'|'draft'|'service-fee-pending'|'invitation-pending'|'proposals-pending'|'comparison-ready'|'restaurant-pending'|'delivery-ready'|'in-transit'|'restaurant-receipt-pending'|'age-check-pending'|'purchase-pending'|'wine-payment-pending'|'handover-pending'|'host-receipt-pending'|'completed'|'cancel-refund-pending'|'cancelled'|'return-pending'|'returned';
+export const statusNames: Record<Status,string> = {'signature-pending':'待主人簽收','collection-review-pending':'待餐廳確認代收',draft:'填寫宴客需求','service-fee-pending':'待付服務費','invitation-pending':'待平台邀請','proposals-pending':'等待酒商提案','comparison-ready':'可以比較選定','restaurant-pending':'待餐廳確認安排','delivery-ready':'待酒商出貨','in-transit':'配送中','restaurant-receipt-pending':'待餐廳確認收貨','age-check-pending':'待餐廳驗齡','purchase-pending':'待現場確認購買','wine-payment-pending':'待付酒款','handover-pending':'待餐廳交付','host-receipt-pending':'待主人確認收取',completed:'服務完成','cancel-refund-pending':'取消待退款',cancelled:'已取消／已退款','return-pending':'待退回',returned:'已退回／服務未完成'};
 export interface Request { date:string; restaurantId:string; guests:number; cuisine:string; budget:number; preference:string }
 export interface Wine { name:string; capacity:number; quantity:number; price:number }
 export interface Proposal { merchant: 'merchant-a'|'merchant-b'; items:Wine[]; shipping:number; restaurantFee:number; reason:string; delivery:string; limits:string; submitted:boolean }
 export interface Event { id:string; action:string; actor:Actor; at:string; summary:string }
+export type Point={x:number;y:number};
+export type Strokes=Point[][];
+export interface ReceiptSnapshot {orderId:string;merchant:Proposal['merchant'];items:Wine[];wineAmount:number;shipping:number;amount:number}
+export interface Signature {name:string;strokes:Strokes;at:string;snapshot:ReceiptSnapshot;invalidatedAt:string|null}
+export interface Checkout {mode:'none'|'guest'|'handoff'|'staff';signature:Signature|null;attempts:{id:string;outcome:'success'|'failed';at:string}[];completedBy:'online'|'collection'|'legacy'|null;completedAt:string|null;legacy:boolean;operations:{id:string;type:string;actor:Actor}[]}
+export interface Collection {orderId:string;restaurantId:string;merchant:Proposal['merchant'];wineAmount:number;shipping:number;amount:number;acceptedBy:Actor;acceptedAt:string;status:'pending'|'received';receivedBy:Actor|null;receivedAt:string|null;receivedAmount:number|null}
 export interface Order {
  id:string; request:Request; status:Status; invited:boolean; proposals:Proposal[]; selected:Proposal|null;
  serviceFee:{amount:number;paid:boolean;refund:number};
@@ -15,18 +21,20 @@ export interface Order {
  arrangement:string; age:{result:'pending'|'passed'|'failed';reason:string;actor:Actor|null;at:string|null};
  cancellationReason:string; returnedAt:string|null; returnCost:number|null;
  commission:{orderId:string;merchant:string;restaurantId:string;wineAmount:number;rateBps:number;amount:number;status:'pending'}|null;
- events:Event[];
+ events:Event[];checkout:Checkout;collection:Collection|null;returnReason:'age-failed'|'host-cancelled'|null;
 }
-export interface State {schemaVersion:1;actor:Actor;order:Order|null;prefill:boolean}
-export type Command =
+export interface State {schemaVersion:2;actor:Actor;order:Order|null;prefill:boolean}
+export type Command = (
  | {type:'create';request:Request}
- | {type:'service-pay'|'invite'|'ship'|'deliver'|'receive'|'purchase'|'wine-pay'|'handover'|'complete'|'refund'|'return'}
+ | {type:'service-pay'|'invite'|'ship'|'deliver'|'receive'|'purchase'|'handover'|'complete'|'refund'|'return'|'signature-clear'|'request-collection'|'staff-review'|'collection-accept'|'collection-decline'|'collection-receive'|'cancel-purchase'}
+ | {type:'signature-save';name:string;strokes:Strokes}
+ | {type:'wine-pay';outcome?:'success'|'failed'}
  | {type:'proposal-save'|'proposal-submit';proposal:Proposal}
  | {type:'select';merchant:Proposal['merchant']}
  | {type:'arrange';time:string}
  | {type:'cancel';reason:string}
  | {type:'age';passed:boolean;reason:string}
- | {type:'cost';amount:number};
+ | {type:'cost';amount:number}) & {operationId?:string};
 export const KEY='banquet-wine-demo:v1';
 export const integer=(value:number,min:number)=>Number.isSafeInteger(value)&&value>=min;
 function ensure(condition:unknown,message:string):asserts condition {if(!condition)throw new Error(message);}
@@ -49,7 +57,36 @@ export function validateProposal(p:Proposal){
 export function wineTotal(p:Proposal){return p.items.reduce((sum,w)=>sum+w.quantity*w.price,0);}
 export function total(p:Proposal){return 500+wineTotal(p)+p.shipping+p.restaurantFee;}
 export function commissionAmount(amount:number,rateBps=1000){ensure(integer(amount,0)&&integer(rateBps,0)&&rateBps<=10000,'分潤參數無效');return Math.round(amount*rateBps/10000);}
-export function initial(prefill=true):State{return {schemaVersion:1,actor:'host',order:null,prefill};}
+export function emptyCheckout():Checkout{return {mode:'none',signature:null,attempts:[],completedBy:null,completedAt:null,legacy:false,operations:[]};}
+export function initial(prefill=true):State{return {schemaVersion:2,actor:'host',order:null,prefill};}
+export function orderForActor(state:State,actor:Actor=state.actor):Order|null {
+ const o=state.order;
+ return o&&o.selected&&actor.startsWith('merchant-')&&actor!==o.selected.merchant?null:o;
+}
+export function receiptSnapshot(o:Order):ReceiptSnapshot {
+ ensure(o.selected,'尚未選定酒商');const p=o.selected,wineAmount=wineTotal(p);
+ return {orderId:o.id,merchant:p.merchant,items:structuredClone(p.items),wineAmount,shipping:p.shipping,amount:wineAmount+p.shipping};
+}
+export function validStrokes(value:unknown):value is Strokes {
+ if(!Array.isArray(value)||value.length===0||value.length>200)return false;
+ let points=0,moved=false;
+ for(const stroke of value){if(!Array.isArray(stroke)||stroke.length<2)return false;points+=stroke.length;
+  for(const p of stroke)if(!p||!Number.isFinite(p.x)||!Number.isFinite(p.y)||p.x<0||p.x>1000||p.y<0||p.y>300)return false;
+  if(stroke.some(p=>Math.hypot(p.x-stroke[0].x,p.y-stroke[0].y)>1))moved=true;
+ }
+ return points<=12000&&moved;
+}
+export function signatureValid(o:Order):boolean {
+ const s=o.checkout.signature;
+ return !!s&&!s.invalidatedAt&&!!s.name.trim()&&validStrokes(s.strokes)&&!!o.selected&&JSON.stringify(s.snapshot)===JSON.stringify(receiptSnapshot(o));
+}
+function finish(o:Order,by:'online'|'collection',at:string){
+ const p=o.selected!;const wineAmount=wineTotal(p);
+ ensure(!o.checkout.completedBy&&!o.commission,'此訂單已完成');
+ o.commission={orderId:o.id,merchant:p.merchant,restaurantId:o.request.restaurantId,wineAmount,rateBps:1000,amount:commissionAmount(wineAmount),status:'pending'};
+ o.checkout.completedBy=by;o.checkout.completedAt=at;o.status='completed';
+ o.events.push({id:`${o.id}-${o.events.length+1}`,action:'complete',actor:by==='online'?'host':'restaurant',at,summary:'服務完成，可協助開酒'});
+}
 export function sampleRequest(now=new Date()):Request {
  const local=taipeiDateAfter(7,now);
  return {date:local+'T18:00',restaurantId:'restaurant-demo',guests:12,cuisine:'法式料理・海陸分享餐',budget:6500,preference:'紅白酒皆可'};
@@ -59,23 +96,29 @@ const terminal=['completed','cancel-refund-pending','cancelled','return-pending'
 export function transition(state:State,actor:Actor,command:Command,now=new Date()):State {
  ensure(Object.hasOwn(actorNames,actor),'未知的示範角色');
  const n=structuredClone(state), c=command;
- const expected:Partial<Record<Command['type'],Actor>>={create:'host','service-pay':'host',invite:'platform',select:'host',arrange:'restaurant',cancel:'restaurant',receive:'restaurant',age:'restaurant',purchase:'host','wine-pay':'host',handover:'restaurant',complete:'host',refund:'platform',cost:'platform'};
+ const stamp=now.toISOString();
+ const expected:Partial<Record<Command['type'],Actor>>={create:'host','service-pay':'host',invite:'platform',select:'host',arrange:'restaurant',cancel:'restaurant',receive:'restaurant',age:'restaurant',purchase:'host','wine-pay':'host',handover:'restaurant',complete:'host',refund:'platform',cost:'platform','signature-save':'host','signature-clear':'host','request-collection':'host','staff-review':'restaurant','collection-accept':'restaurant','collection-decline':'restaurant','cancel-purchase':'host'};
  if(expected[c.type])ensure(actor===expected[c.type],'此角色沒有執行該動作的權限');
  if(c.type==='create'){
   ensure(!n.order,'目前已有訂單，請先使用展示工具重設或建立空白需求');validateNewRequestDate(c.request.date,now);validateRequest(c.request);
-  n.order={id:'BW-'+Date.now().toString(36).toUpperCase(),request:structuredClone(c.request),status:'service-fee-pending',invited:false,proposals:[],selected:null,serviceFee:{amount:500,paid:false,refund:0},winePayment:null,arrangement:'',age:{result:'pending',reason:'',actor:null,at:null},cancellationReason:'',returnedAt:null,returnCost:null,commission:null,events:[]};
+  n.order={id:'BW-'+Date.now().toString(36).toUpperCase(),request:structuredClone(c.request),status:'service-fee-pending',invited:false,proposals:[],selected:null,serviceFee:{amount:500,paid:false,refund:0},winePayment:null,arrangement:'',age:{result:'pending',reason:'',actor:null,at:null},cancellationReason:'',returnedAt:null,returnCost:null,commission:null,events:[],checkout:emptyCheckout(),collection:null,returnReason:null};
  } else {
   const o=n.order;ensure(o,'請先建立需求');
+  ensure(orderForActor(n,actor),'本次未獲選，無後續服務資訊可查看。');
   if(c.type==='proposal-save'||c.type==='proposal-submit')ensure(actor===c.proposal.merchant&&(actor==='merchant-a'||actor==='merchant-b'),'只能編輯自己的提案');
-  if(['ship','deliver','return'].includes(c.type))ensure(actor===o.selected?.merchant,'只有選定酒商可以執行此動作');
+  if(['ship','deliver','return','collection-receive'].includes(c.type))ensure(actor===o.selected?.merchant,'只有選定酒商可以執行此動作');
+  if(c.operationId&&o.checkout.operations.some(x=>x.id===c.operationId&&x.type===c.type&&x.actor===actor))return state;
   // Each irreversible action has one success event; edit/save operations may repeat.
-  if(!['proposal-save','proposal-submit','cost'].includes(c.type)&&o.events.some(e=>e.action===c.type&&e.actor===actor)){
+  if(['service-pay','invite','select','arrange','cancel','ship','deliver','receive','age','handover','complete','refund','return'].includes(c.type)&&o.events.some(e=>e.action===c.type&&e.actor===actor)){
    if(c.type==='select')ensure(o.selected?.merchant===c.merchant,'選定後不能重選酒商');
    if(c.type==='age')ensure(o.age.result===(c.passed?'passed':'failed'),'驗齡結果已鎖定，不能改變或恢復正常履約');
    return state;
   }
+  if(c.type==='wine-pay'&&o.checkout.completedBy==='online')return state;
+  if(c.type==='collection-accept'&&o.checkout.completedBy==='collection')return state;
+  if(c.type==='collection-receive'&&o.collection?.status==='received')return state;
   if(terminal.includes(o.status)){
-   const allowed=(o.status==='cancel-refund-pending'&&c.type==='refund')||(['return-pending','returned'].includes(o.status)&&c.type==='cost')||(o.status==='return-pending'&&c.type==='return');
+   const allowed=(o.status==='completed'&&c.type==='collection-receive'&&!!o.collection)||(o.status==='cancel-refund-pending'&&c.type==='refund')||(['return-pending','returned'].includes(o.status)&&c.type==='cost')||(o.status==='return-pending'&&c.type==='return');
    ensure(allowed,'此訂單已完成或進入異常分支，不能恢復正常履約');
   }
   const at=(status:Status)=>ensure(o.status===status,`目前為「${statusNames[o.status]}」，尚未符合此操作條件`);
@@ -96,20 +139,32 @@ export function transition(state:State,actor:Actor,command:Command,now=new Date(
    case 'ship':at('delivery-ready');o.status='in-transit';break;
    case 'deliver':at('in-transit');o.status='restaurant-receipt-pending';break;
    case 'receive':at('restaurant-receipt-pending');o.status='age-check-pending';break;
-   case 'age':at('age-check-pending');ensure(c.passed||c.reason.trim(),'驗齡未通過須填寫原因');o.age={result:c.passed?'passed':'failed',reason:c.passed?'':c.reason.trim(),actor,at:new Date().toISOString()};o.status=c.passed?'purchase-pending':'return-pending';break;
-   case 'purchase':at('purchase-pending');ensure(o.age.result==='passed','請先通過餐廳驗齡');o.status='wine-payment-pending';break;
-   case 'wine-pay':at('wine-payment-pending');ensure(o.age.result==='passed'&&o.selected,'請先通過驗齡並確認購買');{
-    const wineAmount=wineTotal(o.selected);o.winePayment={payee:o.selected.merchant,amount:wineAmount+o.selected.shipping,wineAmount,paid:true};o.commission={orderId:o.id,merchant:o.selected.merchant,restaurantId:o.request.restaurantId,wineAmount,rateBps:1000,amount:commissionAmount(wineAmount),status:'pending'};o.status='handover-pending';break;
+   case 'age':at('age-check-pending');ensure(c.passed||c.reason.trim(),'驗齡未通過須填寫原因');o.age={result:c.passed?'passed':'failed',reason:c.passed?'':c.reason.trim(),actor,at:stamp};o.status=c.passed?'signature-pending':'return-pending';if(c.passed){o.checkout.mode='guest';n.actor='host';}else{o.returnReason='age-failed';}break;
+   case 'purchase':throw new Error('請於客人專用畫面核對明細並手寫簽名');
+   case 'signature-save':ensure(['signature-pending','wine-payment-pending'].includes(o.status)&&o.age.result==='passed'&&o.checkout.mode==='guest','請先通過本人核對及驗齡');ensure(c.name.trim()&&c.name.trim().length<=100,'請填寫下單人姓名（100 字以內）');ensure(validStrokes(c.strokes),'請完成非空白手寫簽名（筆畫過多請清除重簽）');o.checkout.signature={name:c.name.trim(),strokes:structuredClone(c.strokes),at:stamp,snapshot:receiptSnapshot(o),invalidatedAt:null};o.status='wine-payment-pending';break;
+   case 'signature-clear':ensure(['signature-pending','wine-payment-pending'].includes(o.status)&&o.checkout.mode==='guest','目前無法修改簽名');o.checkout.signature=null;o.status='signature-pending';break;
+   case 'wine-pay':at('wine-payment-pending');ensure(o.age.result==='passed'&&o.selected&&signatureValid(o)&&o.checkout.mode==='guest','請核對明細並保存有效簽名');{
+    const wineAmount=wineTotal(o.selected),outcome=c.outcome??'success';o.checkout.attempts.push({id:c.operationId??`${o.id}-${o.events.length}`,outcome,at:stamp});
+    if(outcome==='success'){o.winePayment={payee:o.selected.merchant,amount:wineAmount+o.selected.shipping,wineAmount,paid:true};finish(o,'online',stamp);}break;
    }
-   case 'handover':at('handover-pending');ensure(o.age.result==='passed'&&o.winePayment?.paid,'驗齡及酒款收款未完成');o.status='host-receipt-pending';break;
-   case 'complete':at('host-receipt-pending');o.status='completed';break;
+   case 'request-collection':at('wine-payment-pending');ensure(signatureValid(o)&&o.checkout.mode==='guest'&&o.checkout.attempts.some(x=>x.outcome==='failed'),'請先簽名並嘗試模擬付款');o.status='collection-review-pending';o.checkout.mode='handoff';n.actor='restaurant';break;
+   case 'staff-review':at('collection-review-pending');ensure(o.checkout.mode==='handoff','請將裝置交回店員');o.checkout.mode='staff';break;
+   case 'collection-decline':at('collection-review-pending');ensure(o.checkout.mode==='staff','請先交回店員核對');o.status='wine-payment-pending';o.checkout.mode='guest';n.actor='host';break;
+   case 'collection-accept':at('collection-review-pending');ensure(o.age.result==='passed'&&signatureValid(o)&&o.checkout.mode==='staff'&&o.checkout.attempts.some(x=>x.outcome==='failed'),'請先完成本人簽名、付款嘗試並由店員核對');{
+    const snapshot=receiptSnapshot(o);ensure(!o.collection&&!o.winePayment,'此訂單已有付款方式');o.collection={orderId:o.id,restaurantId:o.request.restaurantId,merchant:snapshot.merchant,wineAmount:snapshot.wineAmount,shipping:snapshot.shipping,amount:snapshot.amount,acceptedBy:'restaurant',acceptedAt:stamp,status:'pending',receivedBy:null,receivedAt:null,receivedAmount:null};finish(o,'collection',stamp);break;
+   }
+   case 'collection-receive':at('completed');ensure(o.collection?.status==='pending','目前沒有待收清帳款');o.collection.status='received';o.collection.receivedBy=actor;o.collection.receivedAt=stamp;o.collection.receivedAmount=o.collection.amount;break;
+   case 'cancel-purchase':ensure(['signature-pending','wine-payment-pending'].includes(o.status)&&o.age.result==='passed','僅能於服務完成前取消購買');o.returnReason='host-cancelled';o.cancellationReason='主人取消購買';if(o.checkout.signature)o.checkout.signature.invalidatedAt=stamp;o.checkout.mode='none';n.actor='restaurant';o.status='return-pending';break;
+   case 'handover':at('handover-pending');ensure(o.checkout.legacy&&o.age.result==='passed'&&o.winePayment?.paid,'僅供舊版已付款訂單接續');o.status='host-receipt-pending';break;
+   case 'complete':at('host-receipt-pending');ensure(o.checkout.legacy&&o.winePayment?.paid,'僅供舊版已付款訂單接續');o.status='completed';o.checkout.completedBy='legacy';o.checkout.completedAt=stamp;break;
    case 'refund':at('cancel-refund-pending');ensure(o.serviceFee.paid&&!o.serviceFee.refund,'無可退還服務費');o.serviceFee.refund=o.serviceFee.amount;o.status='cancelled';break;
    case 'return':at('return-pending');o.returnedAt=new Date().toISOString();o.status='returned';break;
    case 'cost':ensure(['return-pending','returned'].includes(o.status),'只有退回訂單可登錄成本');ensure(integer(c.amount,0),'退回運費須為非負整數');o.returnCost=c.amount;break;
   }
  }
  const o=n.order!;
- const summaries:Record<Command['type'],string>={create:'已提交六項宴客需求','service-pay':'模擬支付平台服務費 500 元',invite:'人工邀請酒商甲、乙','proposal-save':'保存自己的提案草稿','proposal-submit':'送出有效提案',select:'選定協調意向並鎖定條件',arrange:'確認餐廳收貨時段',cancel:'無法配合，取消待退款',ship:'酒商標記已出貨',deliver:'酒商標記已送達',receive:'餐廳確認收貨（暫存）',age:'餐廳登錄驗齡結果',purchase:'主人確認現場購買','wine-pay':'酒商模擬收款成功，建立唯一待結算分潤',handover:'餐廳已交付主人',complete:'主人確認收取，服務完成',refund:'平台全額模擬退還服務費',return:'選定酒商確認取回酒品',cost:'平台登錄退回運費成本'};
- o.events.push({id:`${o.id}-${o.events.length+1}`,action:c.type,actor,at:new Date().toISOString(),summary:summaries[c.type]});
+ const summaries:Record<Command['type'],string>={create:'已提交六項宴客需求','service-pay':'模擬支付平台服務費 500 元',invite:'人工邀請酒商甲、乙','proposal-save':'保存自己的提案草稿','proposal-submit':'送出有效提案',select:'選定協調意向並鎖定條件',arrange:'確認餐廳收貨時段',cancel:'無法配合，取消待退款',ship:'酒商標記已出貨',deliver:'酒商標記已送達',receive:'餐廳確認收貨（暫存）',age:'餐廳核對下單本人並登錄驗齡結果',purchase:'主人確認現場購買','wine-pay':c.type==='wine-pay'&&c.outcome==='failed'?'模擬付款失敗，待付款':'酒商模擬收款成功，建立唯一待結算分潤',handover:'舊版：餐廳已交付主人',complete:'舊版：主人確認收取，服務完成',refund:'平台全額模擬退還服務費',return:'選定酒商確認取回酒品',cost:'平台登錄退回運費成本','signature-save':'主人保存簽名與交易明細','signature-clear':'主人清除簽名','request-collection':'主人請餐廳協助代收','staff-review':'交回店員核對代收金額','collection-accept':'餐廳確認承接代收，待付酒商','collection-decline':'餐廳不承接代收，回到待付款','collection-receive':'選定酒商確認已收到餐廳全額款項','cancel-purchase':'主人取消購買，待酒商取回'};
+ o.events.push({id:`${o.id}-${o.events.length+1}`,action:c.type,actor,at:stamp,summary:summaries[c.type]});
+ if(c.operationId)o.checkout.operations.push({id:c.operationId,type:c.type,actor});
  return n;
 }

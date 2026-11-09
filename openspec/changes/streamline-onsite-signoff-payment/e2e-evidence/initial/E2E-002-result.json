@@ -1,0 +1,433 @@
+{
+  "case": "E2E-002",
+  "status": "FAIL",
+  "observations": [
+    "顯示：請填寫下單人姓名",
+    "顯示：請完成非空白手寫簽名",
+    "顯示：請填寫下單人姓名",
+    "清除後不可付款",
+    "清除跨重開保存",
+    "顯示：已保存簽名",
+    "未完成時無付款、帳款及分潤",
+    "未失敗不能代收",
+    "沒有產品 console 或 page error"
+  ],
+  "screenshots": [
+    "E2E-002-validation.png",
+    "E2E-002-resigned.png",
+    "E2E-002-failure.png"
+  ],
+  "browserErrors": [],
+  "requests": [
+    "http://127.0.0.1:5173/",
+    "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+    "http://127.0.0.1:5173/@vite/client",
+    "http://127.0.0.1:5173/src/main.tsx?t=1794194111078",
+    "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014mtC9CsuDBoc4WGwNOPzFJCE8Ugks9FneLlkS_mFz-HA32gwD-vWvNpZ5-BnvXu0QUp_5sswITERri4O_lqUnCQ/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjUxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MH0%3D&nocache=17a7b&tm=2026-11-09T03%3A00%3A00.000Z",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=90ed9c97",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react.js?v=90ed9c97",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=90ed9c97",
+    "http://127.0.0.1:5173/src/app/App.tsx?t=1794194110554",
+    "http://127.0.0.1:5173/src/style.css?t=1794194111078",
+    "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+    "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/049DC355-4012-41E3-BDC3-CB0388D28507/to/wsm.sessionActivated?tm=2026-11-09T03%3A00%3A00.000Z",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-SU6MV2YM.js?v=90ed9c97",
+    "http://127.0.0.1:5173/src/domain/model.ts?t=1794193774088",
+    "http://127.0.0.1:5173/src/app/Checkout.tsx",
+    "http://127.0.0.1:5173/src/app/SignaturePad.tsx",
+    "http://127.0.0.1:5173/src/demo/scenarios.ts?t=1794193774088",
+    "http://127.0.0.1:5173/src/persistence/storage.ts?t=1794193834987",
+    "http://127.0.0.1:5173/src/domain/banquet-date.ts",
+    "http://127.0.0.1:5173/src/persistence/legacy.ts",
+    "http://127.0.0.1:5173/",
+    "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+    "http://127.0.0.1:5173/@vite/client",
+    "http://127.0.0.1:5173/src/main.tsx?t=1794194111078",
+    "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014Uj07FDfiRoxI8hw9LL2X6l3uTpChSNHX_rjFgpNinb6NXpgEWXP7n-BojBfhwnq27aPxgR5DEXkbd4wmtPSnVQ/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjUxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MH0%3D&nocache=14d52&tm=2026-11-09T03%3A00%3A00.000Z",
+    "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=90ed9c97",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react.js?v=90ed9c97",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js?v=90ed9c97",
+    "http://127.0.0.1:5173/src/app/App.tsx?t=1794194110554",
+    "http://127.0.0.1:5173/src/style.css?t=1794194111078",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-SU6MV2YM.js?v=90ed9c97",
+    "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/5738C9E4-1494-45DF-AE09-9170910989F6/to/wsm.sessionActivated?tm=2026-11-09T03%3A00%3A00.000Z",
+    "http://127.0.0.1:5173/src/domain/model.ts?t=1794193774088",
+    "http://127.0.0.1:5173/src/app/Checkout.tsx",
+    "http://127.0.0.1:5173/src/app/SignaturePad.tsx",
+    "http://127.0.0.1:5173/src/demo/scenarios.ts?t=1794193774088",
+    "http://127.0.0.1:5173/src/persistence/storage.ts?t=1794193834987",
+    "http://127.0.0.1:5173/src/domain/banquet-date.ts",
+    "http://127.0.0.1:5173/src/persistence/legacy.ts"
+  ],
+  "injected": [
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+      "initiator": {
+        "type": "parser",
+        "url": "http://127.0.0.1:5173/",
+        "lineNumber": 2,
+        "columnNumber": 210
+      }
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014mtC9CsuDBoc4WGwNOPzFJCE8Ugks9FneLlkS_mFz-HA32gwD-vWvNpZ5-BnvXu0QUp_5sswITERri4O_lqUnCQ/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjUxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MH0%3D&nocache=17a7b&tm=2026-11-09T03%3A00%3A00.000Z",
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "AsyncCall",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1444,
+              "columnNumber": 20
+            },
+            {
+              "functionName": "InitCall",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1539,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "InitCall",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1635,
+              "columnNumber": 24
+            },
+            {
+              "functionName": "StartCallback",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2443,
+              "columnNumber": 23
+            },
+            {
+              "functionName": "Start",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1454,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "Start",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1607,
+              "columnNumber": 17
+            },
+            {
+              "functionName": "Init",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2417,
+              "columnNumber": 15
+            },
+            {
+              "functionName": "StartSession",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2554,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 3166,
+              "columnNumber": 5
+            },
+            {
+              "functionName": "",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 3167,
+              "columnNumber": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/049DC355-4012-41E3-BDC3-CB0388D28507/to/wsm.sessionActivated?tm=2026-11-09T03%3A00%3A00.000Z",
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "AsyncCall",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1444,
+              "columnNumber": 20
+            },
+            {
+              "functionName": "Call",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1477,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "Call",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1619,
+              "columnNumber": 17
+            },
+            {
+              "functionName": "Call",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1967,
+              "columnNumber": 21
+            },
+            {
+              "functionName": "OnInitCall",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2335,
+              "columnNumber": 25
+            },
+            {
+              "functionName": "FireActivateEventImpl",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2645,
+              "columnNumber": 12
+            },
+            {
+              "functionName": "FireActivateEvent",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2660,
+              "columnNumber": 12
+            },
+            {
+              "functionName": "Initialize",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2723,
+              "columnNumber": 12
+            },
+            {
+              "functionName": "AddRunnerWsm",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2744,
+              "columnNumber": 4
+            },
+            {
+              "functionName": "InitCallCallback",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2469,
+              "columnNumber": 47
+            },
+            {
+              "functionName": "AsyncCallCallback",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1551,
+              "columnNumber": 20
+            },
+            {
+              "functionName": "onload",
+              "scriptId": "19",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1425,
+              "columnNumber": 32
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+      "initiator": {
+        "type": "parser",
+        "url": "http://127.0.0.1:5173/",
+        "lineNumber": 2,
+        "columnNumber": 210
+      }
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/6D0F9D36-CAF6-46E3-AEFA-8C02D8831014Uj07FDfiRoxI8hw9LL2X6l3uTpChSNHX_rjFgpNinb6NXpgEWXP7n-BojBfhwnq27aPxgR5DEXkbd4wmtPSnVQ/init?data=eyJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjUxNzMvIiwicGx1Z2lucyI6IndzbSZjYiZ4aHJfY29udGVudCIsImRhdGEiOnsiZGF0YSI6W3sicGx1Z2luIjoid3NtIiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJcIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ4aHJfY29udGVudCIsInBhcmFtZXRlcnMiOiJ7XCJyZWZlcnJlclwiOlwiXCJ9In1dfSwiaXNUb3BMZXZlbCI6dHJ1ZSwicGFnZVN0YXJ0VGltZSI6MCwibmF2aWdhdGlvblN0YXJ0VGltZSI6MH0%3D&nocache=14d52&tm=2026-11-09T03%3A00%3A00.000Z",
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "AsyncCall",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1444,
+              "columnNumber": 20
+            },
+            {
+              "functionName": "InitCall",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1539,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "InitCall",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1635,
+              "columnNumber": 24
+            },
+            {
+              "functionName": "StartCallback",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2443,
+              "columnNumber": 23
+            },
+            {
+              "functionName": "Start",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1454,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "Start",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1607,
+              "columnNumber": 17
+            },
+            {
+              "functionName": "Init",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2417,
+              "columnNumber": 15
+            },
+            {
+              "functionName": "StartSession",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2554,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 3166,
+              "columnNumber": 5
+            },
+            {
+              "functionName": "",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 3167,
+              "columnNumber": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "http://gc.kes.v2.scr.kaspersky-labs.com/0202F06A-EF41-4451-8BD5-ABD8B9CFBD68/5738C9E4-1494-45DF-AE09-9170910989F6/to/wsm.sessionActivated?tm=2026-11-09T03%3A00%3A00.000Z",
+      "initiator": {
+        "type": "script",
+        "stack": {
+          "callFrames": [
+            {
+              "functionName": "AsyncCall",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1444,
+              "columnNumber": 20
+            },
+            {
+              "functionName": "Call",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1477,
+              "columnNumber": 8
+            },
+            {
+              "functionName": "Call",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1619,
+              "columnNumber": 17
+            },
+            {
+              "functionName": "Call",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1967,
+              "columnNumber": 21
+            },
+            {
+              "functionName": "OnInitCall",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2335,
+              "columnNumber": 25
+            },
+            {
+              "functionName": "FireActivateEventImpl",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2645,
+              "columnNumber": 12
+            },
+            {
+              "functionName": "FireActivateEvent",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2660,
+              "columnNumber": 12
+            },
+            {
+              "functionName": "Initialize",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2723,
+              "columnNumber": 12
+            },
+            {
+              "functionName": "AddRunnerWsm",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2744,
+              "columnNumber": 4
+            },
+            {
+              "functionName": "InitCallCallback",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 2469,
+              "columnNumber": 47
+            },
+            {
+              "functionName": "AsyncCallCallback",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1551,
+              "columnNumber": 20
+            },
+            {
+              "functionName": "onload",
+              "scriptId": "106",
+              "url": "http://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=Fj-UTb5M2HfQQCvUBYr-mdeC1EtvLdnC4-sTzL7W1cXexG7iNdPW2dYanoLiP90Z",
+              "lineNumber": 1425,
+              "columnNumber": 32
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "error": "Error: 無真實支付或產品外部網路呼叫；如有防護軟體注入則保留 CDP initiator",
+  "visibleText": "宴遇\nBANQUET & WINE\nDEMO 模擬模式\nAT YOUR TABLE\n核對這一席的酒款\n\n限下單本人簽收；付款成功或餐廳承接代收後，即完成服務。\n\n待付酒款\n已保存操作結果。\n當面核對的交易明細\n\n服務編號 BW-MW8OB1C0 · 收款方：酒商甲\n\n勃根地風格黑皮諾\n750 ml · 6 瓶 × NT$ 1,000\n酒款金額\nNT$ 6,000\n配送費\nNT$ 200\n應付酒商合計\nNT$ 6,200\n\n平台服務費 500 元已獨立支付；餐廳現場費用 300 元另收，不併入本筆。所有付款均為模擬，不收集信用卡或證件資料。\n\n本人簽收\n\n我已當面核對上述酒款、數量及金額，並同意於付款成功或餐廳確認承接代收後接收這批酒。簽名本身不代表已付款或服務完成。\n\n已保存簽名：展示主人 · 2026/11/9 上午11:00:00\n\n清除簽名並重簽\n支付酒款與配送費\n模擬付款結果\n成功\n失敗\n模擬支付酒款\n取消購買\n交還店員，稍後接續"
+}
