@@ -4,7 +4,7 @@ async(page)=>{
  const assert=(v,message)=>{checks.push({message,pass:!!v});if(!v)throw Error(message);};
  const button=name=>p.getByRole('button',{name,exact:true}),role=async name=>button(name).click();
  const confirm=async()=>p.getByRole('dialog').getByRole('button',{name:'確認',exact:true}).click();
- const shot=async suffix=>{const path='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-'+suffix+'.png';await p.screenshot({path,fullPage:true});shots.push(path);};
+ const shot=async suffix=>{const path='C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-'+suffix+'.png';await p.screenshot({path,fullPage:true});shots.push(path);};
  const hidden=async(a,stage)=>{await role(a);await p.reload();const text=await p.locator('#root').textContent();assert(!text.includes('本次宴客服務')&&!text.includes('法式料理')&&!text.includes('0912345678')&&!text.includes('每一步，都有紀錄')&&!text.includes('這一席的費用'),stage+' '+a+' no service data or sidebar/timeline');assert(await p.locator('.order-head').count()===0,stage+' '+a+' no hidden overview DOM');};
  const result={url:'http://127.0.0.1:5173/',checks,errors,shots,at:new Date().toISOString()};
  try{

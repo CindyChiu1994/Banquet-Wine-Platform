@@ -1,6 +1,6 @@
 # 執行紀錄
 
-2026-11-09，Playwright MCP Chrome，固定 http://127.0.0.1:5173/。每案獨立context，從可見UI建立前置；只有LEGACY與儲存故障依計畫匯入完整樣本或故障注入。所有context執行後關閉。執行來源保存在 [service-e2e-case.mjs](../../../../scripts/service-e2e-case.mjs)，透過MCP browser_run_code_unsafe呼叫buildCase產生的函式；不是直接Playwright替代品。
+2026-11-09，Playwright MCP Chrome，固定 http://127.0.0.1:5173/。每案獨立context，從可見UI建立前置；只有LEGACY與儲存故障依計畫匯入完整樣本或故障注入。所有context執行後關閉。執行來源保存在 [service-e2e-case.mjs](../../../../../scripts/service-e2e-case.mjs)，透過MCP browser_run_code_unsafe呼叫buildCase產生的函式；不是直接Playwright替代品。
 
 最終26／26通過，0失敗、0跳過。395項觀察，71張本次必要截圖，逐案JSON及勾選結果可追溯；舊failure.png為先前測試定位／修復證據，不計入71張必要證據。完整案例、步驟與預期以唯一[e2e-testing.md](../e2e-testing.md)為準。
 
@@ -22,3 +22,5 @@
 - 截圖已檢查檔案存在、非空，並以同期DOM／狀態觀察對應畫面；人工複核報價阻擋、揭價、減量及桌機／手機警語與購買畫面。
 
 單元測試8檔243項、TypeScript strict＋Vite build及OpenSpec strict皆通過。測試未涉及真實支付或正式授權驗證；本結果不是法律核可。
+
+封存說明：本文件與JSON保留原執行日期及歷史觀察；當時的絕對截圖路徑僅作追溯，封存後請依同目錄相對連結或證據總覽檢視。

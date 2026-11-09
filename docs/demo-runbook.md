@@ -52,4 +52,4 @@ React、TypeScript strict、Vite、原生CSS與localStorage，無後端或登入
 
 v1/v2未簽未付舊單缺聯絡資料時，由主人一次補填；已驗齡者再交餐廳核對姓名，保留原驗齡與費用。已簽舊單沿用原固定署名與快照，已付不要求重付或補造簽名；歷史小數容量例外只限原提交，重新提交需正整數。舊取回成本0／200／未填只在原始metadata保留。
 
-本次[E2E唯一清單](../openspec/changes/clarify-onsite-wine-service-and-budget/e2e-testing.md)及[歷史樣本manifest](../openspec/changes/clarify-onsite-wine-service-and-budget/e2e-fixtures/manifest.md)保存實測結果。舊版測試紀錄在[archive](../openspec/changes/archive)，不代表本版已驗收。八分鐘口述腳本尚未重新計時。
+本次[E2E唯一清單](../openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-testing.md)及[歷史樣本manifest](../openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-fixtures/manifest.md)保存實測結果。舊版測試紀錄在[archive](../openspec/changes/archive)，不代表本版已驗收。八分鐘口述腳本尚未重新計時。

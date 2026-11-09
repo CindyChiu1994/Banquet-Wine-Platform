@@ -1,7 +1,7 @@
 import {build} from 'esbuild';
 import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-const root='openspec/changes/clarify-onsite-wine-service-and-budget/e2e-fixtures';
+const root='openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-fixtures';
 const result=await build({stdin:{contents:"export * from './src/domain/model.ts';export {scenario} from './src/demo/scenarios.ts';export {validState,load} from './src/persistence/storage.ts';",resolveDir:process.cwd()},bundle:true,platform:'node',format:'esm',write:false});
 const m=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
 if(m.initial().schemaVersion!==3)throw Error('Capture requires untouched v3');

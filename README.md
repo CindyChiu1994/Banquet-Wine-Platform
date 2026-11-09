@@ -36,11 +36,11 @@ React、TypeScript strict、Vite、原生CSS與localStorage，無後端或登入
 
 ## 文件
 
-- [本次變更與三張流程圖](openspec/changes/clarify-onsite-wine-service-and-budget/design.md)
-- [E2E清單與執行結果](openspec/changes/clarify-onsite-wine-service-and-budget/e2e-testing.md)
-- [任務](openspec/changes/clarify-onsite-wine-service-and-budget/tasks.md)
-- [歷史42樣本manifest](openspec/changes/clarify-onsite-wine-service-and-budget/e2e-fixtures/manifest.md)
+- [本次變更與三張流程圖](openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/design.md)
+- [E2E清單與執行結果](openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-testing.md)
+- [任務](openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/tasks.md)
+- [歷史42樣本manifest](openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-fixtures/manifest.md)
 - [展示手冊](docs/demo-runbook.md)
 - [歷史變更](openspec/changes/archive)
 
-本次實作不自動封存；主規格同步與封存依後續指示執行。
+本次變更已於2026-11-09同步主規格並封存；規格見openspec/specs，實作與驗收歷史見上列封存文件。

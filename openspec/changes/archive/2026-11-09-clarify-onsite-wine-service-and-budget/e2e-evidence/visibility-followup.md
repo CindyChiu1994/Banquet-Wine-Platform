@@ -10,7 +10,7 @@
 - 已邀請及兩份建議書到齊但未選定：酒商可編輯自己的建議書，合作餐廳仍無服務資料。
 - 選定甲後餐廳可看服務並安排，甲維持可讀，未獲選乙仍無後續資料。領域測試另驗證反向選乙的對稱性與非法操作不改狀態。
 - 單款與兩款的四個標籤均無序號；第二列資料保存、重整及正式提交正常。
-- 精確步驟與觀察：[JSON](visibility-followup.json)；重跑原始碼：[Playwright MCP函式](../../../../scripts/visibility-followup.playwright.js)。
+- 精確步驟與觀察：[JSON](visibility-followup.json)；重跑原始碼：[Playwright MCP函式](../../../../../scripts/visibility-followup.playwright.js)。
 
 ## 截圖
 
@@ -21,3 +21,5 @@
 - [visibility-restaurant-selected.png](visibility-restaurant-selected.png)
 
 本次沿用原先開發伺服器，驗證結束僅關閉新建的隔離context，保留伺服器供使用者測試。先前26案、243項單元測試與71張截圖為原驗收歷史，本次追加結果不冒稱重跑全部26案。
+
+封存說明：本文件與JSON保留原執行日期及歷史觀察；當時的絕對截圖路徑僅作追溯，封存後請依同目錄相對連結或證據總覽檢視。

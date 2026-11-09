@@ -1,7 +1,7 @@
 import {describe,it,expect} from 'vitest';
-import v1 from '../../openspec/changes/clarify-onsite-wine-service-and-budget/e2e-fixtures/v1-fixtures.json';
-import v2 from '../../openspec/changes/clarify-onsite-wine-service-and-budget/e2e-fixtures/v2-fixtures.json';
-import v3 from '../../openspec/changes/clarify-onsite-wine-service-and-budget/e2e-fixtures/v3-fixtures.json';
+import v1 from '../../openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-fixtures/v1-fixtures.json';
+import v2 from '../../openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-fixtures/v2-fixtures.json';
+import v3 from '../../openspec/changes/archive/2026-11-09-clarify-onsite-wine-service-and-budget/e2e-fixtures/v3-fixtures.json';
 import {load,save,validState} from './storage';
 import {orderViewForActor,transition,type Actor,type Command} from '../domain/model';
 describe('42 original manifest fixtures migrate purely and roundtrip',()=>{
