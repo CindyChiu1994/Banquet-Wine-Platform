@@ -1,0 +1,71 @@
+{
+  "id": "E2E-023",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:10:42.140Z",
+  "observations": [
+    {
+      "message": "new schema blank",
+      "pass": true
+    },
+    {
+      "message": "empty service has no previous payment or stock blank",
+      "pass": true
+    },
+    {
+      "message": "correct prefill blank",
+      "pass": true
+    },
+    {
+      "message": "new schema normal",
+      "pass": true
+    },
+    {
+      "message": "empty service has no previous payment or stock normal",
+      "pass": true
+    },
+    {
+      "message": "correct prefill normal",
+      "pass": true
+    },
+    {
+      "message": "new schema cancel",
+      "pass": true
+    },
+    {
+      "message": "valid new setup cancel",
+      "pass": true
+    },
+    {
+      "message": "no retired fee or stale finance cancel",
+      "pass": true
+    },
+    {
+      "message": "new schema age",
+      "pass": true
+    },
+    {
+      "message": "valid new setup age",
+      "pass": true
+    },
+    {
+      "message": "no retired fee or stale finance age",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-023-blank.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-023-normal.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-023-cancel.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-023-age.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:10:43.374Z"
+}

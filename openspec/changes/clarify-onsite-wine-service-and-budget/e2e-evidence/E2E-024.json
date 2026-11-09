@@ -1,0 +1,42 @@
+{
+  "id": "E2E-024",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:10:48.293Z",
+  "observations": [
+    {
+      "message": "visible save failure",
+      "pass": true
+    },
+    {
+      "message": "failed save leaves original string",
+      "pass": true
+    },
+    {
+      "message": "recovered write permits retry",
+      "pass": true
+    },
+    {
+      "message": "corrupt data preserved until confirmation",
+      "pass": true
+    },
+    {
+      "message": "confirmed reset only app key",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-024-write-failure.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-024-corrupt-preserved.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-024-recovered.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:10:49.200Z"
+}

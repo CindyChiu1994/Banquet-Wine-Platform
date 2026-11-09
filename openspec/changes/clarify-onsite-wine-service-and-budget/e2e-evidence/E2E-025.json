@@ -1,0 +1,116 @@
+{
+  "id": "E2E-025",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:11:02.148Z",
+  "observations": [
+    {
+      "message": "bad request blocked 宴客聯絡人姓名",
+      "pass": true
+    },
+    {
+      "message": "bad request blocked 聯絡電話",
+      "pass": true
+    },
+    {
+      "message": "bad request blocked 聯絡電話abc",
+      "pass": true
+    },
+    {
+      "message": "bad request blocked 菜色或料理類型 \n ",
+      "pass": true
+    },
+    {
+      "message": "bad request blocked 宴客人數1.5",
+      "pass": true
+    },
+    {
+      "message": "bad request blocked 宴客日期與時間2000-01-01T18:00",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 容量（ml） 1=",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 容量（ml） 1=0",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 容量（ml） 1=-1",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 容量（ml） 1=1.5",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 建議瓶數 1=",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 建議瓶數 1=0",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 建議瓶數 1=-1",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 建議瓶數 1=1.5",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 單價（元） 1=",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 單價（元） 1=0",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 單價（元） 1=-1",
+      "pass": true
+    },
+    {
+      "message": "invalid wine field 單價（元） 1=1.5",
+      "pass": true
+    },
+    {
+      "message": "second row invalid",
+      "pass": true
+    },
+    {
+      "message": "invalid shipping ",
+      "pass": true
+    },
+    {
+      "message": "invalid shipping -1",
+      "pass": true
+    },
+    {
+      "message": "invalid shipping 0.5",
+      "pass": true
+    },
+    {
+      "message": "valid integer proposal zero shipping",
+      "pass": true
+    },
+    {
+      "message": "multiline survives roles/reload",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-025-input-regression.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:11:04.415Z"
+}

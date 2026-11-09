@@ -1,0 +1,598 @@
+{
+  "id": "E2E-021",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:12:08.295Z",
+  "observations": [
+    {
+      "message": "pure load leaves original 1/age",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/age",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/age",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/purchase",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/purchase",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/purchase",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/payment",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/payment",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/payment",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/handover",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/handover",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/handover",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/receipt",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/receipt",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/receipt",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/completed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/completed",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/completed",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/return-pending",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/return-pending",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/return-pending",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/returned",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/returned",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/returned",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 1/cancelled",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 1/cancelled",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 1/cancelled",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/age",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/age",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/age",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/signature",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/signature",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/signature",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/signed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/signed",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/signed",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/failed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/failed",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/failed",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/collection",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/collection",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/collection",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/collected",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/collected",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/collected",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/online",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/online",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/online",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/cancelled",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/cancelled",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/cancelled",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/return-pending",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/return-pending",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/return-pending",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/returned",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/returned",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/returned",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/decimal-draft",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/decimal-draft",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/decimal-draft",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/decimal-submitted",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/decimal-submitted",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/decimal-submitted",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/decimal-selected",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/decimal-selected",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/decimal-selected",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/decimal-age",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/decimal-age",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/decimal-age",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/blank-draft",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/blank-draft",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 2/blank-draft",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/comparison",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/comparison",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/comparison",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/selected",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/selected",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/selected",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/age",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/age",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/age",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/passed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/passed",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/passed",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/signed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/signed",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/signed",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/paid",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/paid",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/paid",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/failed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/failed",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/failed",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/collection",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/collection",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/collection",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/received",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/received",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/received",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/cancel-pending",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/cancelled",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/cancelled",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/cancelled",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/return-null",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/return-null",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/return-null",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/return-zero",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/return-zero",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/return-zero",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/return-200",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/return-200",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/return-200",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/returned",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/returned",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/returned",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/over-budget",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/over-budget",
+      "pass": true
+    },
+    {
+      "message": "historical cost not active 3/over-budget",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/signature",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/signature",
+      "pass": true
+    },
+    {
+      "message": "legacy age+new contact needs restaurant check",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 2/signature",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 2/signature",
+      "pass": true
+    },
+    {
+      "message": "no active return cost UI or pending ledger",
+      "pass": true
+    },
+    {
+      "message": "legacy mismatch irreversible merchant return",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/signed",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/signed",
+      "pass": true
+    },
+    {
+      "message": "old signature remains byte-equivalent after payment",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "pure load leaves original 3/collection",
+      "pass": true
+    },
+    {
+      "message": "historical fixture accepted 3/collection",
+      "pass": true
+    },
+    {
+      "message": "legacy account received whole",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v2-signed.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v2-collection.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v2-collected.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v2-online.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-signed.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-paid.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-collection.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-received.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-return-null.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-return-zero.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-v3-return-200.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-legacy-contact-checked.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-legacy-name-return.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-legacy-signed-paid.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-021-legacy-received.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:12:16.014Z"
+}

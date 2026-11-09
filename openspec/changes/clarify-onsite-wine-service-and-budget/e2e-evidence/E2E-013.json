@@ -1,0 +1,50 @@
+{
+  "id": "E2E-013",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:06:53.008Z",
+  "observations": [
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "request not completion",
+      "pass": true
+    },
+    {
+      "message": "staff accepts full account",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "host sees own collection checkout instructions",
+      "pass": true
+    },
+    {
+      "message": "full account received once without offset or unsold stock",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-013-handoff.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-013-host-collection.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-013-received-full.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:06:54.533Z"
+}

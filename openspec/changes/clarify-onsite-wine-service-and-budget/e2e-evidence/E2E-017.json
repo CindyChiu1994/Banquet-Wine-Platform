@@ -1,0 +1,65 @@
+{
+  "id": "E2E-017",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:07:42.089Z",
+  "observations": [
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "only quantity editable",
+      "pass": true
+    },
+    {
+      "message": "invalid quantity not saved -1",
+      "pass": true
+    },
+    {
+      "message": "invalid quantity not saved 1.5",
+      "pass": true
+    },
+    {
+      "message": "invalid quantity not saved 7",
+      "pass": true
+    },
+    {
+      "message": "invalid quantity not saved 0",
+      "pass": true
+    },
+    {
+      "message": "allzero asks whole cancellation",
+      "pass": true
+    },
+    {
+      "message": "completed cannot edit 平台管理者",
+      "pass": true
+    },
+    {
+      "message": "completed cannot edit 合作餐廳",
+      "pass": true
+    },
+    {
+      "message": "completed cannot edit 酒商甲",
+      "pass": true
+    },
+    {
+      "message": "completed cannot edit 宴客主人",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-017-invalid-quantities.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-017-completed-locked.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:07:43.550Z"
+}

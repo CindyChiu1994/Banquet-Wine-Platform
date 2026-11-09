@@ -1,0 +1,48 @@
+{
+  "id": "E2E-005",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:05:44.723Z",
+  "observations": [
+    {
+      "message": "reject public quote 搭配理由",
+      "pass": true
+    },
+    {
+      "message": "reject public quote 備酒條件",
+      "pass": true
+    },
+    {
+      "message": "reject public quote 備貨限制",
+      "pass": true
+    },
+    {
+      "message": "capacity/count/time accepted",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes proposal prices before gate",
+      "pass": true
+    },
+    {
+      "message": "safe explanation visible",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-005-safe-public-text.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:05:45.723Z"
+}

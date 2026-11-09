@@ -1,0 +1,3214 @@
+{
+  "comparison": {
+    "schemaVersion": 3,
+    "actor": "host",
+    "order": {
+      "id": "BW-MW96R347",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.894Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "comparison-ready",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": null,
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "",
+      "age": {
+        "result": "pending",
+        "reason": "",
+        "actor": null,
+        "at": null
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R347-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.894Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R347-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.895Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R347-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.895Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R347-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.895Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R347-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.896Z",
+          "summary": "送出有效提案"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "selected": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "restaurant-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "",
+      "age": {
+        "result": "pending",
+        "reason": "",
+        "actor": null,
+        "at": null
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "age": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "age-check-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "pending",
+        "reason": "",
+        "actor": null,
+        "at": null
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "passed": {
+    "schemaVersion": 3,
+    "actor": "host",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "signature-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "passed",
+        "reason": "",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.898Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R349-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        }
+      ],
+      "checkout": {
+        "mode": "guest",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "signed": {
+    "schemaVersion": 3,
+    "actor": "host",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "wine-payment-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "passed",
+        "reason": "",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.898Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R349-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R349-12",
+          "action": "signature-save",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "主人保存簽名與交易明細"
+        }
+      ],
+      "checkout": {
+        "mode": "guest",
+        "signature": {
+          "name": "展示主人",
+          "strokes": [
+            [
+              {
+                "x": 10,
+                "y": 20
+              },
+              {
+                "x": 150,
+                "y": 80
+              }
+            ]
+          ],
+          "at": "2026-11-09T11:36:21.898Z",
+          "snapshot": {
+            "orderId": "BW-MW96R349",
+            "merchant": "merchant-a",
+            "items": [
+              {
+                "name": "勃根地風格黑皮諾",
+                "capacity": 750,
+                "quantity": 6,
+                "price": 1000
+              }
+            ],
+            "wineAmount": 6000,
+            "shipping": 200,
+            "amount": 6200
+          },
+          "invalidatedAt": null
+        },
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "paid": {
+    "schemaVersion": 3,
+    "actor": "host",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "completed",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": {
+        "payee": "merchant-a",
+        "amount": 6200,
+        "wineAmount": 6000,
+        "paid": true
+      },
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "passed",
+        "reason": "",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.898Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": {
+        "orderId": "BW-MW96R349",
+        "merchant": "merchant-a",
+        "restaurantId": "restaurant-demo",
+        "wineAmount": 6000,
+        "rateBps": 1000,
+        "amount": 600,
+        "status": "pending"
+      },
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R349-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R349-12",
+          "action": "signature-save",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "主人保存簽名與交易明細"
+        },
+        {
+          "id": "BW-MW96R349-13",
+          "action": "complete",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "服務完成，可協助開酒"
+        },
+        {
+          "id": "BW-MW96R349-14",
+          "action": "wine-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "酒商模擬收款成功，建立唯一待結算分潤"
+        }
+      ],
+      "checkout": {
+        "mode": "guest",
+        "signature": {
+          "name": "展示主人",
+          "strokes": [
+            [
+              {
+                "x": 10,
+                "y": 20
+              },
+              {
+                "x": 150,
+                "y": 80
+              }
+            ]
+          ],
+          "at": "2026-11-09T11:36:21.898Z",
+          "snapshot": {
+            "orderId": "BW-MW96R349",
+            "merchant": "merchant-a",
+            "items": [
+              {
+                "name": "勃根地風格黑皮諾",
+                "capacity": 750,
+                "quantity": 6,
+                "price": 1000
+              }
+            ],
+            "wineAmount": 6000,
+            "shipping": 200,
+            "amount": 6200
+          },
+          "invalidatedAt": null
+        },
+        "attempts": [
+          {
+            "id": "BW-MW96R349-12",
+            "outcome": "success",
+            "at": "2026-11-09T11:36:21.898Z"
+          }
+        ],
+        "completedBy": "online",
+        "completedAt": "2026-11-09T11:36:21.898Z",
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "failed": {
+    "schemaVersion": 3,
+    "actor": "host",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "wine-payment-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "passed",
+        "reason": "",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.898Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R349-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R349-12",
+          "action": "signature-save",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "主人保存簽名與交易明細"
+        },
+        {
+          "id": "BW-MW96R349-13",
+          "action": "wine-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.899Z",
+          "summary": "模擬付款失敗，待付款"
+        }
+      ],
+      "checkout": {
+        "mode": "guest",
+        "signature": {
+          "name": "展示主人",
+          "strokes": [
+            [
+              {
+                "x": 10,
+                "y": 20
+              },
+              {
+                "x": 150,
+                "y": 80
+              }
+            ]
+          ],
+          "at": "2026-11-09T11:36:21.898Z",
+          "snapshot": {
+            "orderId": "BW-MW96R349",
+            "merchant": "merchant-a",
+            "items": [
+              {
+                "name": "勃根地風格黑皮諾",
+                "capacity": 750,
+                "quantity": 6,
+                "price": 1000
+              }
+            ],
+            "wineAmount": 6000,
+            "shipping": 200,
+            "amount": 6200
+          },
+          "invalidatedAt": null
+        },
+        "attempts": [
+          {
+            "id": "BW-MW96R349-12",
+            "outcome": "failed",
+            "at": "2026-11-09T11:36:21.899Z"
+          }
+        ],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "collection": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "completed",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "passed",
+        "reason": "",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.898Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": {
+        "orderId": "BW-MW96R349",
+        "merchant": "merchant-a",
+        "restaurantId": "restaurant-demo",
+        "wineAmount": 6000,
+        "rateBps": 1000,
+        "amount": 600,
+        "status": "pending"
+      },
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R349-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R349-12",
+          "action": "signature-save",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "主人保存簽名與交易明細"
+        },
+        {
+          "id": "BW-MW96R349-13",
+          "action": "wine-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.899Z",
+          "summary": "模擬付款失敗，待付款"
+        },
+        {
+          "id": "BW-MW96R349-14",
+          "action": "request-collection",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.899Z",
+          "summary": "主人請餐廳協助代收"
+        },
+        {
+          "id": "BW-MW96R349-15",
+          "action": "staff-review",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "交回店員核對代收金額"
+        },
+        {
+          "id": "BW-MW96R349-16",
+          "action": "complete",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "服務完成，可協助開酒"
+        },
+        {
+          "id": "BW-MW96R349-17",
+          "action": "collection-accept",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "餐廳確認承接代收，待付酒商"
+        }
+      ],
+      "checkout": {
+        "mode": "staff",
+        "signature": {
+          "name": "展示主人",
+          "strokes": [
+            [
+              {
+                "x": 10,
+                "y": 20
+              },
+              {
+                "x": 150,
+                "y": 80
+              }
+            ]
+          ],
+          "at": "2026-11-09T11:36:21.898Z",
+          "snapshot": {
+            "orderId": "BW-MW96R349",
+            "merchant": "merchant-a",
+            "items": [
+              {
+                "name": "勃根地風格黑皮諾",
+                "capacity": 750,
+                "quantity": 6,
+                "price": 1000
+              }
+            ],
+            "wineAmount": 6000,
+            "shipping": 200,
+            "amount": 6200
+          },
+          "invalidatedAt": null
+        },
+        "attempts": [
+          {
+            "id": "BW-MW96R349-12",
+            "outcome": "failed",
+            "at": "2026-11-09T11:36:21.899Z"
+          }
+        ],
+        "completedBy": "collection",
+        "completedAt": "2026-11-09T11:36:21.900Z",
+        "legacy": false,
+        "operations": []
+      },
+      "collection": {
+        "orderId": "BW-MW96R349",
+        "restaurantId": "restaurant-demo",
+        "merchant": "merchant-a",
+        "wineAmount": 6000,
+        "shipping": 200,
+        "amount": 6200,
+        "acceptedBy": "restaurant",
+        "acceptedAt": "2026-11-09T11:36:21.900Z",
+        "status": "pending",
+        "receivedBy": null,
+        "receivedAt": null,
+        "receivedAmount": null
+      },
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "received": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R349",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.897Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "completed",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "passed",
+        "reason": "",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.898Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": {
+        "orderId": "BW-MW96R349",
+        "merchant": "merchant-a",
+        "restaurantId": "restaurant-demo",
+        "wineAmount": 6000,
+        "rateBps": 1000,
+        "amount": 600,
+        "status": "pending"
+      },
+      "events": [
+        {
+          "id": "BW-MW96R349-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R349-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R349-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R349-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R349-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R349-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R349-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R349-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R349-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.897Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R349-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R349-12",
+          "action": "signature-save",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.898Z",
+          "summary": "主人保存簽名與交易明細"
+        },
+        {
+          "id": "BW-MW96R349-13",
+          "action": "wine-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.899Z",
+          "summary": "模擬付款失敗，待付款"
+        },
+        {
+          "id": "BW-MW96R349-14",
+          "action": "request-collection",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.899Z",
+          "summary": "主人請餐廳協助代收"
+        },
+        {
+          "id": "BW-MW96R349-15",
+          "action": "staff-review",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "交回店員核對代收金額"
+        },
+        {
+          "id": "BW-MW96R349-16",
+          "action": "complete",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "服務完成，可協助開酒"
+        },
+        {
+          "id": "BW-MW96R349-17",
+          "action": "collection-accept",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "餐廳確認承接代收，待付酒商"
+        },
+        {
+          "id": "BW-MW96R349-18",
+          "action": "collection-receive",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "選定酒商確認已收到餐廳全額款項"
+        }
+      ],
+      "checkout": {
+        "mode": "staff",
+        "signature": {
+          "name": "展示主人",
+          "strokes": [
+            [
+              {
+                "x": 10,
+                "y": 20
+              },
+              {
+                "x": 150,
+                "y": 80
+              }
+            ]
+          ],
+          "at": "2026-11-09T11:36:21.898Z",
+          "snapshot": {
+            "orderId": "BW-MW96R349",
+            "merchant": "merchant-a",
+            "items": [
+              {
+                "name": "勃根地風格黑皮諾",
+                "capacity": 750,
+                "quantity": 6,
+                "price": 1000
+              }
+            ],
+            "wineAmount": 6000,
+            "shipping": 200,
+            "amount": 6200
+          },
+          "invalidatedAt": null
+        },
+        "attempts": [
+          {
+            "id": "BW-MW96R349-12",
+            "outcome": "failed",
+            "at": "2026-11-09T11:36:21.899Z"
+          }
+        ],
+        "completedBy": "collection",
+        "completedAt": "2026-11-09T11:36:21.900Z",
+        "legacy": false,
+        "operations": []
+      },
+      "collection": {
+        "orderId": "BW-MW96R349",
+        "restaurantId": "restaurant-demo",
+        "merchant": "merchant-a",
+        "wineAmount": 6000,
+        "shipping": 200,
+        "amount": 6200,
+        "acceptedBy": "restaurant",
+        "acceptedAt": "2026-11-09T11:36:21.900Z",
+        "status": "received",
+        "receivedBy": "merchant-a",
+        "receivedAt": "2026-11-09T11:36:21.900Z",
+        "receivedAmount": 6200
+      },
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "cancel-pending": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R34C",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.900Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "cancel-refund-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "",
+      "age": {
+        "result": "pending",
+        "reason": "",
+        "actor": null,
+        "at": null
+      },
+      "cancellationReason": "餐廳無法安排",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R34C-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R34C-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R34C-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R34C-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34C-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34C-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R34C-7",
+          "action": "cancel",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "無法配合，取消待退款"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "cancelled": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R34C",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.900Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "cancelled",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 500
+      },
+      "winePayment": null,
+      "arrangement": "",
+      "age": {
+        "result": "pending",
+        "reason": "",
+        "actor": null,
+        "at": null
+      },
+      "cancellationReason": "餐廳無法安排",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R34C-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R34C-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R34C-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.900Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R34C-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34C-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34C-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R34C-7",
+          "action": "cancel",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "無法配合，取消待退款"
+        },
+        {
+          "id": "BW-MW96R34C-8",
+          "action": "refund",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "平台全額模擬退還服務費"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  },
+  "return-null": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R34D",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.901Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "return-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "failed",
+        "reason": "年齡未通過",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.901Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R34D-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R34D-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R34D-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R34D-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R34D-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R34D-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R34D-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R34D-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R34D-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": "age-failed"
+    },
+    "prefill": true
+  },
+  "return-zero": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R34D",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.901Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "return-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "failed",
+        "reason": "年齡未通過",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.901Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": 0,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R34D-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R34D-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R34D-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R34D-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R34D-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R34D-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R34D-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R34D-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R34D-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R34D-12",
+          "action": "cost",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.902Z",
+          "summary": "平台登錄退回運費成本"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": "age-failed"
+    },
+    "prefill": true
+  },
+  "return-200": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R34D",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.901Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "return-pending",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "failed",
+        "reason": "年齡未通過",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.901Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": 200,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R34D-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R34D-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R34D-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R34D-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R34D-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R34D-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R34D-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R34D-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R34D-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R34D-12",
+          "action": "cost",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.902Z",
+          "summary": "平台登錄退回運費成本"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": "age-failed"
+    },
+    "prefill": true
+  },
+  "returned": {
+    "schemaVersion": 3,
+    "actor": "restaurant",
+    "order": {
+      "id": "BW-MW96R34D",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.901Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "returned",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1000
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": {
+        "merchant": "merchant-a",
+        "items": [
+          {
+            "name": "勃根地風格黑皮諾",
+            "capacity": 750,
+            "quantity": 6,
+            "price": 1000
+          }
+        ],
+        "shipping": 200,
+        "restaurantFee": 300,
+        "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+        "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+        "limits": "示範供貨 6 瓶；無其他限制",
+        "submitted": true
+      },
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "宴客當日 15:00–17:00",
+      "age": {
+        "result": "failed",
+        "reason": "年齡未通過",
+        "actor": "restaurant",
+        "at": "2026-11-09T11:36:21.901Z"
+      },
+      "cancellationReason": "",
+      "returnedAt": "2026-11-09T11:36:21.902Z",
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R34D-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R34D-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R34D-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R34D-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R34D-6",
+          "action": "select",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "選定協調意向並鎖定條件"
+        },
+        {
+          "id": "BW-MW96R34D-7",
+          "action": "arrange",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "確認餐廳收貨時段"
+        },
+        {
+          "id": "BW-MW96R34D-8",
+          "action": "ship",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已出貨"
+        },
+        {
+          "id": "BW-MW96R34D-9",
+          "action": "deliver",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "酒商標記已送達"
+        },
+        {
+          "id": "BW-MW96R34D-10",
+          "action": "receive",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳確認收貨（暫存）"
+        },
+        {
+          "id": "BW-MW96R34D-11",
+          "action": "age",
+          "actor": "restaurant",
+          "at": "2026-11-09T11:36:21.901Z",
+          "summary": "餐廳核對下單本人並登錄驗齡結果"
+        },
+        {
+          "id": "BW-MW96R34D-12",
+          "action": "return",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.902Z",
+          "summary": "選定酒商確認取回酒品"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": "age-failed"
+    },
+    "prefill": true
+  },
+  "over-budget": {
+    "schemaVersion": 3,
+    "actor": "host",
+    "order": {
+      "id": "BW-MW96R347",
+      "request": {
+        "hostName": "展示主人",
+        "contactPhone": "0912345678",
+        "date": "2026-11-16T18:00",
+        "restaurantId": "restaurant-demo",
+        "guests": 12,
+        "cuisine": "法式料理・海陸分享餐",
+        "budget": 6500,
+        "preference": "紅白酒皆可"
+      },
+      "identity": {
+        "originVersion": 3,
+        "contact": "complete",
+        "lockedName": "展示主人",
+        "completedAt": "2026-11-09T11:36:21.894Z",
+        "checkRequired": false,
+        "checked": null,
+        "legacyProposals": []
+      },
+      "status": "comparison-ready",
+      "invited": true,
+      "proposals": [
+        {
+          "merchant": "merchant-b",
+          "items": [
+            {
+              "name": "波爾多風格紅酒",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1100
+            }
+          ],
+          "shipping": 0,
+          "restaurantFee": 300,
+          "reason": "成熟莓果與厚實酒體，搭配牛排與濃郁醬汁。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        },
+        {
+          "merchant": "merchant-a",
+          "items": [
+            {
+              "name": "勃根地風格黑皮諾",
+              "capacity": 750,
+              "quantity": 6,
+              "price": 1200
+            }
+          ],
+          "shipping": 200,
+          "restaurantFee": 300,
+          "reason": "細緻紅果香氣與柔和單寧，搭配禽肉及分享主菜。",
+          "delivery": "宴客當日 15:00–17:00 配送至餐廳",
+          "limits": "示範供貨 6 瓶；無其他限制",
+          "submitted": true
+        }
+      ],
+      "selected": null,
+      "serviceFee": {
+        "amount": 500,
+        "paid": true,
+        "refund": 0
+      },
+      "winePayment": null,
+      "arrangement": "",
+      "age": {
+        "result": "pending",
+        "reason": "",
+        "actor": null,
+        "at": null
+      },
+      "cancellationReason": "",
+      "returnedAt": null,
+      "returnCost": null,
+      "commission": null,
+      "events": [
+        {
+          "id": "BW-MW96R347-1",
+          "action": "create",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.894Z",
+          "summary": "已提交宴客需求與聯絡資料"
+        },
+        {
+          "id": "BW-MW96R347-2",
+          "action": "service-pay",
+          "actor": "host",
+          "at": "2026-11-09T11:36:21.895Z",
+          "summary": "模擬支付平台服務費 500 元"
+        },
+        {
+          "id": "BW-MW96R347-3",
+          "action": "invite",
+          "actor": "platform",
+          "at": "2026-11-09T11:36:21.895Z",
+          "summary": "人工邀請酒商甲、乙"
+        },
+        {
+          "id": "BW-MW96R347-4",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.895Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R347-5",
+          "action": "proposal-submit",
+          "actor": "merchant-b",
+          "at": "2026-11-09T11:36:21.896Z",
+          "summary": "送出有效提案"
+        },
+        {
+          "id": "BW-MW96R347-6",
+          "action": "proposal-submit",
+          "actor": "merchant-a",
+          "at": "2026-11-09T11:36:21.902Z",
+          "summary": "送出有效提案"
+        }
+      ],
+      "checkout": {
+        "mode": "none",
+        "signature": null,
+        "attempts": [],
+        "completedBy": null,
+        "completedAt": null,
+        "legacy": false,
+        "operations": []
+      },
+      "collection": null,
+      "returnReason": null
+    },
+    "prefill": true
+  }
+}

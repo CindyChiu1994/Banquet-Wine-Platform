@@ -1,0 +1,44 @@
+{
+  "id": "E2E-016",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:07:35.694Z",
+  "observations": [
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "revision invalidates old signature and failure eligibility",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "new signature alone cannot reuse old failed attempt",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "new failed revision collection uses4200 commission400",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-016-revised-collection.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:07:37.219Z"
+}

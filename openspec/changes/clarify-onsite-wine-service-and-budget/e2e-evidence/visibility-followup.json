@@ -1,0 +1,131 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "checks": [
+    {
+      "message": "unpaid 酒商甲 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "unpaid 酒商甲 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "unpaid 酒商乙 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "unpaid 酒商乙 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "unpaid 合作餐廳 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "unpaid 合作餐廳 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "owner/platform retain overview 宴客主人",
+      "pass": true
+    },
+    {
+      "message": "owner/platform retain overview 平台管理者",
+      "pass": true
+    },
+    {
+      "message": "paid-not-invited 酒商甲 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "paid-not-invited 酒商甲 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "paid-not-invited 酒商乙 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "paid-not-invited 酒商乙 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "paid-not-invited 合作餐廳 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "paid-not-invited 合作餐廳 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "invited merchant overview 酒商甲",
+      "pass": true
+    },
+    {
+      "message": "four labels without serial 酒商甲",
+      "pass": true
+    },
+    {
+      "message": "invited merchant overview 酒商乙",
+      "pass": true
+    },
+    {
+      "message": "four labels without serial 酒商乙",
+      "pass": true
+    },
+    {
+      "message": "invited-unselected 合作餐廳 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "invited-unselected 合作餐廳 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "multiple wine rows retain unnumbered labels",
+      "pass": true
+    },
+    {
+      "message": "second row saved/restored correctly",
+      "pass": true
+    },
+    {
+      "message": "multi-row proposal submit",
+      "pass": true
+    },
+    {
+      "message": "comparison-ready 合作餐廳 no service data or sidebar/timeline",
+      "pass": true
+    },
+    {
+      "message": "comparison-ready 合作餐廳 no hidden overview DOM",
+      "pass": true
+    },
+    {
+      "message": "selected restaurant can see service and arrange",
+      "pass": true
+    },
+    {
+      "message": "selected merchant retains service",
+      "pass": true
+    },
+    {
+      "message": "unchosen merchant remains excluded",
+      "pass": true
+    },
+    {
+      "message": "no page/console errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "shots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-unpaid-hidden.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-paid-uninvited-hidden.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-restaurant-wait-selection.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-proposal-labels.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/visibility-restaurant-selected.png"
+  ],
+  "at": "2026-11-09T13:21:55.606Z",
+  "status": "PASS"
+}

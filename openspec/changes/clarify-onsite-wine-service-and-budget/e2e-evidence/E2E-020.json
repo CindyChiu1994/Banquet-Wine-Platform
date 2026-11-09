@@ -1,0 +1,64 @@
+{
+  "id": "E2E-020",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:10:01.491Z",
+  "observations": [
+    {
+      "message": "three visible proposal warnings 1366",
+      "pass": true
+    },
+    {
+      "message": "proposal no horizontal overflow 1366",
+      "pass": true
+    },
+    {
+      "message": "onsite warning visible 1366",
+      "pass": true
+    },
+    {
+      "message": "checkout no horizontal overflow 1366",
+      "pass": true
+    },
+    {
+      "message": "three visible proposal warnings 390",
+      "pass": true
+    },
+    {
+      "message": "proposal no horizontal overflow 390",
+      "pass": true
+    },
+    {
+      "message": "onsite warning visible 390",
+      "pass": true
+    },
+    {
+      "message": "checkout no horizontal overflow 390",
+      "pass": true
+    },
+    {
+      "message": "native touch signature saved",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-020-proposal-1366.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-020-checkout-1366.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-020-proposal-390.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-020-checkout-390.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-020-touch-handoff.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:10:03.970Z"
+}

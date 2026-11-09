@@ -1,0 +1,307 @@
+{
+  "change": "clarify-onsite-wine-service-and-budget",
+  "schema": "spec-driven",
+  "date": "2026-11-09",
+  "source": "http://127.0.0.1:5173/",
+  "browser": "Playwright MCP Chrome",
+  "pass": 26,
+  "fail": 0,
+  "skipped": 0,
+  "total": 26,
+  "screenshots": 71,
+  "observations": 395,
+  "productRepairIterations": 2,
+  "unitTests": {
+    "files": 8,
+    "passed": 243
+  },
+  "build": "PASS",
+  "openspecStrict": "PASS",
+  "results": [
+    {
+      "id": "E2E-001",
+      "status": "PASS",
+      "observations": 5,
+      "screenshots": [
+        "E2E-001-request-paid.png"
+      ],
+      "finishedAt": "2026-11-09T12:04:16.121Z"
+    },
+    {
+      "id": "E2E-002",
+      "status": "PASS",
+      "observations": 8,
+      "screenshots": [
+        "E2E-002-over-limit-blocked.png",
+        "E2E-002-boundary-accepted.png"
+      ],
+      "finishedAt": "2026-11-09T12:05:34.093Z"
+    },
+    {
+      "id": "E2E-003",
+      "status": "PASS",
+      "observations": 9,
+      "screenshots": [
+        "E2E-003-draft-corrected.png"
+      ],
+      "finishedAt": "2026-11-09T12:05:40.124Z"
+    },
+    {
+      "id": "E2E-004",
+      "status": "PASS",
+      "observations": 11,
+      "screenshots": [
+        "E2E-004-commission-dialog-hidden.png",
+        "E2E-004-stored-before-age.png"
+      ],
+      "finishedAt": "2026-11-09T12:04:37.119Z"
+    },
+    {
+      "id": "E2E-005",
+      "status": "PASS",
+      "observations": 8,
+      "screenshots": [
+        "E2E-005-safe-public-text.png"
+      ],
+      "finishedAt": "2026-11-09T12:05:45.723Z"
+    },
+    {
+      "id": "E2E-006",
+      "status": "PASS",
+      "observations": 6,
+      "screenshots": [
+        "E2E-006-unchosen-b.png",
+        "E2E-006-unchosen-a.png"
+      ],
+      "finishedAt": "2026-11-09T12:04:48.189Z"
+    },
+    {
+      "id": "E2E-007",
+      "status": "PASS",
+      "observations": 5,
+      "screenshots": [
+        "E2E-007-restaurant-stock.png"
+      ],
+      "finishedAt": "2026-11-09T12:05:59.740Z"
+    },
+    {
+      "id": "E2E-008",
+      "status": "PASS",
+      "observations": 5,
+      "screenshots": [
+        "E2E-008-cancel-refund.png"
+      ],
+      "finishedAt": "2026-11-09T12:06:05.109Z"
+    },
+    {
+      "id": "E2E-009",
+      "status": "PASS",
+      "observations": 8,
+      "screenshots": [
+        "E2E-009-onsite-revealed.png"
+      ],
+      "finishedAt": "2026-11-09T12:06:10.259Z"
+    },
+    {
+      "id": "E2E-010",
+      "status": "PASS",
+      "observations": 11,
+      "screenshots": [
+        "E2E-010-identity-failed.png",
+        "E2E-010-age-failed.png"
+      ],
+      "finishedAt": "2026-11-09T12:06:36.727Z"
+    },
+    {
+      "id": "E2E-011",
+      "status": "PASS",
+      "observations": 13,
+      "screenshots": [
+        "E2E-011-host-completed.png",
+        "E2E-011-internal-full.png"
+      ],
+      "finishedAt": "2026-11-09T12:06:42.913Z"
+    },
+    {
+      "id": "E2E-012",
+      "status": "PASS",
+      "observations": 5,
+      "screenshots": [
+        "E2E-012-retry-success.png"
+      ],
+      "finishedAt": "2026-11-09T12:06:48.476Z"
+    },
+    {
+      "id": "E2E-013",
+      "status": "PASS",
+      "observations": 8,
+      "screenshots": [
+        "E2E-013-handoff.png",
+        "E2E-013-host-collection.png",
+        "E2E-013-received-full.png"
+      ],
+      "finishedAt": "2026-11-09T12:06:54.533Z"
+    },
+    {
+      "id": "E2E-014",
+      "status": "PASS",
+      "observations": 8,
+      "screenshots": [
+        "E2E-014-cancel-after-decline.png",
+        "E2E-014-cancel-before-sign.png"
+      ],
+      "finishedAt": "2026-11-09T12:07:24.661Z"
+    },
+    {
+      "id": "E2E-015",
+      "status": "PASS",
+      "observations": 7,
+      "screenshots": [
+        "E2E-015-staff-reduction.png",
+        "E2E-015-partial-completed.png"
+      ],
+      "finishedAt": "2026-11-09T12:07:30.815Z"
+    },
+    {
+      "id": "E2E-016",
+      "status": "PASS",
+      "observations": 7,
+      "screenshots": [
+        "E2E-016-revised-collection.png"
+      ],
+      "finishedAt": "2026-11-09T12:07:37.219Z"
+    },
+    {
+      "id": "E2E-017",
+      "status": "PASS",
+      "observations": 12,
+      "screenshots": [
+        "E2E-017-invalid-quantities.png",
+        "E2E-017-completed-locked.png"
+      ],
+      "finishedAt": "2026-11-09T12:07:43.550Z"
+    },
+    {
+      "id": "E2E-018",
+      "status": "PASS",
+      "observations": 10,
+      "screenshots": [
+        "E2E-018-unused-returned.png",
+        "E2E-018-age-return-no-cost.png",
+        "E2E-018-cancel-return-no-cost.png"
+      ],
+      "finishedAt": "2026-11-09T12:07:50.714Z"
+    },
+    {
+      "id": "E2E-019",
+      "status": "PASS",
+      "observations": 35,
+      "screenshots": [
+        "E2E-019-host-direct.png",
+        "E2E-019-host-collection.png",
+        "E2E-019-host-received.png",
+        "E2E-019-host-cancel.png",
+        "E2E-019-host-partial.png",
+        "E2E-019-reverse-merchant.png"
+      ],
+      "finishedAt": "2026-11-09T12:09:57.451Z"
+    },
+    {
+      "id": "E2E-020",
+      "status": "PASS",
+      "observations": 11,
+      "screenshots": [
+        "E2E-020-proposal-1366.png",
+        "E2E-020-checkout-1366.png",
+        "E2E-020-proposal-390.png",
+        "E2E-020-checkout-390.png",
+        "E2E-020-touch-handoff.png"
+      ],
+      "finishedAt": "2026-11-09T12:10:03.970Z"
+    },
+    {
+      "id": "E2E-021",
+      "status": "PASS",
+      "observations": 142,
+      "screenshots": [
+        "E2E-021-v2-signed.png",
+        "E2E-021-v2-collection.png",
+        "E2E-021-v2-collected.png",
+        "E2E-021-v2-online.png",
+        "E2E-021-v3-signed.png",
+        "E2E-021-v3-paid.png",
+        "E2E-021-v3-collection.png",
+        "E2E-021-v3-received.png",
+        "E2E-021-v3-return-null.png",
+        "E2E-021-v3-return-zero.png",
+        "E2E-021-v3-return-200.png",
+        "E2E-021-legacy-contact-checked.png",
+        "E2E-021-legacy-name-return.png",
+        "E2E-021-legacy-signed-paid.png",
+        "E2E-021-legacy-received.png"
+      ],
+      "finishedAt": "2026-11-09T12:12:16.014Z"
+    },
+    {
+      "id": "E2E-022",
+      "status": "PASS",
+      "observations": 8,
+      "screenshots": [
+        "E2E-022-old-budget.png",
+        "E2E-022-new-budget.png",
+        "E2E-022-decimal-corrected.png",
+        "E2E-022-old-selected.png"
+      ],
+      "finishedAt": "2026-11-09T12:12:50.806Z"
+    },
+    {
+      "id": "E2E-023",
+      "status": "PASS",
+      "observations": 13,
+      "screenshots": [
+        "E2E-023-blank.png",
+        "E2E-023-normal.png",
+        "E2E-023-cancel.png",
+        "E2E-023-age.png"
+      ],
+      "finishedAt": "2026-11-09T12:10:43.374Z"
+    },
+    {
+      "id": "E2E-024",
+      "status": "PASS",
+      "observations": 6,
+      "screenshots": [
+        "E2E-024-write-failure.png",
+        "E2E-024-corrupt-preserved.png",
+        "E2E-024-recovered.png"
+      ],
+      "finishedAt": "2026-11-09T12:10:49.200Z"
+    },
+    {
+      "id": "E2E-025",
+      "status": "PASS",
+      "observations": 25,
+      "screenshots": [
+        "E2E-025-input-regression.png"
+      ],
+      "finishedAt": "2026-11-09T12:11:04.415Z"
+    },
+    {
+      "id": "E2E-026",
+      "status": "PASS",
+      "observations": 9,
+      "screenshots": [
+        "E2E-026-unique-online.png",
+        "E2E-026-unique-collection.png",
+        "E2E-026-cancel-guard.png"
+      ],
+      "finishedAt": "2026-11-09T12:11:11.907Z"
+    }
+  ],
+  "pageConsoleErrors": 0,
+  "externalTraffic": {
+    "origin": "http://gc.kes.v2.scr.kaspersky-labs.com",
+    "classification": "本機Kaspersky注入，CDP initiator指向其main.js；產品無支付或外部API請求。",
+    "evidence": "network-diagnostic.json"
+  }
+}

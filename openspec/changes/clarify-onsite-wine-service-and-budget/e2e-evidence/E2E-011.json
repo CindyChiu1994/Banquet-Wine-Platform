@@ -1,0 +1,69 @@
+{
+  "id": "E2E-011",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:06:41.385Z",
+  "observations": [
+    {
+      "message": "blank signature blocked",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "cleared signature cannot pay",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "full purchase completes once with no unsold stock",
+      "pass": true
+    },
+    {
+      "message": "authorized role sees actual 600 commission",
+      "pass": true
+    },
+    {
+      "message": "no full purchase return region",
+      "pass": true
+    },
+    {
+      "message": "authorized role sees actual 600 commission",
+      "pass": true
+    },
+    {
+      "message": "no full purchase return region",
+      "pass": true
+    },
+    {
+      "message": "authorized role sees actual 600 commission",
+      "pass": true
+    },
+    {
+      "message": "no full purchase return region",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-011-host-completed.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-011-internal-full.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:06:42.913Z"
+}

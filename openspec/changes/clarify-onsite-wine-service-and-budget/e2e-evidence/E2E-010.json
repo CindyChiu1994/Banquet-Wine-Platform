@@ -1,0 +1,61 @@
+{
+  "id": "E2E-010",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:06:35.262Z",
+  "observations": [
+    {
+      "message": "missing failure reason blocked",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes proposal prices before gate",
+      "pass": true
+    },
+    {
+      "message": "failed identity/age returns stock without wine sale",
+      "pass": true
+    },
+    {
+      "message": "no active return cost UI or pending ledger",
+      "pass": true
+    },
+    {
+      "message": "missing failure reason blocked",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes proposal prices before gate",
+      "pass": true
+    },
+    {
+      "message": "failed identity/age returns stock without wine sale",
+      "pass": true
+    },
+    {
+      "message": "no active return cost UI or pending ledger",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-010-identity-failed.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-010-age-failed.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:06:36.727Z"
+}

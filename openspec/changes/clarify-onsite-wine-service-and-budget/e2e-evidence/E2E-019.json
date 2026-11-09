@@ -1,0 +1,161 @@
+{
+  "id": "E2E-019",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:09:47.032Z",
+  "observations": [
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "internal commission direct",
+      "pass": true
+    },
+    {
+      "message": "internal commission direct",
+      "pass": true
+    },
+    {
+      "message": "chosen merchant no PII/strokes direct",
+      "pass": true
+    },
+    {
+      "message": "internal commission direct",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "unchosen hidden direct",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "internal commission collection",
+      "pass": true
+    },
+    {
+      "message": "internal commission collection",
+      "pass": true
+    },
+    {
+      "message": "chosen merchant no PII/strokes collection",
+      "pass": true
+    },
+    {
+      "message": "internal commission collection",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "unchosen hidden collection",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "internal commission received",
+      "pass": true
+    },
+    {
+      "message": "internal commission received",
+      "pass": true
+    },
+    {
+      "message": "chosen merchant no PII/strokes received",
+      "pass": true
+    },
+    {
+      "message": "internal commission received",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "unchosen hidden received",
+      "pass": true
+    },
+    {
+      "message": "chosen merchant no PII/strokes cancel",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "unchosen hidden cancel",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "internal commission partial",
+      "pass": true
+    },
+    {
+      "message": "internal commission partial",
+      "pass": true
+    },
+    {
+      "message": "chosen merchant no PII/strokes partial",
+      "pass": true
+    },
+    {
+      "message": "internal commission partial",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "unchosen hidden partial",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "B chosen has no PII",
+      "pass": true
+    },
+    {
+      "message": "A unchosen after B completed",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-019-host-direct.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-019-host-collection.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-019-host-received.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-019-host-cancel.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-019-host-partial.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-019-reverse-merchant.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:09:57.451Z"
+}

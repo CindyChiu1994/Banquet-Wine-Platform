@@ -1,0 +1,373 @@
+[
+  {
+    "version": 1,
+    "name": "age",
+    "sha256": "b0a7fc5e4abfc27ef219c35576e961b24319a8aa8bfaffab38e5d10f6a836f78",
+    "status": "age-check-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "purchase",
+    "sha256": "cf228ee0ea144821ddaf2799d5f24507a9fbae28afad543370b59e5ef27867f7",
+    "status": "purchase-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "payment",
+    "sha256": "e4e4b9ba43df35818010e271ed7c36549db08597a11ea61538a2615515f00f57",
+    "status": "wine-payment-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "handover",
+    "sha256": "da34c5d9d307ee874e8245372513f0b5e5559f7c4ed59197a72c877a61ab36df",
+    "status": "handover-pending",
+    "winePayment": {
+      "payee": "merchant-a",
+      "amount": 6200,
+      "wineAmount": 6000,
+      "paid": true
+    },
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "receipt",
+    "sha256": "4eeaa75c9aac809d0d8beb4d24340c850d9b5cbf915874e39b76622bb6735406",
+    "status": "host-receipt-pending",
+    "winePayment": {
+      "payee": "merchant-a",
+      "amount": 6200,
+      "wineAmount": 6000,
+      "paid": true
+    },
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "completed",
+    "sha256": "3e9cde90231012ea83d2472ee861a693ece8b6488d82a3e8e223afe5a08d155c",
+    "status": "completed",
+    "winePayment": {
+      "payee": "merchant-a",
+      "amount": 6200,
+      "wineAmount": 6000,
+      "paid": true
+    },
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "return-pending",
+    "sha256": "b3b5d0e2440d779d66b0fc18c83990151f812dbe58830a6348e6b3f6ddcb5fbd",
+    "status": "return-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "returned",
+    "sha256": "c8e921969aba97cf79734f0451762b8d1b0a97550dc2faa49d100c50a75dfb3f",
+    "status": "returned",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "cancel-pending",
+    "sha256": "23996a7798abf3b1b65ea2b962446154477efe05a9083787222f9ce5a7f3c6f3",
+    "status": "cancel-refund-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 1,
+    "name": "cancelled",
+    "sha256": "a4f9adc25e476ad37308f3ae7897b0f3533cc566aeeafb1e16816d62433edb5f",
+    "status": "cancelled",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "age",
+    "sha256": "1832631cc4d23a378074221ce8b27d89e763a419770615c068abb42966f77cf5",
+    "status": "age-check-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "signature",
+    "sha256": "d22d011d4076ea2fa4132adbda3b9e1194396ebbdd9998a5117091465262cc80",
+    "status": "signature-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "signed",
+    "sha256": "70ef0620480f22eb9645021912d0914c1cc2c6bb1f53cde7946fc053647c82d3",
+    "status": "wine-payment-pending",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T05:22:08.986Z",
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "failed",
+    "sha256": "1f11693957a9a6c4fd2a47f40e2ad17e5bb933b7d16ca5198e9eb79eb571456a",
+    "status": "wine-payment-pending",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T05:22:08.986Z",
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "collection",
+    "sha256": "5c25d9c9cd5f9203b08d6e69c25e36d49961e5367621b198a524b125296ef26a",
+    "status": "completed",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T05:22:08.986Z",
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "collected",
+    "sha256": "b32bfe7d9dfbbbab295bc83eb399eb1e68da3c6053b3b9885b86e92aedaccdcf",
+    "status": "completed",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T05:22:08.986Z",
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "online",
+    "sha256": "854bba02c881ed8ec50ce76856b8ae6868c67ed57a42f68f0428965bce45a417",
+    "status": "completed",
+    "winePayment": {
+      "payee": "merchant-a",
+      "amount": 6200,
+      "wineAmount": 6000,
+      "paid": true
+    },
+    "signatureAt": "2026-11-09T05:22:09.703Z",
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "cancel-pending",
+    "sha256": "3f258af6a6e60582b23ad8aa5fc6741acb3ab048f09eb1aa4cffe15ffe100b8f",
+    "status": "cancel-refund-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "cancelled",
+    "sha256": "a03bf5c58b0ffa63e6cee1dc667d36883e5a19532e0c9e5e69652b7be9d99019",
+    "status": "cancelled",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "return-pending",
+    "sha256": "3ebaefdf9f1eddf49b6e4deff986b8f1a8b63a28956dcc6fbbb8fa0e21b51889",
+    "status": "return-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "returned",
+    "sha256": "fa9860c80cde27d16da6602f4b326dbb20bd5d2cea6e264a869a8e6953c0c0b2",
+    "status": "returned",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "decimal-draft",
+    "sha256": "0f634c0dc32d40e24f4a2ed4320bb0ebdfff48ad838acc3aae9ea7d2464db10b",
+    "status": "proposals-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "decimal-submitted",
+    "sha256": "b05c23d809b89ea949af9112569106f2d26d57dce43039bc127463ecd698bc85",
+    "status": "comparison-ready",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "decimal-selected",
+    "sha256": "efd25dd576d82208c0c5b645b24f96bc3381ca86b3b389332a78d5908fc64aa3",
+    "status": "restaurant-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "decimal-age",
+    "sha256": "66fb54d0f5f5247e5bb68a5b06b4146ce44832658d4402f1b4877d63e84e464c",
+    "status": "age-check-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 2,
+    "name": "blank-draft",
+    "sha256": "761fbe9b272324a5b3234dba476cc7a8d8ff6081277e5d4984f831ff4715e1a7",
+    "status": "proposals-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "comparison",
+    "sha256": "366bd3ea52585ad633b100cc81664c64ac92ee59f91f9a99922fef1c3eda7d1c",
+    "status": "comparison-ready",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "selected",
+    "sha256": "cc4c520d02437e18ce297cc313a0b18f273ae9fda67960d794e7e6b062ebb601",
+    "status": "restaurant-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "age",
+    "sha256": "dd2115a990eb3bb15411efd2ce62b12907a06af3d7e0f695c8da48bf8e263736",
+    "status": "age-check-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "passed",
+    "sha256": "8a1894d14169a8db09524c65bd564ab5fe9d6b2716f4657a98da7696127e5c04",
+    "status": "signature-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "signed",
+    "sha256": "f77b525adfaf58654cd57e836667275f32db6564679b233903641593a9fa1ffd",
+    "status": "wine-payment-pending",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T11:36:21.898Z",
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "paid",
+    "sha256": "ca4dd495013de01b91bdf6888935ad0a6dd46c6d8a2a2226971cbdaaf746c35e",
+    "status": "completed",
+    "winePayment": {
+      "payee": "merchant-a",
+      "amount": 6200,
+      "wineAmount": 6000,
+      "paid": true
+    },
+    "signatureAt": "2026-11-09T11:36:21.898Z",
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "failed",
+    "sha256": "79c3138cf1d36cc914dd6f9a90ea1ebce6f09cd429cd60b429fcfcae9cf51247",
+    "status": "wine-payment-pending",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T11:36:21.898Z",
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "collection",
+    "sha256": "1fc7e2e60ea304ee96fbf77c403dd4265a12859277be8d2eaf91d47ce9d40da3",
+    "status": "completed",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T11:36:21.898Z",
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "received",
+    "sha256": "bd6fc10460135df3793c86b025569fe7462d7d9d230b1ad4a0e86e93ffa007b9",
+    "status": "completed",
+    "winePayment": null,
+    "signatureAt": "2026-11-09T11:36:21.898Z",
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "cancel-pending",
+    "sha256": "1b7af2cdf37e96838f6ed1cb3e2eaa2f781916fec845a9e1b3c1680ae5a0ba69",
+    "status": "cancel-refund-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "cancelled",
+    "sha256": "5f830d3e44b6b05a80d09d3d84fa173c1483c8ca6a00989e00beb23deaeb4e48",
+    "status": "cancelled",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "return-null",
+    "sha256": "e6114177fd438c02b572450b12174ce8420c65ef5fe7d45f9b6b6fdb8e3cc856",
+    "status": "return-pending",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "return-zero",
+    "sha256": "bc1f3cff0cc519070b57c002653fc7b1a361008aace7bbbf34c6f693275c6415",
+    "status": "return-pending",
+    "winePayment": null,
+    "returnCost": 0
+  },
+  {
+    "version": 3,
+    "name": "return-200",
+    "sha256": "d6f436eeba3acb6ca0b9505718a573b3403cf769969657517c143c053f3e5327",
+    "status": "return-pending",
+    "winePayment": null,
+    "returnCost": 200
+  },
+  {
+    "version": 3,
+    "name": "returned",
+    "sha256": "c7d1bdc65bca1d8d4990155cec85ce3ed7656e99bf41bf70f7f31dd3a2cd027c",
+    "status": "returned",
+    "winePayment": null,
+    "returnCost": null
+  },
+  {
+    "version": 3,
+    "name": "over-budget",
+    "sha256": "a352121f11fe6d672e703eeff13f33921bbe308de5567cdf5af632cfba3bb97e",
+    "status": "comparison-ready",
+    "winePayment": null,
+    "returnCost": null
+  }
+]

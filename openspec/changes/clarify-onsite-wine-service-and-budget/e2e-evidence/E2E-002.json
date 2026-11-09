@@ -1,0 +1,49 @@
+{
+  "id": "E2E-002",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:05:33.015Z",
+  "observations": [
+    {
+      "message": "retired restaurant fee field absent",
+      "pass": true
+    },
+    {
+      "message": "live cap 6825",
+      "pass": true
+    },
+    {
+      "message": "live 1 dollar excess",
+      "pass": true
+    },
+    {
+      "message": "over-limit submit not persisted",
+      "pass": true
+    },
+    {
+      "message": "boundary accepted",
+      "pass": true
+    },
+    {
+      "message": "merchant edits own proposal",
+      "pass": true
+    },
+    {
+      "message": "two valid submissions required",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-002-over-limit-blocked.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-002-boundary-accepted.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:05:34.093Z"
+}

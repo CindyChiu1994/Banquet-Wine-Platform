@@ -1,0 +1,36 @@
+{
+  "id": "E2E-001",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:04:15.112Z",
+  "observations": [
+    {
+      "message": "budget/service disclosure before request",
+      "pass": true
+    },
+    {
+      "message": "cannot invite before service fee",
+      "pass": true
+    },
+    {
+      "message": "identity locked, multiline retained and service fee before invitation",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-001-request-paid.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:04:16.121Z"
+}

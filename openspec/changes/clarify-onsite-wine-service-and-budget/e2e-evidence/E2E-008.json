@@ -1,0 +1,36 @@
+{
+  "id": "E2E-008",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:06:04.287Z",
+  "observations": [
+    {
+      "message": "cancelled service cannot sign or pay",
+      "pass": true
+    },
+    {
+      "message": "full service refund no wine/account/commission",
+      "pass": true
+    },
+    {
+      "message": "refund action retired after done",
+      "pass": true
+    },
+    {
+      "message": "no active return cost UI or pending ledger",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-008-cancel-refund.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:06:05.109Z"
+}

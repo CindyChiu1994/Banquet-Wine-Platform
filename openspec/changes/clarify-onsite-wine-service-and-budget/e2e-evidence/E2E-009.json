@@ -1,0 +1,48 @@
+{
+  "id": "E2E-009",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:06:09.677Z",
+  "observations": [
+    {
+      "message": "onsite heading seller and restaurant disclosure",
+      "pass": true
+    },
+    {
+      "message": "complete receipt revealed before signature",
+      "pass": true
+    },
+    {
+      "message": "unsigned cannot pay",
+      "pass": true
+    },
+    {
+      "message": "fixed readonly name",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "host DOM excludes internal amounts and retired fee",
+      "pass": true
+    },
+    {
+      "message": "resume remains unpaid",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-009-onsite-revealed.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:06:10.259Z"
+}

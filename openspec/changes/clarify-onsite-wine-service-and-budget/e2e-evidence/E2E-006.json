@@ -1,0 +1,41 @@
+{
+  "id": "E2E-006",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:04:46.391Z",
+  "observations": [
+    {
+      "message": "one proposal cannot select",
+      "pass": true
+    },
+    {
+      "message": "commission is not a wine purchase",
+      "pass": true
+    },
+    {
+      "message": "selection has no payment or commission",
+      "pass": true
+    },
+    {
+      "message": "B hidden after A selected",
+      "pass": true
+    },
+    {
+      "message": "A hidden after B selected",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-006-unchosen-b.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-006-unchosen-a.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:04:48.189Z"
+}

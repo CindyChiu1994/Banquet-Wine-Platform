@@ -1,0 +1,54 @@
+{
+  "id": "E2E-026",
+  "url": "http://127.0.0.1:5173/",
+  "startedAt": "2026-11-09T12:11:09.427Z",
+  "observations": [
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "double pay only one completion/commission",
+      "pass": true
+    },
+    {
+      "message": "done locks editing/payment",
+      "pass": true
+    },
+    {
+      "message": "signature saved",
+      "pass": true
+    },
+    {
+      "message": "no edit during collection review",
+      "pass": true
+    },
+    {
+      "message": "collection accept/receive unique no full return",
+      "pass": true
+    },
+    {
+      "message": "cancel cannot restore checkout or age",
+      "pass": true
+    },
+    {
+      "message": "no active return cost UI or pending ledger",
+      "pass": true
+    },
+    {
+      "message": "no page/console error",
+      "pass": true
+    }
+  ],
+  "screenshots": [
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-026-unique-online.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-026-unique-collection.png",
+    "C:/Users/uuukkjghkjhkjhkjhouh/AI PM Course/product-temp/openspec/changes/clarify-onsite-wine-service-and-budget/e2e-evidence/E2E-026-cancel-guard.png"
+  ],
+  "errors": [],
+  "network": [
+    "http://gc.kes.v2.scr.kaspersky-labs.com"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-11-09T12:11:11.907Z"
+}

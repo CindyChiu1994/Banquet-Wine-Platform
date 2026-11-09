@@ -1,0 +1,428 @@
+[
+  {
+    "file": "E2E-001-request-paid.png",
+    "bytes": 130980,
+    "width": 1366,
+    "height": 1470
+  },
+  {
+    "file": "E2E-002-over-limit-blocked.png",
+    "bytes": 146407,
+    "width": 1366,
+    "height": 1804
+  },
+  {
+    "file": "E2E-002-boundary-accepted.png",
+    "bytes": 150301,
+    "width": 1366,
+    "height": 1922
+  },
+  {
+    "file": "E2E-003-draft-corrected.png",
+    "bytes": 152294,
+    "width": 1366,
+    "height": 1988
+  },
+  {
+    "file": "E2E-004-commission-dialog-hidden.png",
+    "bytes": 241353,
+    "width": 1366,
+    "height": 1804
+  },
+  {
+    "file": "E2E-004-stored-before-age.png",
+    "bytes": 151736,
+    "width": 1366,
+    "height": 1787
+  },
+  {
+    "file": "E2E-005-safe-public-text.png",
+    "bytes": 148783,
+    "width": 1366,
+    "height": 1742
+  },
+  {
+    "file": "E2E-006-unchosen-b.png",
+    "bytes": 52798,
+    "width": 1366,
+    "height": 768
+  },
+  {
+    "file": "E2E-006-unchosen-a.png",
+    "bytes": 52781,
+    "width": 1366,
+    "height": 768
+  },
+  {
+    "file": "E2E-007-restaurant-stock.png",
+    "bytes": 170363,
+    "width": 1366,
+    "height": 1958
+  },
+  {
+    "file": "E2E-008-cancel-refund.png",
+    "bytes": 171224,
+    "width": 1366,
+    "height": 1900
+  },
+  {
+    "file": "E2E-009-onsite-revealed.png",
+    "bytes": 88919,
+    "width": 1366,
+    "height": 1630
+  },
+  {
+    "file": "E2E-010-identity-failed.png",
+    "bytes": 176211,
+    "width": 1366,
+    "height": 1950
+  },
+  {
+    "file": "E2E-010-age-failed.png",
+    "bytes": 176324,
+    "width": 1366,
+    "height": 1950
+  },
+  {
+    "file": "E2E-011-host-completed.png",
+    "bytes": 56321,
+    "width": 1366,
+    "height": 974
+  },
+  {
+    "file": "E2E-011-internal-full.png",
+    "bytes": 187769,
+    "width": 1366,
+    "height": 2316
+  },
+  {
+    "file": "E2E-012-retry-success.png",
+    "bytes": 54897,
+    "width": 1366,
+    "height": 940
+  },
+  {
+    "file": "E2E-013-handoff.png",
+    "bytes": 62529,
+    "width": 1366,
+    "height": 988
+  },
+  {
+    "file": "E2E-013-host-collection.png",
+    "bytes": 57863,
+    "width": 1366,
+    "height": 974
+  },
+  {
+    "file": "E2E-013-received-full.png",
+    "bytes": 191817,
+    "width": 1366,
+    "height": 2039
+  },
+  {
+    "file": "E2E-014-cancel-after-decline.png",
+    "bytes": 187633,
+    "width": 1366,
+    "height": 2316
+  },
+  {
+    "file": "E2E-014-cancel-before-sign.png",
+    "bytes": 170698,
+    "width": 1366,
+    "height": 2041
+  },
+  {
+    "file": "E2E-015-staff-reduction.png",
+    "bytes": 47386,
+    "width": 1366,
+    "height": 905
+  },
+  {
+    "file": "E2E-015-partial-completed.png",
+    "bytes": 191206,
+    "width": 1366,
+    "height": 2089
+  },
+  {
+    "file": "E2E-016-revised-collection.png",
+    "bytes": 206602,
+    "width": 1366,
+    "height": 2316
+  },
+  {
+    "file": "E2E-017-invalid-quantities.png",
+    "bytes": 46447,
+    "width": 1366,
+    "height": 920
+  },
+  {
+    "file": "E2E-017-completed-locked.png",
+    "bytes": 188163,
+    "width": 1366,
+    "height": 2496
+  },
+  {
+    "file": "E2E-018-unused-returned.png",
+    "bytes": 189618,
+    "width": 1366,
+    "height": 2089
+  },
+  {
+    "file": "E2E-018-age-return-no-cost.png",
+    "bytes": 165885,
+    "width": 1366,
+    "height": 1917
+  },
+  {
+    "file": "E2E-018-cancel-return-no-cost.png",
+    "bytes": 164697,
+    "width": 1366,
+    "height": 1917
+  },
+  {
+    "file": "E2E-019-host-direct.png",
+    "bytes": 188106,
+    "width": 1366,
+    "height": 2496
+  },
+  {
+    "file": "E2E-019-host-collection.png",
+    "bytes": 189120,
+    "width": 1366,
+    "height": 2496
+  },
+  {
+    "file": "E2E-019-host-received.png",
+    "bytes": 189667,
+    "width": 1366,
+    "height": 2496
+  },
+  {
+    "file": "E2E-019-host-cancel.png",
+    "bytes": 176795,
+    "width": 1366,
+    "height": 2130
+  },
+  {
+    "file": "E2E-019-host-partial.png",
+    "bytes": 189100,
+    "width": 1366,
+    "height": 2496
+  },
+  {
+    "file": "E2E-019-reverse-merchant.png",
+    "bytes": 55257,
+    "width": 1366,
+    "height": 768
+  },
+  {
+    "file": "E2E-020-proposal-1366.png",
+    "bytes": 165627,
+    "width": 1366,
+    "height": 1804
+  },
+  {
+    "file": "E2E-020-checkout-1366.png",
+    "bytes": 89041,
+    "width": 1366,
+    "height": 1630
+  },
+  {
+    "file": "E2E-020-proposal-390.png",
+    "bytes": 137754,
+    "width": 390,
+    "height": 2822
+  },
+  {
+    "file": "E2E-020-checkout-390.png",
+    "bytes": 82066,
+    "width": 390,
+    "height": 2246
+  },
+  {
+    "file": "E2E-020-touch-handoff.png",
+    "bytes": 56385,
+    "width": 390,
+    "height": 1039
+  },
+  {
+    "file": "E2E-021-v2-signed.png",
+    "bytes": 82963,
+    "width": 1366,
+    "height": 1485
+  },
+  {
+    "file": "E2E-021-v2-collection.png",
+    "bytes": 56617,
+    "width": 1366,
+    "height": 940
+  },
+  {
+    "file": "E2E-021-v2-collected.png",
+    "bytes": 189986,
+    "width": 1366,
+    "height": 2039
+  },
+  {
+    "file": "E2E-021-v2-online.png",
+    "bytes": 55216,
+    "width": 1366,
+    "height": 940
+  },
+  {
+    "file": "E2E-021-v3-signed.png",
+    "bytes": 82370,
+    "width": 1366,
+    "height": 1485
+  },
+  {
+    "file": "E2E-021-v3-paid.png",
+    "bytes": 54951,
+    "width": 1366,
+    "height": 940
+  },
+  {
+    "file": "E2E-021-v3-collection.png",
+    "bytes": 56464,
+    "width": 1366,
+    "height": 940
+  },
+  {
+    "file": "E2E-021-v3-received.png",
+    "bytes": 56464,
+    "width": 1366,
+    "height": 940
+  },
+  {
+    "file": "E2E-021-v3-return-null.png",
+    "bytes": 163707,
+    "width": 1366,
+    "height": 1900
+  },
+  {
+    "file": "E2E-021-v3-return-zero.png",
+    "bytes": 163707,
+    "width": 1366,
+    "height": 1900
+  },
+  {
+    "file": "E2E-021-v3-return-200.png",
+    "bytes": 163707,
+    "width": 1366,
+    "height": 1900
+  },
+  {
+    "file": "E2E-021-legacy-contact-checked.png",
+    "bytes": 85108,
+    "width": 1366,
+    "height": 1519
+  },
+  {
+    "file": "E2E-021-legacy-name-return.png",
+    "bytes": 163654,
+    "width": 1366,
+    "height": 1917
+  },
+  {
+    "file": "E2E-021-legacy-signed-paid.png",
+    "bytes": 56455,
+    "width": 1366,
+    "height": 974
+  },
+  {
+    "file": "E2E-021-legacy-received.png",
+    "bytes": 190434,
+    "width": 1366,
+    "height": 2039
+  },
+  {
+    "file": "E2E-022-old-budget.png",
+    "bytes": 168534,
+    "width": 1366,
+    "height": 1849
+  },
+  {
+    "file": "E2E-022-new-budget.png",
+    "bytes": 168731,
+    "width": 1366,
+    "height": 1852
+  },
+  {
+    "file": "E2E-022-decimal-corrected.png",
+    "bytes": 150865,
+    "width": 1366,
+    "height": 1920
+  },
+  {
+    "file": "E2E-022-old-selected.png",
+    "bytes": 160195,
+    "width": 1366,
+    "height": 1944
+  },
+  {
+    "file": "E2E-023-blank.png",
+    "bytes": 116461,
+    "width": 1366,
+    "height": 1197
+  },
+  {
+    "file": "E2E-023-normal.png",
+    "bytes": 117963,
+    "width": 1366,
+    "height": 1197
+  },
+  {
+    "file": "E2E-023-cancel.png",
+    "bytes": 164160,
+    "width": 1366,
+    "height": 1942
+  },
+  {
+    "file": "E2E-023-age.png",
+    "bytes": 170630,
+    "width": 1366,
+    "height": 1958
+  },
+  {
+    "file": "E2E-024-write-failure.png",
+    "bytes": 143823,
+    "width": 1366,
+    "height": 1530
+  },
+  {
+    "file": "E2E-024-corrupt-preserved.png",
+    "bytes": 122780,
+    "width": 1366,
+    "height": 1265
+  },
+  {
+    "file": "E2E-024-recovered.png",
+    "bytes": 119676,
+    "width": 1366,
+    "height": 1247
+  },
+  {
+    "file": "E2E-025-input-regression.png",
+    "bytes": 149389,
+    "width": 1366,
+    "height": 1691
+  },
+  {
+    "file": "E2E-026-unique-online.png",
+    "bytes": 187716,
+    "width": 1366,
+    "height": 2316
+  },
+  {
+    "file": "E2E-026-unique-collection.png",
+    "bytes": 190300,
+    "width": 1366,
+    "height": 2039
+  },
+  {
+    "file": "E2E-026-cancel-guard.png",
+    "bytes": 175959,
+    "width": 1366,
+    "height": 2130
+  }
+]
