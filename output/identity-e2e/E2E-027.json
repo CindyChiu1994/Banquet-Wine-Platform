@@ -1,0 +1,47 @@
+{
+  "id": "E2E-027",
+  "status": "PASS",
+  "screenshots": [
+    "e2e-evidence/E2E-027-cross-midnight.png",
+    "e2e-evidence/E2E-027-timezone.png"
+  ],
+  "observations": [
+    "欄位錯誤 2026-11-11",
+    "過早不建立 2026-11-08T18:00",
+    "欄位錯誤 2026-11-11",
+    "過早不建立 2026-11-10T23:59",
+    "午夜下限合法",
+    "欄位錯誤 2026-11-12",
+    "最後確認跨日重新驗證",
+    "跨月跨年門檻 2026-12-02",
+    "跨月跨年門檻 2027-01-02",
+    "裝置時區不改台北門檻 America/Los_Angeles",
+    "裝置時區不改台北門檻 Asia/Taipei",
+    "無未解決 browser error",
+    "本機防護注入 3 筆，CDP 來源稽核另存 network-audit.json",
+    "無產品外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [
+    "http://127.0.0.1:5173/",
+    "http://127.0.0.1:5173/@vite/client",
+    "http://127.0.0.1:5173/src/main.tsx",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react.js",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js",
+    "http://127.0.0.1:5173/src/app/App.tsx",
+    "http://127.0.0.1:5173/src/style.css",
+    "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-SU6MV2YM.js",
+    "http://127.0.0.1:5173/src/domain/model.ts",
+    "http://127.0.0.1:5173/src/app/Checkout.tsx",
+    "http://127.0.0.1:5173/src/app/SignaturePad.tsx",
+    "http://127.0.0.1:5173/src/demo/scenarios.ts",
+    "http://127.0.0.1:5173/src/persistence/storage.ts",
+    "http://127.0.0.1:5173/src/domain/banquet-date.ts",
+    "http://127.0.0.1:5173/src/persistence/legacy.ts",
+    "http://127.0.0.1:5173/src/persistence/v2-model.ts",
+    "http://127.0.0.1:5173/src/persistence/v1-legacy.ts",
+    "http://127.0.0.1:5173/src/persistence/v2-storage.ts"
+  ]
+}

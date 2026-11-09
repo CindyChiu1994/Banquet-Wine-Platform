@@ -1,9 +1,10 @@
 import {useState} from 'react';
-import {actorNames,signatureValid,statusNames,wineTotal,type Command,type Order,type Strokes} from '../domain/model';
+import {actorNames,fixedName,signatureValid,statusNames,wineTotal,type Command,type Order,type Strokes} from '../domain/model';
 import {SignaturePad,SignaturePreview} from './SignaturePad';
 const money=(n:number)=>'NT$ '+n.toLocaleString('zh-TW');
 export function Checkout({order:o,run,workspace,error,notice}:{order:Order;run:(c:Command)=>void;workspace:()=>void;error:string;notice:string}){
- const [name,setName]=useState(o.checkout.signature?.name??''),[strokes,setStrokes]=useState<Strokes>(o.checkout.signature?.strokes??[]),[outcome,setOutcome]=useState<'success'|'failed'>('success'),[cancel,setCancel]=useState(false);
+ const name=fixedName(o);
+ const [strokes,setStrokes]=useState<Strokes>(o.checkout.signature?.strokes??[]),[outcome,setOutcome]=useState<'success'|'failed'>('success'),[cancel,setCancel]=useState(false);
  const p=o.selected!,valid=signatureValid(o),mode=o.checkout.mode,done=o.status==='completed';
  const failed=o.checkout.attempts.some(a=>a.outcome==='failed');
  const clear=()=>{setStrokes([]);run({type:'signature-clear'});};
@@ -20,7 +21,7 @@ export function Checkout({order:o,run,workspace,error,notice}:{order:Order;run:(
   :mode==='staff'?<section className="card"><h2>餐廳代收確認</h2><p className="policy">合作餐廳應付 {actorNames[p.merchant]}：{money(wineTotal(p)+p.shipping)}。即使主人稍後尚未結帳，仍由本餐廳負責向酒商付款。餐廳分潤另計，不抵銷此款項。</p><div className="checkout-actions"><button className="primary" onClick={()=>run({type:'collection-accept'})}>確認由本餐廳代收</button><button className="secondary" onClick={()=>run({type:'collection-decline'})}>不承接代收</button></div></section>
   :<><section className="card"><h2>本人簽收</h2><p>我已當面核對上述酒款、數量及金額，並同意於付款成功或餐廳確認承接代收後接收這批酒。簽名本身不代表已付款或服務完成。</p>
    {valid?<><p>已保存簽名：{o.checkout.signature!.name} · {new Date(o.checkout.signature!.at).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'})}</p><SignaturePreview strokes={o.checkout.signature!.strokes}/><button className="secondary" onClick={clear}>清除簽名並重簽</button></>:<>
-    <label className="field"><span>下單人姓名</span><input maxLength={100} value={name} onChange={e=>setName(e.target.value)}/></label><p className="subtle">請以手指或滑鼠在下方手寫簽名，再保存。</p><SignaturePad value={strokes} onChange={setStrokes}/><div className="checkout-actions"><button className="secondary" onClick={clear}>清除簽名</button><button className="primary" onClick={()=>run({type:'signature-save',name,strokes})}>保存簽名</button></div>
+    <label className="field"><span>下單人姓名</span><input readOnly aria-readonly="true" value={name}/></label><p className="subtle">請以手指或滑鼠在下方手寫簽名，再保存。</p><SignaturePad value={strokes} onChange={setStrokes}/><div className="checkout-actions"><button className="secondary" onClick={clear}>清除簽名</button><button className="primary" onClick={()=>run({type:'signature-save',name,strokes})}>保存簽名</button></div>
    </>}
   </section><section className="card"><h2>支付酒款與配送費</h2>{failed&&<p role="status" className="error">模擬付款失敗，仍待付款。有效簽名已保留，可重試付款、請餐廳協助代收或取消購買。服務尚未完成，不可開酒。</p>}
    <label className="field"><span>模擬付款結果</span><select value={outcome} onChange={e=>setOutcome(e.target.value as 'success'|'failed')}><option value="success">成功</option><option value="failed">失敗</option></select></label><div className="checkout-actions"><button className="primary" disabled={!valid} onClick={()=>run({type:'wine-pay',outcome})}>{failed?'重試模擬支付酒款':'模擬支付酒款'}</button>{failed&&<button className="secondary" disabled={!valid} onClick={()=>run({type:'request-collection'})}>請餐廳協助代收</button>}</div>

@@ -99,3 +99,11 @@ describe('保存與情境工廠',()=>{
  it('讀寫失敗明確回報；不影響其他 key',()=>{const broken:StoragePort={getItem:()=>{throw new Error('denied');},setItem:()=>{throw new Error('quota');}};expect(load(broken).error).toBeTruthy();expect(()=>save(broken,initial())).toThrow();const s=store();s.data.set('other-application','retained');save(s,scenario('age'));save(s,scenario('normal'));expect(s.data.get('other-application')).toBe('retained');expect(load(s).state.order).toBeNull();});
  it('快照不會隨原提案價格改變；沒有敏感證件資料',()=>{const s=scenario('age');s.order!.proposals[0].items[0].price=99;expect(s.order?.selected?.items[0].price).toBe(1000);expect(JSON.stringify(s)).not.toMatch(/cardNumber|birthday|identityNumber|passport/);});
 });
+
+describe('必填聯絡資料與整數提交',()=>{
+ it.each(['0912-345-678','0912 345 678','02 2345-6789 分機 123','02-2345-6789 #123','02-2345-6789 ext123'])('電話格式接受 %s',contactPhone=>{const s=transition(initial(),'host',{type:'create',request:{...sampleRequest(),hostName:' 主 人 ',contactPhone}});expect(s.order?.request.hostName).toBe('主 人');expect(s.order?.request.contactPhone?.startsWith('0')).toBe(true);expect(validState(s)).toBe(true);});
+ it.each(['','abc','123','分機 123','091234567','02 abc45678','0912345678 #123'])('拒絕無效電話 %s',contactPhone=>expect(()=>validateRequest({...sampleRequest(),contactPhone})).toThrow('電話'));
+ it.each(['','  ','甲'.repeat(101)])('拒絕姓名邊界 %s',hostName=>expect(()=>validateRequest({...sampleRequest(),hostName})).toThrow('姓名'));
+ it.each(['capacity','quantity','price'] as const)('逐欄拒絕非法 %s',key=>{for(const value of [0,-1,1.5,NaN,Infinity,Number.MAX_SAFE_INTEGER+1]){const p=sampleProposal('merchant-a');p.items[0][key]=value;expect(()=>validateProposal(p)).toThrow();}});
+ it('運費非負安全整數、固定費與溢位',()=>{for(const shipping of [NaN,-1,0.5,Infinity,Number.MAX_SAFE_INTEGER+1])expect(()=>validateProposal({...sampleProposal('merchant-a'),shipping})).toThrow();expect(()=>validateProposal({...sampleProposal('merchant-a'),restaurantFee:0})).toThrow();const p=sampleProposal('merchant-a');p.items[0].price=Number.MAX_SAFE_INTEGER;expect(()=>validateProposal(p)).toThrow('範圍');});
+});

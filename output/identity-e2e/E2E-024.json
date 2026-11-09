@@ -1,0 +1,49 @@
+{
+  "id": "E2E-024",
+  "status": "PASS",
+  "screenshots": [
+    "e2e-evidence/E2E-024-failure-create.png",
+    "e2e-evidence/E2E-024-retry-create.png",
+    "e2e-evidence/E2E-024-failure-contact.png",
+    "e2e-evidence/E2E-024-retry-contact.png",
+    "e2e-evidence/E2E-024-failure-check.png",
+    "e2e-evidence/E2E-024-retry-check.png"
+  ],
+  "observations": [
+    "欄位錯誤 保存失敗",
+    "失敗未覆寫 create",
+    "明確重試成功 create",
+    "欄位錯誤 保存失敗",
+    "失敗未覆寫 contact",
+    "明確重試成功 contact",
+    "欄位錯誤 保存失敗",
+    "失敗未覆寫 check",
+    "明確重試成功 check",
+    "無未解決 browser error",
+    "本機防護注入 9 筆，CDP 來源稽核另存 network-audit.json",
+    "無產品外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [
+    "http://127.0.0.1:5173/",
+    "http://127.0.0.1:5173/@vite/client",
+    "http://127.0.0.1:5173/src/main.tsx",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react.js",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js",
+    "http://127.0.0.1:5173/src/app/App.tsx",
+    "http://127.0.0.1:5173/src/style.css",
+    "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-SU6MV2YM.js",
+    "http://127.0.0.1:5173/src/domain/model.ts",
+    "http://127.0.0.1:5173/src/app/Checkout.tsx",
+    "http://127.0.0.1:5173/src/app/SignaturePad.tsx",
+    "http://127.0.0.1:5173/src/demo/scenarios.ts",
+    "http://127.0.0.1:5173/src/persistence/storage.ts",
+    "http://127.0.0.1:5173/src/domain/banquet-date.ts",
+    "http://127.0.0.1:5173/src/persistence/legacy.ts",
+    "http://127.0.0.1:5173/src/persistence/v2-model.ts",
+    "http://127.0.0.1:5173/src/persistence/v1-legacy.ts",
+    "http://127.0.0.1:5173/src/persistence/v2-storage.ts"
+  ]
+}

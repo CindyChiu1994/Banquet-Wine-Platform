@@ -1,0 +1,47 @@
+{
+  "id": "E2E-025",
+  "status": "PASS",
+  "screenshots": [
+    "e2e-evidence/E2E-025-從空白需求開始.png",
+    "e2e-evidence/E2E-025-重設正常起點.png",
+    "e2e-evidence/E2E-025-載入餐廳取消前.png",
+    "e2e-evidence/E2E-025-載入餐廳驗齡前.png"
+  ],
+  "observations": [
+    "返回不取代 從空白需求開始",
+    "空白無預填",
+    "返回不取代 重設正常起點",
+    "正常模擬預填",
+    "正常預填可修改",
+    "返回不取代 載入餐廳取消前",
+    "新入口不用舊例外 載入餐廳取消前",
+    "返回不取代 載入餐廳驗齡前",
+    "新入口不用舊例外 載入餐廳驗齡前",
+    "無未解決 browser error",
+    "本機防護注入 15 筆，CDP 來源稽核另存 network-audit.json",
+    "無產品外部服務或真實支付請求"
+  ],
+  "browserErrors": [],
+  "requests": [
+    "http://127.0.0.1:5173/",
+    "http://127.0.0.1:5173/@vite/client",
+    "http://127.0.0.1:5173/src/main.tsx",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react.js",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/react-dom_client.js",
+    "http://127.0.0.1:5173/src/app/App.tsx",
+    "http://127.0.0.1:5173/src/style.css",
+    "http://127.0.0.1:5173/node_modules/vite/dist/client/env.mjs",
+    "http://127.0.0.1:5173/node_modules/.vite/deps/chunk-SU6MV2YM.js",
+    "http://127.0.0.1:5173/src/domain/model.ts",
+    "http://127.0.0.1:5173/src/app/Checkout.tsx",
+    "http://127.0.0.1:5173/src/app/SignaturePad.tsx",
+    "http://127.0.0.1:5173/src/demo/scenarios.ts",
+    "http://127.0.0.1:5173/src/persistence/storage.ts",
+    "http://127.0.0.1:5173/src/domain/banquet-date.ts",
+    "http://127.0.0.1:5173/src/persistence/legacy.ts",
+    "http://127.0.0.1:5173/src/persistence/v2-model.ts",
+    "http://127.0.0.1:5173/src/persistence/v1-legacy.ts",
+    "http://127.0.0.1:5173/src/persistence/v2-storage.ts"
+  ]
+}
